@@ -1,0 +1,175 @@
+.popup-search-box {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 99999;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  transition: all ease 0.1s;
+  background: rgba(255, 255, 255, 0.1);  // You can adjust the alpha channel for transparency
+  backdrop-filter: blur(5px);  // Apply a blur effect
+  border-radius: 5px;  // Rounded corners
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  // Optional: Add some box-shadow for depth
+
+  // Fallback for browsers that don't support backdrop-filter
+  @supports not (backdrop-filter: blur(10px)) {
+    background: rgba(255, 255, 255, 0.7);
+  }
+  button.searchClose {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: unset I !important;
+    width: fit-content;
+    border:none;
+    background-color: transparent;
+    font-size: 16px;
+    text-decoration: underline;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+  }
+  .show-all-result {
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    right: unset  !important;
+    width: fit-content;
+    border:none;
+    background-color: transparent;
+    font-size: 16px;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    font-weight: bold;
+    color: #ADB5BD;
+    -webkit-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+    @include lg {
+      font-size: 14px;
+    }
+  }
+
+  form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    padding-bottom: 40px;
+    cursor: auto;
+    width: 100%;
+    max-width: 700px;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all ease-in-out 0.2s;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    @include lg {
+      max-width: calc(100vw - 20px);
+      height: 70vh;
+      padding-bottom: 0;
+    }
+
+    
+
+    input {
+      font-size: 16px;
+      height: 70px;
+      width: 100%;
+      border:none;
+      border-bottom: 2px solid $theme-color;
+      background-color: transparent;
+      padding-right : 55px;
+      color: $title-color;
+      border-radius: 0;
+      margin-top: 20px;
+      @include lg {
+        font-size: 14px;
+      }
+
+      @include inputPlaceholder {
+        color: $title-color;
+      }
+    }
+
+    button:not(.searchClose),
+    .search-icon {
+      position: absolute;
+      top: 60px;
+      background-color: transparent;
+      border: none;
+      font-size: 24px;
+      right: 40px;
+      transition: all ease 0.4s;
+      transform: scale(1.001);
+      
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    ul {
+      max-height: 300px;
+      overflow: auto;
+      @include lg {
+        max-height: 400px;
+        padding-bottom: 0;
+      }
+      li {
+        padding: 10px 20px;
+        border-bottom: 1px solid $theme-color;
+        transition: all .3s ease-in-out ;
+        &.new{
+          h6,span {
+            font-weight: bold;
+          }
+        }
+
+    
+        .search-list-img{
+          img {
+            width: 53px;
+            height: 53px;
+          }
+        }
+        .search-list-content{
+          h6 {
+            font-size: 14px;
+            margin: 0;
+            color: $title-color;
+          }
+          span{
+            font-size: 14px;
+            color :$theme-color;
+            font-weight: bold;
+         
+          }
+        }
+      }
+    } 
+
+  }
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    transition: all ease 0.4s;
+    border-radius: 0;
+
+    form {
+      transition-delay: 0.5s;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+
+}

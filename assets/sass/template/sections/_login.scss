@@ -1,0 +1,110 @@
+/* Login ---------------------------------- */
+.login-page{
+    // background: url("../img/bg/login-bg.svg") center center no-repeat #F8F9FA;
+    background-color: #F8F9FA;
+    background-size: cover;
+    #wrapper,
+    .container {
+        max-height: 100vh;
+        overflow: hidden;
+    }
+  .container {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  #wrapper,
+  .container {
+    padding: 0 !important;
+  }
+  .loginForm {
+    max-width: 585px;
+    @include md {
+          padding: 50px;
+      }
+      .logo{
+        text-align: center;
+          img {
+            height: 100px;
+            width: auto;
+          }
+      } 
+      .forget-password{
+        color : #818181;
+        &:hover{
+            text-decoration: underline;
+        }
+      }
+      .social-sigin {
+        background-color: #FFFFFF;
+        border: 1px solid $title-color;
+        color: #3C4043;
+        line-height: 1;
+        padding: 21px 31px;
+        font-size: 14px;
+        border-radius: 15px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        transition: all ease-in-out 0.3s;
+        width: 100%;
+        @include sm {
+            width: fit-content;
+            padding: 15px 20px;
+            border-radius: 10px;
+        }
+        &:hover {
+            background-color: #010101;
+            color: #fff;
+        }
+        .social-icon {
+            height: 24px;
+            width: 24px;
+            margin-right: 8px;
+            @include sm {
+            margin-right: 0;
+
+            }
+          svg {
+                height: 100%;
+                width: 100%;
+                @include sm {
+                    height: auto;
+                    width: auto;
+                }
+            }
+          
+        }
+        &.apple-signin-btn{
+                svg path{
+                    transition: all ease-in-out 0.3s;
+                }
+            &:hover{
+                svg path{
+                    fill:#fff
+                }
+
+            }
+        }
+        
+    }
+    
+  }
+
+  .backword-link{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+      svg path,
+      svg rect {
+          transition: all .3s ease-in-out;
+      }
+    &:hover{
+        svg path {
+            fill: $white-color;
+        }
+        svg rect {
+            fill: $theme-color;
+            opacity: 1;
+        }
+    }
+  }
+}
