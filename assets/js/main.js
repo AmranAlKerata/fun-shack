@@ -1050,10 +1050,12 @@
   });
 
   // /*----------- 20. Toggle Password ----------*/
-  $("#togglePassword").click(function() {
-    const passwordInput = $("#passwordInp");
-    const showIcon = $("#showIcon");
-    const hideIcon = $("#hideIcon");
+  $(".togglePassword").click(function() {
+    // Find the password input related to this toggle button
+    // Assuming the toggle button is in the same container as the password input
+    const passwordInput = $(this).siblings(".passwordInp");
+    const showIcon = $(this).children(".showIcon");
+    const hideIcon = $(this).children(".hideIcon");
 
     if (passwordInput.attr("type") === "password") {
       passwordInput.attr("type", "text");

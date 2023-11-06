@@ -17,7 +17,7 @@ input {
     outline: 0;
     box-shadow: none;
     background-color: $white-color;
-    border-color: $theme-color
+    border-color: $theme-color;
   }
 
   @include inputPlaceholder {
@@ -25,10 +25,10 @@ input {
   }
 
   &.style2 {
-    padding-left: 52px !important; 
+    padding-left: 52px !important;
     background-image: none;
 
-    ~i {
+    ~ i {
       color: $theme-color;
       font-weight: 400;
       top: 19px;
@@ -37,17 +37,17 @@ input {
     }
   }
 }
-#togglePassword{
+.togglePassword {
   position: absolute;
-    top: 14px;
-    left: 25px;
+  top: 14px;
+  left: 25px;
   cursor: pointer;
 }
 .form-group {
   margin-bottom: var(--bs-gutter-x);
   position: relative;
 
-  >i {
+  > i {
     display: inline-block;
     position: absolute;
     right: 25px;
@@ -70,19 +70,19 @@ input {
   }
 
   &.has-label {
-    >i {
+    > i {
       top: 50px;
     }
   }
 }
 
 [class*="col-"].form-group {
-  >i {
+  > i {
     right: calc((var(--bs-gutter-x) / 2) + 25px);
   }
 
   .style2 {
-    ~i {
+    ~ i {
       left: calc((var(--bs-gutter-x) / 2) + 25px);
     }
   }
@@ -105,7 +105,6 @@ select {
 }
 
 option {
-
   &:checked,
   &:focus,
   &:hover {
@@ -133,7 +132,6 @@ textarea {
   border-radius: 0;
 }
 
-
 input[type="checkbox"] {
   visibility: hidden;
   opacity: 0;
@@ -144,8 +142,7 @@ input[type="checkbox"] {
   display: none;
 
   &:checked {
-    ~label {
-
+    ~ label {
       &:before {
         content: "\f00c";
         color: $white-color;
@@ -155,7 +152,7 @@ input[type="checkbox"] {
     }
   }
 
-  ~label {
+  ~ label {
     position: relative;
     padding-left: 30px;
     cursor: pointer;
@@ -179,7 +176,6 @@ input[type="checkbox"] {
   }
 }
 
-
 input[type="radio"] {
   visibility: hidden;
   opacity: 0;
@@ -189,8 +185,7 @@ input[type="radio"] {
   height: 0;
   display: none;
 
-
-  ~label {
+  ~ label {
     position: relative;
     padding-left: 30px;
     cursor: pointer;
@@ -198,7 +193,6 @@ input[type="radio"] {
     display: inline-block;
     font-weight: 600;
     margin-bottom: 0;
-
 
     &::before {
       content: '\f111';
@@ -222,7 +216,7 @@ input[type="radio"] {
   }
 
   &:checked {
-    ~label {
+    ~ label {
       &::before {
         border-color: $theme-color;
         background-color: $theme-color;
@@ -230,11 +224,10 @@ input[type="radio"] {
       }
     }
   }
-
 }
 
 label {
-  margin-bottom: 0.5em;  
+  margin-bottom: 0.5em;
   margin-top: -0.3em;
   display: block;
   color: $title-color;
@@ -257,10 +250,11 @@ input.is-invalid,
 }
 
 textarea.is-invalid {
-  background-position: top calc(.375em + 0.5875rem) right calc(.375em + .8875rem);
+  background-position: top calc(.375em + 0.5875rem) right
+    calc(.375em + .8875rem);
 }
 
-.row.no-gutters>.form-group {
+.row.no-gutters > .form-group {
   margin-bottom: 0;
 }
 
@@ -288,8 +282,7 @@ textarea.is-invalid {
   }
 }
 
-.langauge { 
-
+.langauge {
   .nice-select {
     font-family: $body-font;
     background: none;
@@ -318,7 +311,7 @@ textarea.is-invalid {
       @extend :active;
 
       &:after {
-        transform: rotate(0deg); 
+        transform: rotate(0deg);
       }
 
       .list {
@@ -327,9 +320,9 @@ textarea.is-invalid {
         pointer-events: auto;
         transform: scale(1) translateY(0);
         li {
-          display: block;  
-          &:before{
-            display: none; 
+          display: block;
+          &:before {
+            display: none;
           }
         }
       }
@@ -337,7 +330,7 @@ textarea.is-invalid {
 
     .option {
       color: $title-color;
-      min-height: 30px; 
+      min-height: 30px;
 
       &.selected {
         color: $theme-color !important;
@@ -350,7 +343,7 @@ textarea.is-invalid {
       }
 
       &:hover,
-      &.focus, 
+      &.focus,
       &.selected.focus {
         background: $theme-color !important;
         color: #fff !important;
