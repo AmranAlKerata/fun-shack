@@ -588,7 +588,7 @@ select {
   line-height: 1.5;
   vertical-align: middle;
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3E%3C/svg%3E");
-  background-position: right 26px center;
+  background-position: left 26px center;
   background-repeat: no-repeat;
   background-size: 16px 12px;
   -webkit-appearance: none;
@@ -1740,7 +1740,7 @@ textarea.is-invalid {
   transition: 0.5s ease;
 }
 .th-btn > i {
-  margin-left: 5px;
+  margin-right: 5px;
 }
 .th-btn:hover, .th-btn.active {
   color: var(--white-color);
@@ -1790,7 +1790,7 @@ textarea.is-invalid {
 .th-btn.style5 {
   background-color: var(--white-color);
   color: var(--theme-color);
-  border: 2px solid #EEEEEE;
+  border: 2px solid #eeeeee;
   padding: 20px 34.5px;
 }
 .th-btn.style5:hover {
@@ -3979,6 +3979,7 @@ a.text-theme:hover,
   border: none;
   background-color: var(--input-bg, #fff);
   border-radius: 0;
+  text-align: right;
 }
 .widget.no-banner-widget {
   padding: 0;
@@ -6414,7 +6415,7 @@ a.text-theme:hover,
 .breadcumb-menu li:after {
   content: "\f060";
   position: relative;
-  margin-right: 10px;
+  margin-left: 10px;
   font-weight: 600;
   font-size: 15px;
   color: var(--white-color);
@@ -9679,7 +9680,7 @@ table.woocommerce-product-attributes {
   color: var(--body-color);
 }
 .th-sort-bar .woocommerce-result-count {
-  padding-left: 15px;
+  padding-right: 15px;
   margin-bottom: 0;
   color: var(--body-color);
 }
