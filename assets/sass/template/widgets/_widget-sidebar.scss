@@ -9,7 +9,7 @@
     height: 55px;
     border: none;
     background-color: var(--input-bg, #fff);
-    border-radius: 0;
+    border-radius: 10px;
     text-align: right;
   }
   &.no-banner-widget {
@@ -707,6 +707,20 @@
   .widget {
     --widget-padding-y: 30px;
     --widget-padding-x: 30px;
+    &_search {
+      position: fixed;
+      top: 0;
+      left: 100%;
+      width: 100%;
+      background-color: #e9ecef;
+      z-index: 9999;
+      transition: all .5s linear;
+      height: 100%;
+      overflow-y: scroll;
+    }
+    &.show {
+      left: 0;
+    }
   }
 
   .widget_title {

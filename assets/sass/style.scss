@@ -1,14 +1,6 @@
-/*
-Template Name: Taxiar
-Template URL: http://themeholy.com/html/texiar
-Description: Taxiar - Online Taxi Service HTML Template
-Author: Taxiar
-Author URI: https://themeforest.net/user/themeholy  
-Version: 1.0.0
-*/
 /*=================================
     CSS Index Here
-==================================*/ 
+==================================*/
 /*
 
 01. Theme Base
@@ -23,7 +15,7 @@ Version: 1.0.0
     2.2. Grid
     2.3. Input
     2.4. Slick Slider
-    2.5. Mobile Menu
+    2.5. Mobile Menu    
 03. Utilities
     3.1. Preloader
     3.2. Buttons
@@ -56,8 +48,7 @@ Version: 1.0.0
 */
 /*=================================
     CSS Index End
-==================================*/    
-
+==================================*/
 
 /*=================================
    01. Theme Base
@@ -77,7 +68,6 @@ Version: 1.0.0
 /*------------------- 1.6. Extend -------------------*/
 @import 'base/extend';
 
-
 /*=================================
     02. Reset
 ==================================*/
@@ -93,12 +83,11 @@ Version: 1.0.0
 /*------------------- 2.4. Slick Slider -------------------*/
 @import 'reset/slick-slider';
 
-/*------------------- 2.4. Nice Select -------------------*/  
-@import 'reset/nice-select'; 
+/*------------------- 2.4. Nice Select -------------------*/
+@import 'reset/nice-select';
 
 /*------------------- 2.5. Mobile Menu -------------------*/
 @import 'reset/asmenu';
-
 
 /*=================================
     03. Utilities
@@ -130,7 +119,6 @@ Version: 1.0.0
 /*------------------- 3.10. Animation -------------------*/
 @import 'utilities/animation';
 
-
 /*=================================
     04. Template Style
 ==================================*/
@@ -138,7 +126,6 @@ Version: 1.0.0
 @import 'template/widgets/widget-default-list';
 @import 'template/widgets/widget-sidebar';
 @import 'template/widgets/widget-footer';
-
 
 /*------------------- 4.2. Header  -------------------*/
 @import 'template/headers/header';
@@ -170,7 +157,6 @@ Version: 1.0.0
 /*------------------- 4.00. Popup Side Menu  -------------------*/
 @import 'template/sections/sidemenu-v1';
 
-
 /*------------------- 4.00. Wocommerce  -------------------*/
 @import 'template/sections/woocommerce';
 
@@ -184,7 +170,7 @@ Version: 1.0.0
 @import 'template/sections/checkout';
 
 /*------------------- 4.00. Wishlist  -------------------*/
-@import 'template/sections/wishlist';  
+@import 'template/sections/wishlist';
 
 /*------------------- 4.00. Shape  -------------------*/
 @import 'template/sections/shape';
@@ -204,7 +190,7 @@ Version: 1.0.0
 /*------------------- 4.00. Team  -------------------*/
 @import 'template/sections/team';
 
-/*------------------- 4.00. Gallery  -------------------*/  
+/*------------------- 4.00. Gallery  -------------------*/
 @import 'template/sections/gallery';
 
 /*------------------- 4.00. Testimonial  -------------------*/
@@ -243,7 +229,7 @@ Version: 1.0.0
 /*------------------- 4.00. CTA -------------------*/
 @import 'template/sections/cta';
 
-/*------------------- 5.00. Login -------------------*/
+/*------------------- 4.00. Login -------------------*/
 @import 'template/sections/login';
 
 /*=================================
@@ -253,20 +239,20 @@ Version: 1.0.0
 
 /*=================================
     06. RTL
-==================================*/   
+==================================*/
 @import 'rtl';
 
-/*------------------- 6.00. Update 1 -------------------*/ 
+/*------------------- 6.00. Update 1 -------------------*/
 @import 'update-v1';
 
 /*------------------- 6.01. Update 2 -------------------*/
 @import 'update-v2';
 
 /*------------------- 6.02. Update 3 -------------------*/
-@import 'update-v3'; 
+@import 'update-v3';
 
 /*------------------- 6.03. Update 4 -------------------*/
-@import 'update-v4';  
+@import 'update-v4';
 
 /*------------------- 6.03. Update 5 -------------------*/
-@import 'update-v5';  
+@import 'update-v5';

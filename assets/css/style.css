@@ -1,12 +1,4 @@
 @charset "UTF-8";
-/*
-Template Name: Taxiar
-Template URL: http://themeholy.com/html/texiar
-Description: Taxiar - Online Taxi Service HTML Template
-Author: Taxiar
-Author URI: https://themeforest.net/user/themeholy  
-Version: 1.0.0
-*/
 /*=================================
     CSS Index Here
 ==================================*/
@@ -24,7 +16,7 @@ Version: 1.0.0
     2.2. Grid
     2.3. Input
     2.4. Slick Slider
-    2.5. Mobile Menu
+    2.5. Mobile Menu    
 03. Utilities
     3.1. Preloader
     3.2. Buttons
@@ -1010,7 +1002,7 @@ textarea.is-invalid {
   border-bottom: 1px solid var(--body-color);
   border-right: 1px solid var(--body-color);
   position: absolute;
-  right: 20px;
+  left: 20px;
   line-height: calc(var(--input-height) - 2px);
   top: 21px;
   height: 8px;
@@ -1101,9 +1093,9 @@ textarea.is-invalid {
   list-style: none;
   min-height: 40px;
   outline: none;
-  padding-left: 10px;
-  padding-right: 15px;
-  text-align: left;
+  padding-right: 10px;
+  padding-left: 15px;
+  text-align: right;
   font-size: 14px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -2003,6 +1995,11 @@ textarea.is-invalid {
     bottom: 20px;
   }
 }
+#dateRange[readonly],
+#dateRange:disabled {
+  background-color: #fff;
+}
+
 /*------------------- 3.3. Titles -------------------*/
 .sec-title {
   margin-bottom: calc(var(--section-title-space) - 12px);
@@ -3978,7 +3975,7 @@ a.text-theme:hover,
   height: 55px;
   border: none;
   background-color: var(--input-bg, #fff);
-  border-radius: 0;
+  border-radius: 10px;
   text-align: right;
 }
 .widget.no-banner-widget {
@@ -4571,6 +4568,21 @@ a.text-theme:hover,
   .widget {
     --widget-padding-y: 30px;
     --widget-padding-x: 30px;
+  }
+  .widget_search {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    background-color: #e9ecef;
+    z-index: 9999;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    height: 100%;
+    overflow-y: scroll;
+  }
+  .widget.show {
+    left: 0;
   }
   .widget_title {
     font-size: 20px;
@@ -9257,6 +9269,20 @@ table.woocommerce-product-attributes {
   text-align: center;
   -webkit-transition: all ease 0.4s;
   transition: all ease 0.4s;
+}
+.th-product.out-of-stock {
+  position: relative;
+}
+.th-product.out-of-stock::after {
+  content: "هذا المنتج غير متاح";
+  z-index: 999;
+  color: red;
+  font-weight: bold;
+}
+.th-product.out-of-stock .price,
+.th-product.out-of-stock .star-rating,
+.th-product.out-of-stock .mobile-buttons {
+  display: none !important;
 }
 .th-product .product-title {
   font-size: 20px;
@@ -15698,7 +15724,7 @@ span.select2-selection.select2-selection--single:focus {
     height: 250px;
   }
 }
-/*------------------- 5.00. Login -------------------*/
+/*------------------- 4.00. Login -------------------*/
 /* Login ---------------------------------- */
 .login-page {
   background-color: #F8F9FA;
@@ -20715,7 +20741,7 @@ span.select2-selection.select2-selection--single:focus {
   width: calc(100% + 42px);
   -webkit-clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
           clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
-  background: #FFC000;
+  background: #ffc000;
   opacity: 0.4;
   left: -20px;
 }
@@ -20901,7 +20927,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 .header-layout8 .header-right .langauge .nice-select:after {
   content: "\f107";
-  right: 0px;
+  left: 0px;
   top: -14px;
   border-bottom: none;
   border-right: none;
@@ -20937,7 +20963,7 @@ span.select2-selection.select2-selection--single:focus {
   color: #fff !important;
 }
 .header-layout8 .header-button .icon-btn {
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
 }
 @media (max-width: 1399px) {
   .header-layout8 .header-button .th-btn {

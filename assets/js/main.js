@@ -1067,6 +1067,65 @@
       hideIcon.hide();
     }
   });
+  $(".flatpicker").flatpickr({
+    mode: "range",
+    dateFormat: "d.m.Y"
+  });
+
+  $("#price-slider-range").slider({
+    range: true,
+    min: 0,
+    max: 10000,
+    values: [ 0, 10000 ], // Set your default min and max values here
+    slide: function(event, ui) {
+      // Set the value of the price input during sliding
+      $("#price").val(
+        10000 - ui.values[1] + " ر.س - " + (10000 - ui.values[0]) + " ر.س "
+      );
+    }
+  });
+
+  // Set the initial value of the price input
+  $("#price").val(
+    10000 -
+      $("#price-slider-range").slider("values", 1) +
+      " ر.س - " +
+      (10000 - $("#price-slider-range").slider("values", 0)) +
+      " ر.س "
+  );
+
+  // Apply the RTL styles to the slider
+  $("#price-slider-range").css({
+    direction: "rtl",
+    "unicode-bidi": "bidi-override"
+  });
+  // Function to check if the screen width is less than or equal to 1024px
+  function checkWidth() {
+    return $(window).width() <= 1024;
+  }
+
+  // Attach a click event to the #filter-button
+  $("#filter-button").click(function() {
+    // Only show the sidebar if the width check passes
+    if (checkWidth()) {
+      $(".widget_search").addClass("show");
+      $("html, body").css("overflow", "hidden");
+    }
+  });
+
+  // Attach a click event to the #closeSidebar
+  $("#closeSidebar").click(function() {
+    $(".widget_search").removeClass("show");
+    console.log("first");
+  });
+
+  // Optional: close the sidebar if the window is resized above 1024px
+  $(window).resize(function() {
+    if (!checkWidth()) {
+      $(".widget_search").removeClass("show");
+      $("html, body").css("overflow", "auto");
+    }
+  });
 
   // /*----------- 00. Right Click Disable ----------*/
   // window.addEventListener('contextmenu', function (e) {

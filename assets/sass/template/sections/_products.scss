@@ -1,7 +1,21 @@
 .th-product {
   text-align: center;
   transition: all ease 0.4s;
-
+  &.out-of-stock {
+    // filter: grayscale(100%);
+    position: relative;
+    &::after {
+      content: "هذا المنتج غير متاح";
+      z-index: 999;
+      color: red;
+      font-weight: bold;
+    }
+    .price,
+    .star-rating,
+    .mobile-buttons {
+      display: none !important;
+    }
+  }
   .product-title {
     font-size: 20px;
     margin: 10px 0 10px 0;
