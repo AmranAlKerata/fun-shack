@@ -1,48 +1,26 @@
 <!doctype html>
-<html dir="ltr" class="no-js" lang="zxx">
+<html dir="rtl" class="no-js" lang="ar">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>كوخ المرح - Online Taxi Service HTML Template - Checkout</title>
-    <meta name="author" content="كوخ المرح">
-    <meta name="description" content="كوخ المرح - Online Taxi Service HTML Template">
-    <meta name="keywords" content="كوخ المرح - Online Taxi Service HTML Template">
+    <title>كوخ المرح</title>
+    <meta name="author" content="Taxiar">
+    <meta name="description" content="كوخ المرح">
+    <meta name="keywords" content="كوخ المرح">
     <meta name="robots" content="INDEX,FOLLOW">
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Favicons - Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="assets/img/favicons/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
-    
-
+    <!-- Site Icon -->
+    <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon">
     <!--==============================
 	    All CSS File
 	============================== -->
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
     <!-- Fontawesome Icon -->
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <!-- Magnific Popup -->
-    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
     <!-- Slick Slider -->
     <link rel="stylesheet" href="assets/css/slick.min.css">
     <!-- Slick Slider -->
@@ -51,7 +29,46 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
+<style>
+    .woocommerce-message a, .woocommerce-info a {
+        text-decoration: none;
+    }
+input[type=checkbox] ~ label {
+    padding-right: 30px;
+    padding-left: 0;
+}
+input[type=checkbox] ~ label:before {
+    right: 0px;
+    left: auto;
+}
+.form-select, select {
+    background-position: left 26px center;
 
+}
+.checkout-ordertable th {
+    text-align: right;
+}
+.woocommerce-checkout-payment {
+    text-align: right;
+}
+input[type=radio] ~ label {
+    padding-right: 30px;
+    padding-left: 0;
+}
+input[type=radio] ~ label::before {
+    right: 0;
+    left: auto;
+}
+@media (max-width: 767px) {
+.cart_table td {
+padding-right: 25%;
+padding-left: 0;
+}}
+.cart_table td:before {
+    right: 15px;
+    left: auto;
+}
+</style>
 <body class="">
 
 
@@ -95,150 +112,65 @@
     <!--==============================
     Mobile Menu
   ============================== -->
-    <div class="th-menu-wrapper">
-        <div class="th-menu-area text-center">
-            <button class="th-menu-toggle "><i class="fal fa-times"></i></button>
-            <div class="mobile-logo">
-                <a href="index.html"><img src="assets/img/logo.svg" alt="كوخ المرح"></a>
-            </div>
-            <div class="th-mobile-menu">
-                <ul>
-                    <li class="menu-item-has-children">
-                        <a href="index.html">Home</a>
-                        <ul class="sub-menu">
-                            <li class="menu-item-has-children">
-                                <a href="#">Multipage</a>
-                                <ul class="sub-menu">
-                                    <li><a href="index.html">Home One </a></li>
-                                    <li><a href="index-2.html">Home Two </a></li>
-                                    <li><a href="index-3.html">Home Three </a></li>
-                                    <li><a href="index-4.html">Home Four </a></li>
-                                    <li><a href="index-5.html">Home Five </a></li>
-                                    <li><a href="index-6.html">Home Six </a></li>
-                                    <li><a href="index-7.html">Home Seven </a></li>
-                                    <li><a href="index-8.html">Home Eight </a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item-has-children">
-                                <a href="#">Onepage</a>
-                                <ul class="sub-menu">
-                                    <li><a href="index-onepage.html">Home One Onepage</a></li>
-                                    <li><a href="index-2-onepage.html">Home Two Onepage</a></li>
-                                    <li><a href="index-3-onepage.html">Home Three Onepage</a></li>
-                                    <li><a href="index-4-onepage.html">Home Four Onepage</a></li>
-                                    <li><a href="index-5-onepage.html">Home Five Onepage</a></li>
-                                    <li><a href="index-6-onepage.html">Home Six Onepage</a></li>
-                                    <li><a href="index-7-onepage.html">Home Seven Onepage</a></li>
-                                    <li><a href="index-8-onepage.html">Home Eight Onepage</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item-has-children">
-                                <a href="#">RTL</a>
-                                <ul class="sub-menu">
-                                    <li><a href="index-rtl.html">Home RTL One</a></li>
-                                    <li><a href="index-rtl-2.html">Home RTL Two</a></li>
-                                    <li><a href="index-rtl-3.html">Home RTL Three</a></li>
-                                    <li><a href="index-rtl-4.html">Home RTL Four</a></li>
-                                    <li><a href="index-rtl-5.html">Home RTL Five</a></li>
-                                    <li><a href="index-rtl-6.html">Home RTL Six</a></li>
-                                    <li><a href="index-rtl-7.html">Home RTL Seven</a></li>
-                                    <li><a href="index-rtl-8.html">Home RTL Eight</a></li>
-                                    <li><a href="index-onepage-rtl.html">Home RTL One Onepage</a></li>
-                                    <li><a href="index-2-onepage-rtl.html">Home RTL Two Onepage</a></li>
-                                    <li><a href="index-3-onepage-rtl.html">Home RTL Three Onepage</a></li>
-                                    <li><a href="index-4-onepage-rtl.html">Home RTL Four Onepage</a></li>
-                                    <li><a href="index-5-onepage-rtl.html">Home RTL Five Onepage</a></li>
-                                    <li><a href="index-6-onepage-rtl.html">Home RTL Six Onepage</a></li>
-                                    <li><a href="index-7-onepage-rtl.html">Home RTL Seven Onepage</a></li>
-                                    <li><a href="index-8-onepage-rtl.html">Home RTL Eight Onepage</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a href="#">About Us</a>
-                        <ul class="sub-menu">
-                            <li><a href="about.html">About Style 1</a></li>
-                            <li><a href="about-2.html">About Style 2</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a href="#">Service</a>
-                        <ul class="sub-menu">
-                            <li><a href="service.html">Service Style 1</a></li>
-                            <li><a href="service-2.html">Service Style 2</a></li>
-                            <li><a href="service-details.html">Service Details Style 1</a></li>
-                            <li><a href="service-details-2.html">Service Details Style 2</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a href="#">Blog</a>
-                        <ul class="sub-menu">
-                            <li>
-                                <a href="#">Blog Layout</a>
-                                <ul class="sub-menu">
-                                    <li><a href="blog-grid-2-columns.html">Blog Grid 02 Columns</a></li>
-                                    <li><a href="blog-grid-3-columns.html">Blog Grid 03 Columns</a></li>
-                                    <li><a href="blog-list.html">Blog List</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="blog.html">Blog Sidebar</a>
-                                <ul class="sub-menu">
-                                    <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                    <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                    <li><a href="blog.html">Blog No Sidebar</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="blog-details.html">Blog Details Style 1</a></li>
-                            <li><a href="blog-details-2.html">Blog Details Style 2</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a href="#">Pages</a>
-                        <ul class="sub-menu">
-                            <li class="menu-item-has-children"><a href="#">Shop</a>
-                                <ul class="sub-menu">
-                                    <li><a href="shop.html">Shop</a></li>
-                                    <li><a href="shop-details.html">Shop Details</a></li>
-                                    <li><a href="cart.html">Cart Page</a></li>
-                                    <li><a href="checkout.html">Checkout</a></li>
-                                    <li><a href="wishlist.html">Wishlist</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item-has-children"><a href="#">Driver</a>
-                                <ul class="sub-menu">
-                                    <li><a href="team.html">Driver Style 1</a></li>
-                                    <li><a href="team-2.html">Driver Style 2</a></li>
-                                    <li><a href="team-details.html">Driver Details Style 1</a></li>
-                                    <li><a href="team-details-2.html">Driver Details Style 2</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item-has-children"><a href="#">Taxi</a>
-                                <ul class="sub-menu">
-                                    <li><a href="taxi.html">Taxi Style 1</a></li>
-                                    <li><a href="taxi-2.html">Taxi Style 2</a></li>
-                                    <li><a href="taxi-details.html">Taxi Details Style 1</a></li>
-                                    <li><a href="taxi-details-2.html">Taxi Details Style 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="gallery.html">gallery Style 1</a></li>
-                            <li><a href="gallery-2.html">gallery Style 2</a></li>
-                            <li><a href="gallery-3.html">gallery Style 3</a></li>
-                            <li><a href="booking.html">Booking Ride</a></li>
-                            <li><a href="faq.html">Faq Style 1</a></li>
-                            <li><a href="faq-2.html">Faq Style 2</a></li>
-                            <li><a href="contact-2.html">Contact Style 2</a> </li>
-                            <li><a href="error.html">Error</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+  <div class="th-menu-wrapper">
+    <div class="th-menu-area text-center">
+        <button class="th-menu-toggle "><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.1925 8.69125L12.8837 12L16.1913 15.3075C16.435 15.5512 16.435 15.9475 16.1913 16.1912C16.0688 16.3137 15.9088 16.3737 15.7488 16.3737C15.5888 16.3737 15.4288 16.3125 15.3063 16.1912L12 12.8838L8.6925 16.1912C8.57 16.3137 8.41 16.3737 8.25 16.3737C8.09 16.3737 7.93 16.3125 7.8075 16.1912C7.56375 15.9475 7.56375 15.5512 7.8075 15.3075L11.115 12L7.8075 8.6925C7.56375 8.44875 7.56375 8.0525 7.8075 7.80875C8.05125 7.565 8.44753 7.565 8.69128 7.80875L11.9988 11.1162L15.3063 7.80875C15.55 7.565 15.9462 7.565 16.19 7.80875C16.4337 8.0525 16.4363 8.4475 16.1925 8.69125ZM23.875 8.25V15.75C23.875 20.23 20.23 23.875 15.75 23.875H8.25C3.77 23.875 0.125 20.23 0.125 15.75V8.25C0.125 3.77 3.77 0.125 8.25 0.125H15.75C20.23 0.125 23.875 3.77 23.875 8.25ZM22.625 8.25C22.625 4.45875 19.5413 1.375 15.75 1.375H8.25C4.45875 1.375 1.375 4.45875 1.375 8.25V15.75C1.375 19.5413 4.45875 22.625 8.25 22.625H15.75C19.5413 22.625 22.625 19.5413 22.625 15.75V8.25Z" fill="#f00"/>
+            </svg>
+            
+            </button>
+        <div class="mobile-logo">
+            <a href="index.html"><img src="assets/img/logo.svg" alt="Taxiar"></a>
+        </div>
+        <div class="th-mobile-menu">
+            <ul>
+                <li class="menu-item-has-children">
+                    <a href="index.html">الفئات</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">الكل</a>
+                        </li>
+                        <li>
+                            <a href="#">مائية</a>
+                        </li>
+                        <li>
+                            <a href="#">جافة</a>
+                        </li>
+                        <li>
+                            <a href="#">كهربائية</a>
+                        </li>
+                        <li>
+                            <a href="#">متوفرة اليوم</a>
+                        </li>
+                        <li>
+                            <a href="#">بكجات</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">طريقة الطلب</a>
+                    
+                </li>
+                <li>
+                    <a href="#">حجوزاتي</a>
+        
+                </li>
+                <li>
+                    <a href="#">الأسئلة الشائعة</a>        
+                </li>
+                <li>
+                    <a href="#">من نحن</a>
+     
+                </li>
+                <li>
+                    <a href="#">الشروط و الأحكام</a>
+                </li>
+  
+            </ul>
+            
         </div>
     </div>
+</div>
     <!--==============================
     Sidemenu
 ============================== -->
@@ -376,216 +308,324 @@
     <!--============================== 
 	Header Area
 ==============================-->
-    <header class="th-header header-layout7">
-        <div class="header-top">
-            <div class="container">
-                <div class="row justify-content-center justify-content-md-between align-items-center gy-2">
-                    <div class="col-auto d-none d-md-block">
-                        <div class="header-links">
-                            <ul>
-                                <li><i class="fa-thin fa-envelope"></i><a href="mailto:info@كوخ المرح.com">info@كوخ المرح.com</a>
-                                </li>
-                                <li><i class="fa-thin fa-phone"></i><a href="tel:+468254762443">(+468) 254 762 443</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+<header class="th-header header-layout5">
+     
+    <div class="sticky-wrapper">
+        <!-- Main Menu Area -->
+        <div class="menu-area">
+            <div class="container py-3 py-lg-0">
+                <div class="row gx-20 align-items-center justify-content-between">
+                
                     <div class="col-auto">
-                        <div class="header-right">
-                            <div class="langauge">
-                                <select class="form-select nice-select">
-                                    <option selected="">English</option>
-                                    <option>Hindi</option>
-                                </select>
+                        <div class="header-logo">
+                            <button type="button" class="th-menu-toggle  d-inline-block d-lg-none">
+                                <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.6C0 0.2688 0.282947 0 0.631579 0H17.0526C17.4013 0 17.6842 0.2688 17.6842 0.6C17.6842 0.9312 17.4013 1.2 17.0526 1.2H0.631579C0.282947 1.2 0 0.9312 0 0.6ZM23.3684 8.4H0.631579C0.282947 8.4 0 8.6688 0 9C0 9.3312 0.282947 9.6 0.631579 9.6H23.3684C23.7171 9.6 24 9.3312 24 9C24 8.6688 23.7171 8.4 23.3684 8.4ZM12 16.8H0.631579C0.282947 16.8 0 17.0688 0 17.4C0 17.7312 0.282947 18 0.631579 18H12C12.3486 18 12.6316 17.7312 12.6316 17.4C12.6316 17.0688 12.3486 16.8 12 16.8Z" fill="#330D38"/>
+                                    </svg>
+                                    
+                            </button>
+                            <a href="index.html">
+                                <img src="assets/img/logo.svg" alt="Taxiar">
+                            </a>
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div class="col-auto d-block d-lg-none">
+                        <div class="header-button">
+                            <button type="button" class="icon-btn searchBoxToggler">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.5302 18.469L14.8362 13.775C16.0302 12.344 16.7502 10.505 16.7502 8.5C16.7502 3.951 13.0492 0.25 8.50024 0.25C3.95124 0.25 0.250244 3.951 0.250244 8.5C0.250244 13.049 3.95124 16.75 8.50024 16.75C10.5052 16.75 12.3442 16.0301 13.7752 14.8361L18.4692 19.53C18.6152 19.676 18.8072 19.75 18.9992 19.75C19.1912 19.75 19.3832 19.677 19.5292 19.53C19.8232 19.237 19.8232 18.762 19.5302 18.469ZM1.75024 8.5C1.75024 4.778 4.77824 1.75 8.50024 1.75C12.2222 1.75 15.2502 4.778 15.2502 8.5C15.2502 12.222 12.2222 15.25 8.50024 15.25C4.77824 15.25 1.75024 12.222 1.75024 8.5Z" fill="#000"/>
+                                    </svg>
+                                    
+                                    
+                            </button>
+                            <a href="#" class="icon-btn notifications">
+           
+                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.4548 13.6465L16.3488 11.8005C15.9528 11.1405 15.7448 10.3855 15.7448 9.61646V6.9895C15.7448 3.2735 12.7188 0.249512 8.9998 0.249512C5.2808 0.249512 2.25479 3.2725 2.25479 6.9895V9.61646C2.25479 10.3855 2.04578 11.1405 1.65078 11.8005L0.544796 13.6465C0.159796 14.2875 0.150795 15.0595 0.518795 15.7095C0.887795 16.3615 1.55478 16.7505 2.30378 16.7505H6.28379C6.27579 16.8345 6.25079 16.9155 6.25079 17.0005C6.25079 18.5175 7.48379 19.7505 9.00079 19.7505C10.5178 19.7505 11.7508 18.5175 11.7508 17.0005C11.7508 16.9155 11.7258 16.8345 11.7178 16.7505H15.6978C16.4468 16.7505 17.1148 16.3615 17.4828 15.7104C17.8498 15.0594 17.8398 14.2875 17.4548 13.6465ZM10.2488 17.0005C10.2488 17.6895 9.68779 18.2505 8.99879 18.2505C8.30979 18.2505 7.74879 17.6895 7.74879 17.0005C7.74879 16.9155 7.76479 16.8325 7.7818 16.7505H10.2158C10.2328 16.8325 10.2488 16.9155 10.2488 17.0005ZM16.1758 14.9705C16.1278 15.0545 15.9868 15.2495 15.6958 15.2495H2.30178C2.01178 15.2495 1.86979 15.0545 1.82179 14.9705C1.77479 14.8865 1.67979 14.6655 1.82879 14.4175L2.93479 12.5715C3.47079 11.6785 3.75279 10.6565 3.75279 9.61646V6.9895C3.75279 4.1005 6.10578 1.74951 8.99778 1.74951C11.8898 1.74951 14.2428 4.1005 14.2428 6.9895V9.61646C14.2428 10.6565 14.5258 11.6785 15.0608 12.5715L16.1668 14.4175C16.3168 14.6655 16.2228 14.8865 16.1758 14.9705Z" fill="#000"/>
+                                    </svg>
+                                    <span class="badge">2</span>
+                            </a>
+                  
+                            <a href="#" class="icon-btn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.75052 13.0012V16.0012C8.75052 16.4152 8.41452 16.7512 8.00052 16.7512C7.58652 16.7512 7.25052 16.4152 7.25052 16.0012V13.0012C7.25052 12.5872 7.58652 12.2512 8.00052 12.2512C8.41452 12.2512 8.75052 12.5872 8.75052 13.0012ZM12.0005 12.2512C11.5865 12.2512 11.2505 12.5872 11.2505 13.0012V16.0012C11.2505 16.4152 11.5865 16.7512 12.0005 16.7512C12.4145 16.7512 12.7505 16.4152 12.7505 16.0012V13.0012C12.7505 12.5872 12.4145 12.2512 12.0005 12.2512ZM18.1975 10.4652L17.4305 16.4752C17.1925 18.3422 15.5935 19.7502 13.7105 19.7502H6.31253C4.43653 19.7502 2.83751 18.3472 2.59451 16.4872L1.8045 10.4652C0.887504 10.0182 0.249512 9.08623 0.249512 8.00023C0.249512 6.48323 1.48251 5.25023 2.99951 5.25023H4.57553L7.35651 0.614242C7.56951 0.259242 8.03053 0.143162 8.38553 0.357162C8.74053 0.570162 8.85652 1.03122 8.64252 1.38622L6.32352 5.25023H13.6745L11.3555 1.38622C11.1425 1.03122 11.2575 0.570162 11.6125 0.357162C11.9665 0.144162 12.4275 0.259242 12.6415 0.614242L15.4225 5.25023H17.0005C18.5175 5.25023 19.7505 6.48323 19.7505 8.00023C19.7505 9.08623 19.1135 10.0182 18.1975 10.4652ZM16.6485 10.7512H3.35553L4.08252 16.2932C4.22852 17.4092 5.18753 18.2512 6.31253 18.2512H13.7105C14.8395 18.2512 15.7995 17.4062 15.9415 16.2862L16.6485 10.7512ZM18.2505 8.00121C18.2505 7.31221 17.6895 6.75121 17.0005 6.75121H3.00052C2.31152 6.75121 1.75052 7.31221 1.75052 8.00121C1.75052 8.69021 2.31152 9.25121 3.00052 9.25121H17.0005C17.6895 9.25121 18.2505 8.69021 18.2505 8.00121Z" fill="#000"/>
+                                    </svg>
+                                    
+                                    
+                                <span class="badge">5</span></a>
+                        </div>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <div class="row align-items-center">
+                         
+                            <div class="col-auto">
+                                <nav class="main-menu d-none d-lg-inline-block">
+                                    <ul>
+                                        <li class="menu-item-has-children">
+                                            <a href="index.html">الفئات</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item">
+                                                    <a href="#">الكل</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="#">مائية</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="#">جافة</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="#">كهربائية</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="#">متوفرة اليوم</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="#">بكجات</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">طريقة الطلب</a>
+                                            
+                                        </li>
+                                        <li>
+                                            <a href="#">حجوزاتي</a>
+                                
+                                        </li>
+                                        <li>
+                                            <a href="#">الأسئلة الشائعة</a>        
+                                        </li>
+                                        <li>
+                                            <a href="#">من نحن</a>
+                             
+                                        </li>
+                                        <li>
+                                            <a href="#">الشروط و الأحكام</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+              
                             </div>
-                            <div class="header-social">
-                                <span class="social-title">Follow Us On:</span>
-                                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
-                                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                   
+                        </div>
+                    </div>
+
+
+                    <div class="col-auto d-none d-lg-block">
+                        <div class="header-button">
+                            <button type="button" class="icon-btn searchBoxToggler">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.5302 18.469L14.8362 13.775C16.0302 12.344 16.7502 10.505 16.7502 8.5C16.7502 3.951 13.0492 0.25 8.50024 0.25C3.95124 0.25 0.250244 3.951 0.250244 8.5C0.250244 13.049 3.95124 16.75 8.50024 16.75C10.5052 16.75 12.3442 16.0301 13.7752 14.8361L18.4692 19.53C18.6152 19.676 18.8072 19.75 18.9992 19.75C19.1912 19.75 19.3832 19.677 19.5292 19.53C19.8232 19.237 19.8232 18.762 19.5302 18.469ZM1.75024 8.5C1.75024 4.778 4.77824 1.75 8.50024 1.75C12.2222 1.75 15.2502 4.778 15.2502 8.5C15.2502 12.222 12.2222 15.25 8.50024 15.25C4.77824 15.25 1.75024 12.222 1.75024 8.5Z" fill="#000"/>
+                                    </svg>
+                                    
+                                    
+                            </button>
+                            <button type="button" id="notificationButton" class="notification-button icon-btn notifications">
+           
+                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.4548 13.6465L16.3488 11.8005C15.9528 11.1405 15.7448 10.3855 15.7448 9.61646V6.9895C15.7448 3.2735 12.7188 0.249512 8.9998 0.249512C5.2808 0.249512 2.25479 3.2725 2.25479 6.9895V9.61646C2.25479 10.3855 2.04578 11.1405 1.65078 11.8005L0.544796 13.6465C0.159796 14.2875 0.150795 15.0595 0.518795 15.7095C0.887795 16.3615 1.55478 16.7505 2.30378 16.7505H6.28379C6.27579 16.8345 6.25079 16.9155 6.25079 17.0005C6.25079 18.5175 7.48379 19.7505 9.00079 19.7505C10.5178 19.7505 11.7508 18.5175 11.7508 17.0005C11.7508 16.9155 11.7258 16.8345 11.7178 16.7505H15.6978C16.4468 16.7505 17.1148 16.3615 17.4828 15.7104C17.8498 15.0594 17.8398 14.2875 17.4548 13.6465ZM10.2488 17.0005C10.2488 17.6895 9.68779 18.2505 8.99879 18.2505C8.30979 18.2505 7.74879 17.6895 7.74879 17.0005C7.74879 16.9155 7.76479 16.8325 7.7818 16.7505H10.2158C10.2328 16.8325 10.2488 16.9155 10.2488 17.0005ZM16.1758 14.9705C16.1278 15.0545 15.9868 15.2495 15.6958 15.2495H2.30178C2.01178 15.2495 1.86979 15.0545 1.82179 14.9705C1.77479 14.8865 1.67979 14.6655 1.82879 14.4175L2.93479 12.5715C3.47079 11.6785 3.75279 10.6565 3.75279 9.61646V6.9895C3.75279 4.1005 6.10578 1.74951 8.99778 1.74951C11.8898 1.74951 14.2428 4.1005 14.2428 6.9895V9.61646C14.2428 10.6565 14.5258 11.6785 15.0608 12.5715L16.1668 14.4175C16.3168 14.6655 16.2228 14.8865 16.1758 14.9705Z" fill="#000"/>
+                                    </svg>
+                                    <span class="badge">2</span>
+                            </button>
+                            <!-- Dropdown -->
+                            <div id="notificationDropdown" class="notification-dropdown hidden">
+                                    <div class="notify-top d-flex align-items-center justify-content-between">
+                                        <span class="text-white fw-bold">الإشعارات</span>
+                                        
+                                        <a href="#">
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.51502 13C8.82279 13.003 8.14524 12.8006 7.56803 12.4185C6.99082 12.0364 6.53988 11.4917 6.27224 10.8533C6.0046 10.2149 5.93227 9.51145 6.06441 8.83195C6.19655 8.15244 6.52722 7.52738 7.0146 7.03581C7.50198 6.54423 8.12418 6.20822 8.80252 6.07026C9.48087 5.93231 10.1849 5.9986 10.8256 6.26076C11.4662 6.52292 12.0148 6.96917 12.4018 7.54308C12.7889 8.117 12.997 8.79279 13 9.48502C13.002 9.94465 12.9134 10.4002 12.7393 10.8256C12.5653 11.251 12.3091 11.6379 11.9855 11.9643C11.6619 12.2907 11.2772 12.5502 10.8533 12.7279C10.4294 12.9056 9.97465 12.9981 9.51502 13ZM9.49002 7.00002C8.99557 7.002 8.51282 7.15056 8.1028 7.42691C7.69278 7.70325 7.37392 8.09498 7.18653 8.55255C6.99914 9.01011 6.95165 9.51297 7.05005 9.99753C7.14845 10.4821 7.38833 10.9266 7.73936 11.2748C8.09038 11.6231 8.53679 11.8594 9.02212 11.9539C9.50745 12.0484 10.0099 11.9969 10.466 11.8059C10.922 11.6148 11.3112 11.2928 11.5842 10.8806C11.8573 10.4684 12.002 9.98447 12 9.49002C11.9987 9.16171 11.9327 8.83688 11.8059 8.53407C11.679 8.23126 11.4938 7.95639 11.2607 7.72518C11.0276 7.49396 10.7513 7.31091 10.4475 7.18649C10.1437 7.06207 9.81833 6.9987 9.49002 7.00002ZM10.04 19H9.04002C8.50976 19.0024 8.00025 18.7941 7.62352 18.421C7.24678 18.0478 7.03367 17.5403 7.03102 17.01C7.03199 16.8883 6.9965 16.769 6.92914 16.6676C6.86178 16.5662 6.76561 16.4873 6.65302 16.441H6.64602C6.53998 16.3975 6.42342 16.3864 6.31109 16.4092C6.19876 16.432 6.09572 16.4876 6.01502 16.569C5.83056 16.7592 5.61029 16.911 5.3669 17.0157C5.12351 17.1203 4.86181 17.1758 4.59689 17.1789C4.33197 17.1819 4.06906 17.1325 3.82331 17.0335C3.57756 16.9345 3.35383 16.7879 3.16502 16.602L2.45702 15.902C2.27009 15.7167 2.12157 15.4964 2.01997 15.2536C1.91837 15.0108 1.86568 14.7504 1.86494 14.4872C1.8642 14.224 1.91541 13.9632 2.01564 13.7199C2.11587 13.4765 2.26314 13.2553 2.44902 13.069C2.53299 12.9824 2.58991 12.8732 2.61282 12.7547C2.63573 12.6363 2.62363 12.5137 2.57802 12.402C2.53411 12.2946 2.4592 12.2027 2.36284 12.1381C2.26649 12.0734 2.15306 12.0389 2.03702 12.039C1.77162 12.043 1.50806 11.9943 1.26161 11.8957C1.01516 11.7971 0.790715 11.6506 0.601266 11.4647C0.411817 11.2788 0.261128 11.0571 0.157923 10.8126C0.0547188 10.568 0.00104874 10.3055 2.03908e-05 10.04V9.04002C-0.00237241 8.50976 0.205913 8.00025 0.579083 7.62352C0.952253 7.24678 1.45976 7.03367 1.99002 7.03102C2.11175 7.03199 2.23099 6.9965 2.3324 6.92914C2.4338 6.86178 2.51272 6.76561 2.55902 6.65302V6.64602C2.60214 6.53992 2.61299 6.42345 2.59022 6.31121C2.56745 6.19897 2.51207 6.09594 2.43102 6.01502C2.24109 5.83036 2.08956 5.60996 1.98515 5.36651C1.88073 5.12305 1.82549 4.86135 1.82261 4.59647C1.81973 4.33159 1.86926 4.06875 1.96836 3.82308C2.06745 3.57741 2.21416 3.35377 2.40002 3.16502L3.10002 2.45402C3.28496 2.26743 3.50485 2.1191 3.74713 2.01751C3.9894 1.91592 4.24932 1.86305 4.51203 1.86194C4.77475 1.86083 5.03511 1.91148 5.27824 2.01101C5.52137 2.11055 5.74251 2.257 5.92902 2.44202C6.01407 2.5291 6.12326 2.58869 6.24251 2.61311C6.36176 2.63753 6.48559 2.62566 6.59802 2.57902C6.70604 2.53576 6.79858 2.46107 6.86366 2.36461C6.92873 2.26815 6.96335 2.15438 6.96302 2.03802C6.95905 1.77274 7.0077 1.50929 7.10614 1.26292C7.20459 1.01655 7.35088 0.792123 7.53657 0.602621C7.72226 0.413119 7.94367 0.262294 8.18799 0.158863C8.43231 0.0554316 8.69471 0.00144414 8.96002 2.03908e-05H9.96002C10.4903 -0.00237241 10.9998 0.205913 11.3765 0.579083C11.7533 0.952253 11.9664 1.45976 11.969 1.99002C11.9659 2.1104 11.9995 2.22889 12.0654 2.32966C12.1314 2.43043 12.2264 2.5087 12.338 2.55402C12.4472 2.59855 12.5668 2.61082 12.6828 2.58937C12.7987 2.56792 12.906 2.51366 12.992 2.43302C13.1768 2.24146 13.3981 2.08887 13.6429 1.98427C13.8876 1.87967 14.1509 1.82518 14.417 1.82402C14.6798 1.82229 14.9403 1.87266 15.1836 1.97221C15.4268 2.07176 15.6479 2.21853 15.834 2.40402L16.542 3.10402C16.7286 3.28896 16.8769 3.50885 16.9785 3.75113C17.0801 3.9934 17.133 4.25332 17.1341 4.51603C17.1352 4.77875 17.0846 5.03911 16.985 5.28224C16.8855 5.52537 16.739 5.74651 16.554 5.93302C16.4673 6.01573 16.4073 6.12251 16.3818 6.23961C16.3564 6.3567 16.3665 6.47875 16.411 6.59002L16.418 6.60402C16.4613 6.71166 16.5359 6.80382 16.6322 6.86855C16.7285 6.93327 16.842 6.96758 16.958 6.96702C17.2233 6.96252 17.4869 7.01064 17.7334 7.1086C17.98 7.20655 18.2047 7.35241 18.3946 7.53772C18.5845 7.72304 18.7357 7.94415 18.8397 8.18828C18.9436 8.43241 18.9981 8.69471 19 8.96002V9.96002C19.0012 10.2227 18.9506 10.4831 18.8511 10.7263C18.7517 10.9695 18.6052 11.1907 18.4203 11.3772C18.2353 11.5638 18.0153 11.7121 17.773 11.8136C17.5307 11.9152 17.2708 11.968 17.008 11.969C16.8876 11.9659 16.7692 11.9995 16.6684 12.0654C16.5676 12.1314 16.4893 12.2264 16.444 12.338C16.3997 12.4472 16.3876 12.5668 16.409 12.6827C16.4305 12.7986 16.4846 12.9059 16.565 12.992C16.7551 13.1761 16.9068 13.3961 17.0113 13.6392C17.1158 13.8824 17.171 14.1438 17.1737 14.4085C17.1764 14.6731 17.1265 14.9356 17.027 15.1808C16.9275 15.4261 16.7803 15.6491 16.594 15.837L15.894 16.545C15.7091 16.7316 15.4892 16.8799 15.2469 16.9815C15.0046 17.0831 14.7447 17.136 14.482 17.1371C14.2193 17.1382 13.9589 17.0876 13.7158 16.988C13.4727 16.8885 13.2515 16.742 13.065 16.557C12.9823 16.4703 12.8755 16.4103 12.7584 16.3848C12.6413 16.3594 12.5193 16.3695 12.408 16.414C12.2983 16.4579 12.204 16.5333 12.1369 16.6306C12.0698 16.7279 12.033 16.8428 12.031 16.961C12.0351 17.2259 11.9868 17.4889 11.8888 17.735C11.7907 17.9811 11.645 18.2054 11.4599 18.395C11.2749 18.5845 11.0541 18.7355 10.8104 18.8394C10.5667 18.9432 10.3049 18.9978 10.04 19ZM7.08102 15.539C7.35937 15.6643 7.59642 15.8661 7.7646 16.1208C7.93277 16.3756 8.02516 16.6728 8.03102 16.978C8.0289 17.1111 8.05315 17.2432 8.10236 17.3668C8.15157 17.4905 8.22476 17.6031 8.31773 17.6983C8.41069 17.7935 8.52158 17.8694 8.64401 17.9215C8.76643 17.9736 8.89797 18.001 9.03102 18.002H10.031C10.2962 18.002 10.5506 17.8967 10.7381 17.7091C10.9257 17.5216 11.031 17.2672 11.031 17.002C11.0298 16.6819 11.1234 16.3685 11.3002 16.1015C11.4769 15.8346 11.7288 15.6259 12.024 15.502C12.3123 15.381 12.63 15.3483 12.9369 15.4079C13.2437 15.4676 13.526 15.6169 13.748 15.837C13.8409 15.9331 13.9519 16.0097 14.0746 16.0625C14.1973 16.1153 14.3293 16.1432 14.4629 16.1446C14.5965 16.146 14.729 16.1209 14.8528 16.0707C14.9766 16.0204 15.0892 15.9461 15.184 15.852L15.884 15.144C15.9768 15.0506 16.0502 14.9398 16.1 14.8179C16.1498 14.696 16.1751 14.5655 16.1743 14.4339C16.1736 14.3022 16.1468 14.172 16.0957 14.0507C16.0445 13.9294 15.9698 13.8194 15.876 13.727C15.6524 13.504 15.4989 13.2205 15.4342 12.9114C15.3696 12.6023 15.3966 12.281 15.512 11.987V11.976L15.517 11.963C15.6344 11.6727 15.8358 11.4239 16.0953 11.2486C16.3549 11.0733 16.6608 10.9795 16.974 10.979C17.1069 10.9809 17.2388 10.9564 17.3622 10.9071C17.4856 10.8578 17.598 10.7845 17.693 10.6916C17.788 10.5987 17.8637 10.4879 17.9157 10.3656C17.9677 10.2433 17.995 10.1119 17.996 9.97902V8.97902C17.996 8.7138 17.8907 8.45945 17.7031 8.27191C17.5156 8.08438 17.2612 7.97902 16.996 7.97902C16.6772 7.98477 16.3641 7.89447 16.0973 7.71988C15.8305 7.54528 15.6224 7.29446 15.5 7.00002V6.99302C15.3764 6.70344 15.3418 6.38361 15.4005 6.07427C15.4593 5.76493 15.6088 5.48009 15.83 5.25602C15.9262 5.16323 16.0029 5.05225 16.0558 4.92952C16.1087 4.8068 16.1367 4.67479 16.1381 4.54116C16.1395 4.40753 16.1143 4.27497 16.064 4.15116C16.0137 4.02736 15.9392 3.9148 15.845 3.82002L15.137 3.12002C15.0437 3.02746 14.933 2.9542 14.8114 2.90444C14.6897 2.85468 14.5595 2.82939 14.428 2.83002C14.2961 2.83041 14.1657 2.85715 14.0442 2.90867C13.9228 2.96019 13.8129 3.03544 13.721 3.13002C13.498 3.35359 13.2145 3.50714 12.9054 3.57181C12.5963 3.63647 12.275 3.60944 11.981 3.49402H11.97H11.957C11.6667 3.37662 11.4179 3.17527 11.2426 2.91571C11.0673 2.65616 10.9735 2.35022 10.973 2.03702C10.9749 1.90415 10.9504 1.77222 10.9011 1.64882C10.8518 1.52543 10.7785 1.41301 10.6856 1.31802C10.5927 1.22304 10.4819 1.14737 10.3596 1.09537C10.2373 1.04337 10.1059 1.01606 9.97302 1.01502H8.97302C8.7078 1.01502 8.45345 1.12038 8.26591 1.30791C8.07838 1.49545 7.97302 1.7498 7.97302 2.01502C7.97628 2.33256 7.88427 2.64378 7.70886 2.9085C7.53346 3.17321 7.28272 3.37925 6.98902 3.50002C6.69882 3.62023 6.37983 3.65304 6.07124 3.59441C5.76265 3.53578 5.47791 3.38828 5.25202 3.17002C5.15916 3.07397 5.04815 2.99733 4.92544 2.94452C4.80272 2.89172 4.67074 2.86381 4.53716 2.86241C4.40357 2.86101 4.27103 2.88616 4.14724 2.93639C4.02345 2.98662 3.91087 3.06094 3.81602 3.15502L3.11602 3.86602C3.02344 3.95929 2.95014 4.06989 2.90033 4.1915C2.85052 4.31311 2.82517 4.44335 2.82573 4.57476C2.82629 4.70618 2.85274 4.8362 2.90358 4.95738C2.95442 5.07857 3.02865 5.18854 3.12202 5.28102C3.35051 5.5013 3.50785 5.78491 3.57379 6.09536C3.63973 6.40581 3.61125 6.72889 3.49202 7.02302C3.48457 7.0419 3.47588 7.06028 3.46602 7.07802C3.34072 7.35637 3.13896 7.59342 2.88422 7.7616C2.62947 7.92977 2.33222 8.02216 2.02702 8.02802C1.89398 8.0259 1.76183 8.05015 1.63821 8.09936C1.51458 8.14857 1.40192 8.22176 1.30673 8.31473C1.21153 8.40769 1.13568 8.51858 1.08356 8.64101C1.03143 8.76343 1.00406 8.89497 1.00302 9.02802V10.028C1.00302 10.2932 1.10838 10.5476 1.29591 10.7351C1.48345 10.9227 1.7378 11.028 2.00302 11.028C2.32199 11.0214 2.63552 11.1113 2.90261 11.2858C3.16969 11.4602 3.37791 11.7113 3.50002 12.006V12.016V12.027C3.61743 12.3172 3.64809 12.6352 3.58826 12.9425C3.52844 13.2498 3.38072 13.5331 3.16302 13.758C3.06734 13.8505 2.99109 13.9612 2.93874 14.0836C2.88638 14.206 2.85899 14.3375 2.85815 14.4706C2.85731 14.6037 2.88305 14.7356 2.93385 14.8587C2.98466 14.9817 3.05951 15.0933 3.15402 15.187L3.86202 15.887C3.95529 15.9796 4.06589 16.0529 4.1875 16.1027C4.30911 16.1525 4.43935 16.1779 4.57076 16.1773C4.70218 16.1768 4.8322 16.1503 4.95338 16.0995C5.07457 16.0486 5.18454 15.9744 5.27702 15.881C5.4973 15.6525 5.78091 15.4952 6.09136 15.4293C6.40181 15.3633 6.72489 15.3918 7.01902 15.511C7.04034 15.5188 7.06107 15.5282 7.08102 15.539Z" fill="#F8F9FA"/>
+                                                </svg>
+                                            <span class="text-white fw-bold ms-2">الضبط 
+                                                    
+                                            </span>
+
+                                        </a>
+
+                                </div>
+                                    <ul class="m-0">
+                                        <li class="new">
+                                            <a href="#" class="d-flex align-items-end justify-content-start gap-2">
+                                                <div class="notification-img">
+                                                    <img src="assets/img/person.jpg" alt="Person">
+
+                                                </div>
+                                                <div class="notification-content">
+                                                    <h6>             
+                                                        خالد رد على تعليقك في منتج نطيطة الكور
+                                                    </h6>
+                                                            <span>
+                                                                2023-09-20
+                                                            </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="new">
+                                            <a href="#" class="d-flex align-items-end justify-content-start gap-2">
+                                                <div class="notification-img">
+                                                    <img src="assets/img/person.jpg" alt="Person">
+
+                                                </div>
+                                                <div class="notification-content">
+                                                    <h6>             
+                                                        خالد رد على تعليقك في منتج نطيطة الكور
+                                                    </h6>
+                                                            <span>
+                                                                2023-09-20
+                                                            </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="d-flex align-items-end justify-content-start gap-2">
+                                                <div class="notification-img">
+                                                    <img src="assets/img/person.jpg" alt="Person">
+
+                                                </div>
+                                                <div class="notification-content">
+                                                    <h6>             
+                                                        خالد رد على تعليقك في منتج نطيطة الكور
+                                                    </h6>
+                                                            <span>
+                                                                2023-09-20
+                                                            </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="d-flex align-items-end justify-content-start gap-2">
+                                                <div class="notification-img">
+                                                    <img src="assets/img/person.jpg" alt="Person">
+
+                                                </div>
+                                                <div class="notification-content">
+                                                    <h6>             
+                                                        خالد رد على تعليقك في منتج نطيطة الكور
+                                                    </h6>
+                                                            <span>
+                                                                2023-09-20
+                                                            </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="d-flex align-items-end justify-content-start gap-2">
+                                                <div class="notification-img">
+                                                    <img src="assets/img/person.jpg" alt="Person">
+
+                                                </div>
+                                                <div class="notification-content">
+                                                    <h6>             
+                                                        خالد رد على تعليقك في منتج نطيطة الكور
+                                                    </h6>
+                                                            <span>
+                                                                2023-09-20
+                                                            </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="d-flex align-items-end justify-content-start gap-2">
+                                                <div class="notification-img">
+                                                    <img src="assets/img/person.jpg" alt="Person">
+
+                                                </div>
+                                                <div class="notification-content">
+                                                    <h6>             
+                                                        خالد رد على تعليقك في منتج نطيطة الكور
+                                                    </h6>
+                                                            <span>
+                                                                2023-09-20
+                                                            </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="d-flex align-items-end justify-content-start gap-2">
+                                                <div class="notification-img">
+                                                    <img src="assets/img/person.jpg" alt="Person">
+
+                                                </div>
+                                                <div class="notification-content">
+                                                    <h6>             
+                                                        خالد رد على تعليقك في منتج نطيطة الكور
+                                                    </h6>
+                                                            <span>
+                                                                2023-09-20
+                                                            </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="d-flex align-items-end justify-content-start gap-2">
+                                                <div class="notification-img">
+                                                    <img src="assets/img/person.jpg" alt="Person">
+
+                                                </div>
+                                                <div class="notification-content">
+                                                    <h6>             
+                                                        خالد رد على تعليقك في منتج نطيطة الكور
+                                                    </h6>
+                                                            <span>
+                                                                2023-09-20
+                                                            </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                 
+                                    <!-- Add more list items here -->
+                                    </ul>
+
+                                    <div class="notify-bottom d-flex align-items-center justify-content-between">
+                                     <a href="#">
+                                         <span class="text-white fw-bold">عرض الكل</span>
+                                     </a>
+                                        
+                                        <a href="#">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11 19.5H21" stroke="#F8F9FA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M11 12.5H21" stroke="#F8F9FA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M11 5.5H21" stroke="#F8F9FA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3 5.5L4 6.5L7 3.5" stroke="#F8F9FA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3 12.5L4 13.5L7 10.5" stroke="#F8F9FA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3 19.5L4 20.5L7 17.5" stroke="#F8F9FA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                
+                                            <span class="text-white fw-bold ms-2">قراءة الكل 
+                                                    
+                                            </span>
+
+                                        </a>
+
+                                </div>
                             </div>
+                            <a href="#" class="icon-btn sideMenuToggler2">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.75052 13.0012V16.0012C8.75052 16.4152 8.41452 16.7512 8.00052 16.7512C7.58652 16.7512 7.25052 16.4152 7.25052 16.0012V13.0012C7.25052 12.5872 7.58652 12.2512 8.00052 12.2512C8.41452 12.2512 8.75052 12.5872 8.75052 13.0012ZM12.0005 12.2512C11.5865 12.2512 11.2505 12.5872 11.2505 13.0012V16.0012C11.2505 16.4152 11.5865 16.7512 12.0005 16.7512C12.4145 16.7512 12.7505 16.4152 12.7505 16.0012V13.0012C12.7505 12.5872 12.4145 12.2512 12.0005 12.2512ZM18.1975 10.4652L17.4305 16.4752C17.1925 18.3422 15.5935 19.7502 13.7105 19.7502H6.31253C4.43653 19.7502 2.83751 18.3472 2.59451 16.4872L1.8045 10.4652C0.887504 10.0182 0.249512 9.08623 0.249512 8.00023C0.249512 6.48323 1.48251 5.25023 2.99951 5.25023H4.57553L7.35651 0.614242C7.56951 0.259242 8.03053 0.143162 8.38553 0.357162C8.74053 0.570162 8.85652 1.03122 8.64252 1.38622L6.32352 5.25023H13.6745L11.3555 1.38622C11.1425 1.03122 11.2575 0.570162 11.6125 0.357162C11.9665 0.144162 12.4275 0.259242 12.6415 0.614242L15.4225 5.25023H17.0005C18.5175 5.25023 19.7505 6.48323 19.7505 8.00023C19.7505 9.08623 19.1135 10.0182 18.1975 10.4652ZM16.6485 10.7512H3.35553L4.08252 16.2932C4.22852 17.4092 5.18753 18.2512 6.31253 18.2512H13.7105C14.8395 18.2512 15.7995 17.4062 15.9415 16.2862L16.6485 10.7512ZM18.2505 8.00121C18.2505 7.31221 17.6895 6.75121 17.0005 6.75121H3.00052C2.31152 6.75121 1.75052 7.31221 1.75052 8.00121C1.75052 8.69021 2.31152 9.25121 3.00052 9.25121H17.0005C17.6895 9.25121 18.2505 8.69021 18.2505 8.00121Z" fill="#000"/>
+                                    </svg>
+                                    
+                                    
+                                <span class="badge">5</span></a>     
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Main Menu -->
-        <div class="sticky-wrapper">
-            <div class="menu-area">
-                <div class="container">
-                    <div class="row align-items-center justify-content-between">
-                        <div class="col-auto">
-                            <div class="header-logo">
-                                <a href="index.html"><img src="assets/img/logo3.svg" alt="كوخ المرح"></a>
-                            </div>
-                        </div>
-                        <div class="col-auto me-xl-auto">
-                            <nav class="main-menu d-none d-lg-block">
-                                <ul>
-                                    <li class="menu-item-has-children">
-                                        <a href="index.html">Home</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item-has-children">
-                                                <a href="#">Multipage</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="index.html">Home One </a></li>
-                                                    <li><a href="index-2.html">Home Two </a></li>
-                                                    <li><a href="index-3.html">Home Three </a></li>
-                                                    <li><a href="index-4.html">Home Four </a></li>
-                                                    <li><a href="index-5.html">Home Five </a></li>
-                                                    <li><a href="index-6.html">Home Six </a></li>
-                                                    <li><a href="index-7.html">Home Seven </a></li>
-                                                    <li><a href="index-8.html">Home Eight </a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item-has-children">
-                                                <a href="#">Onepage</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="index-onepage.html">Home One Onepage</a></li>
-                                                    <li><a href="index-2-onepage.html">Home Two Onepage</a></li>
-                                                    <li><a href="index-3-onepage.html">Home Three Onepage</a></li>
-                                                    <li><a href="index-4-onepage.html">Home Four Onepage</a></li>
-                                                    <li><a href="index-5-onepage.html">Home Five Onepage</a></li>
-                                                    <li><a href="index-6-onepage.html">Home Six Onepage</a></li>
-                                                    <li><a href="index-7-onepage.html">Home Seven Onepage</a></li>
-                                                    <li><a href="index-8-onepage.html">Home Eight Onepage</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item-has-children">
-                                                <a href="#">RTL</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="index-rtl.html">Home RTL One</a></li>
-                                                    <li><a href="index-rtl-2.html">Home RTL Two</a></li>
-                                                    <li><a href="index-rtl-3.html">Home RTL Three</a></li>
-                                                    <li><a href="index-rtl-4.html">Home RTL Four</a></li>
-                                                    <li><a href="index-rtl-5.html">Home RTL Five</a></li>
-                                                    <li><a href="index-rtl-6.html">Home RTL Six</a></li>
-                                                    <li><a href="index-rtl-7.html">Home RTL Seven</a></li>
-                                                    <li><a href="index-rtl-8.html">Home RTL Eight</a></li>
-                                                    <li><a href="index-onepage-rtl.html">Home RTL One Onepage</a></li>
-                                                    <li><a href="index-2-onepage-rtl.html">Home RTL Two Onepage</a></li>
-                                                    <li><a href="index-3-onepage-rtl.html">Home RTL Three Onepage</a></li>
-                                                    <li><a href="index-4-onepage-rtl.html">Home RTL Four Onepage</a></li>
-                                                    <li><a href="index-5-onepage-rtl.html">Home RTL Five Onepage</a></li>
-                                                    <li><a href="index-6-onepage-rtl.html">Home RTL Six Onepage</a></li>
-                                                    <li><a href="index-7-onepage-rtl.html">Home RTL Seven Onepage</a></li>
-                                                    <li><a href="index-8-onepage-rtl.html">Home RTL Eight Onepage</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="#">About Us</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="about.html">About Style 1</a></li>
-                                            <li><a href="about-2.html">About Style 2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="#">Service</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="service.html">Service Style 1</a></li>
-                                            <li><a href="service-2.html">Service Style 2</a></li>
-                                            <li><a href="service-details.html">Service Details Style 1</a></li>
-                                            <li><a href="service-details-2.html">Service Details Style 2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="#">Blog</a>
-                                        <ul class="sub-menu">
-                                            <li>
-                                                <a href="#">Blog Layout</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="blog-grid-2-columns.html">Blog Grid 02 Columns</a></li>
-                                                    <li><a href="blog-grid-3-columns.html">Blog Grid 03 Columns</a></li>
-                                                    <li><a href="blog-list.html">Blog List</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="blog.html">Blog Sidebar</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                                    <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                                    <li><a href="blog.html">Blog No Sidebar</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="blog-details.html">Blog Details Style 1</a></li>
-                                            <li><a href="blog-details-2.html">Blog Details Style 2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="#">Pages</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item-has-children"><a href="#">Shop</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="shop.html">Shop</a></li>
-                                                    <li><a href="shop-details.html">Shop Details</a></li>
-                                                    <li><a href="cart.html">Cart Page</a></li>
-                                                    <li><a href="checkout.html">Checkout</a></li>
-                                                    <li><a href="wishlist.html">Wishlist</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item-has-children"><a href="#">Driver</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="team.html">Driver Style 1</a></li>
-                                                    <li><a href="team-2.html">Driver Style 2</a></li>
-                                                    <li><a href="team-details.html">Driver Details Style 1</a></li>
-                                                    <li><a href="team-details-2.html">Driver Details Style 2</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item-has-children"><a href="#">Taxi</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="taxi.html">Taxi Style 1</a></li>
-                                                    <li><a href="taxi-2.html">Taxi Style 2</a></li>
-                                                    <li><a href="taxi-details.html">Taxi Details Style 1</a></li>
-                                                    <li><a href="taxi-details-2.html">Taxi Details Style 2</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="gallery.html">gallery Style 1</a></li>
-                                            <li><a href="gallery-2.html">gallery Style 2</a></li>
-                                            <li><a href="gallery-3.html">gallery Style 3</a></li>
-                                            <li><a href="booking.html">Booking Ride</a></li>
-                                            <li><a href="faq.html">Faq Style 1</a></li>
-                                            <li><a href="faq-2.html">Faq Style 2</a></li>
-                                            <li><a href="contact-2.html">Contact Style 2</a> </li>
-                                            <li><a href="error.html">Error</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">Contact</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <button class="th-menu-toggle  d-inline-block d-lg-none"><i class="far fa-bars"></i></button>
-                        </div>
-                        <div class="col-auto d-none d-xl-block">
-                            <div class="header-button">
-                                <button type="button" class="icon-btn searchBoxToggler"><i class="far fa-search"></i></button>
-                                <a href="#" class="icon-btn sideMenuToggler2"><i class="fa-regular fa-bag-shopping"></i>
-                                    <span class="badge">5</span></a>
-                                <a href="#" class="icon-btn sideMenuToggler"><i class="far fa-bars"></i></a>
-
-                                <a href="booking.html" class="th-btn">BOOK A TAXI<i class="fa-regular fa-arrow-right ms-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="logo-shape"><img src="assets/img/logo-shape.svg" alt=""></div>
-    </header>
+    </div>
+</header>
     <!--==============================
     Breadcumb
 ============================== -->
     <div class="breadcumb-wrapper " data-bg-src="assets/img/breadcumb/breadcumb-bg.jpg">
         <div class="container z-index-common">
-            <h1 class="breadcumb-title">Checkout</h1>
+            <h1 class="breadcumb-title">كيفية الدفع</h1>
             <ul class="breadcumb-menu">
-                <li><a href="index.html">Home</a></li>
-                <li>Checkout</li>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li>الدفع</li>
             </ul>
         </div>
     </div>
@@ -595,100 +635,107 @@ Checkout Arae
     <div class="th-checkout-wrapper space-top space-extra-bottom">
         <div class="container">
             <div class="woocommerce-form-login-toggle">
-                <div class="woocommerce-info">Returning customer? <a href="#" class="showlogin">Click here to login</a>
-                </div>
+                <div class="woocommerce-info">العميل العائد؟ <a href="#" class="showlogin">انقر هنا لتسجيل الدخول</a></div>
+
             </div>
             <div class="row">
                 <div class="col-12">
                     <form action="#" class="woocommerce-form-login">
                         <div class="form-group">
-                            <label>Username or email *</label>
-                            <input type="text" class="form-control" placeholder="Username or email">
+                            <label> الإسم أو  الإيميل *</label>
+                            <input type="text" class="form-control" placeholder="الإسم أو  الإيميل">
                         </div>
                         <div class="form-group">
-                            <label>Password *</label>
-                            <input type="text" class="form-control" placeholder="Password">
+                            <label>كلمة المرور *</label>
+                            <input type="password" class="form-control" placeholder="كلمة المرور">
                         </div>
                         <div class="form-group">
                             <div class="custom-checkbox">
                                 <input type="checkbox" id="remembermylogin">
-                                <label for="remembermylogin">Remember Me</label>
+                                <label for="remembermylogin">تذكرني</label>
                             </div>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="th-btn">Login</button>
-                            <p class="fs-xs mt-2 mb-0"><a class="text-reset" href="#">Lost your password?</a></p>
+                            <button type="submit" class="th-btn">تسجيل الدخول</button>
+                            <p class="fs-xs mt-2 mb-0"><a class="text-reset" href="#">هل نسيت كلمة المرور؟</a></p>
                         </div>
                     </form>
                 </div>
+                
             </div>
             <div class="woocommerce-form-coupon-toggle">
-                <div class="woocommerce-info">Have a coupon? <a href="#" class="showcoupon">Click here to enter your code</a> </div>
+                <div class="woocommerce-info">هل لديك كوبون خصم؟ <a href="#" class="showcoupon">انقر هنا لإدخال رمزك</a> </div>
             </div>
+            
             <div class="row">
                 <div class="col-12">
                     <form action="#" class="woocommerce-form-coupon">
                         <div class="form-group">
-                            <label>Coupon code</label>
-                            <input type="text" class="form-control" placeholder="Write your coupon code">
+                            <label>رمز الكوبون</label>
+                            <input type="text" class="form-control" placeholder="أدخل رمز الكوبون الخاص بك">
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="th-btn">Apply coupon</button>
+                            <button type="submit" class="th-btn">تطبيق الكوبون</button>
                         </div>
                     </form>
+                    
                 </div>
+                
             </div>
             <form action="#" class="woocommerce-checkout mt-40">
                 <div class="row ">
                     <div class="col-lg-6">
-                        <h2 class="h4">Billing Details</h2>
+                        <h2 class="h4">تفاصيل الفاتورة</h2>
                         <div class="row">
                             <div class="col-12 form-group">
                                 <select class="form-select">
-                                    <option>United Kingdom (UK)</option>
-                                    <option>United State (US)</option>
-                                    <option>Equatorial Guinea (GQ)</option>
-                                    <option>Australia (AU)</option>
-                                    <option>Germany (DE)</option>
+                                    <option>الرياض (العاصمة)</option>
+                                    <option>جدة</option>
+                                    <option>مكة المدينة</option>
+                                    <option>الدمام</option>
+                                    <option>أبها</option>
+                                    <option>الخبر</option>
+                                    <!-- يمكنك إضافة المزيد من المدن هنا -->
                                 </select>
                             </div>
                             <div class="col-md-6 form-group">
-                                <input type="text" class="form-control" placeholder="First Name">
+                                <input type="text" class="form-control" placeholder="الاسم الأول">
                             </div>
                             <div class="col-md-6 form-group">
-                                <input type="text" class="form-control" placeholder="Last Name">
+                                <input type="text" class="form-control" placeholder="الاسم الأخير">
                             </div>
                             <div class="col-12 form-group">
-                                <input type="text" class="form-control" placeholder="Your Company Name">
+                                <input type="text" class= "form-control" placeholder="اسم شركتك">
                             </div>
                             <div class="col-12 form-group">
-                                <input type="text" class="form-control" placeholder="Street Address">
-                                <input type="text" class="form-control" placeholder="Apartment, suite, unit etc. (optional)">
+                                <input type="text" class="form-control" placeholder="عنوان الشارع">
+                                <input type="text" class="form-control" placeholder="شقة، جناح، وحدة، إلخ (اختياري)">
                             </div>
                             <div class="col-12 form-group">
-                                <input type="text" class="form-control" placeholder="Town / City">
+                                <input type="text" class="form-control" placeholder="المدينة / البلدة">
                             </div>
                             <div class="col-md-6 form-group">
-                                <input type="text" class="form-control" placeholder="Country">
+                                <input type="text" class="form-control" placeholder="البلد">
                             </div>
                             <div class="col-md-6 form-group">
-                                <input type="text" class="form-control" placeholder="Postcode / Zip">
+                                <input type="text" class="form-control" placeholder="الرمز البريدي ">
                             </div>
                             <div class="col-12 form-group">
-                                <input type="text" class="form-control" placeholder="Email Address">
-                                <input type="text" class="form-control" placeholder="Phone number">
+                                <input type="text" class="form-control" placeholder="  الإيميل">
+                                <input type="text" class="form-control" placeholder=" الهاتف">
                             </div>
                             <div class="col-12 form-group">
                                 <input type="checkbox" id="accountNewCreate">
-                                <label for="accountNewCreate">Creat An Account?</label>
+                                <label for="accountNewCreate">إنشاء حساب؟</label>
                             </div>
                         </div>
                     </div>
+                    
                     <div class="col-lg-6">
                         <p id="ship-to-different-address">
                             <input id="ship-to-different-address-checkbox" type="checkbox" name="ship_to_different_address" value="1" checked>
                             <label for="ship-to-different-address-checkbox">
-                                Ship to a different address?
+                                الشحن إلى عنوان مختلف؟
                                 <span class="checkmark"></span>
                             </label>
                         </p>
@@ -696,217 +743,327 @@ Checkout Arae
                             <div class="row">
                                 <div class="col-12 form-group">
                                     <select class="form-select">
-                                        <option>United Kingdom (UK)</option>
-                                        <option>United State (US)</option>
-                                        <option>Equatorial Guinea (GQ)</option>
-                                        <option>Australia (AU)</option>
-                                        <option>Germany (DE)</option>
+                                        <option>الرياض (العاصمة)</option>
+                                        <option>جدة</option>
+                                        <option>مكة المدينة</option>
+                                        <option>الدمام</option>
+                                        <option>أبها</option>
+                                        <option>الخبر</option>
+                                        <!-- يمكنك إضافة المزيد من المدن هنا -->
                                     </select>
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <input type="text" class="form-control" placeholder="First Name">
+                                    <input type="text" class="form-control" placeholder="الاسم الأول">
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <input type="text" class="form-control" placeholder="Last Name">
+                                    <input type="text" class= "form-control" placeholder="الاسم الأخير">
                                 </div>
                                 <div class="col-12 form-group">
-                                    <input type="text" class="form-control" placeholder="Your Company Name">
+                                    <input type="text" class="form-control" placeholder="اسم شركتك">
                                 </div>
                                 <div class="col-12 form-group">
-                                    <input type="text" class="form-control" placeholder="Street Address">
-                                    <input type="text" class="form-control" placeholder="Apartment, suite, unit etc. (optional)">
+                                    <input type="text" class="form-control" placeholder="عنوان الشارع">
+                                    <input type="text" class="form-control" placeholder="شقة، جناح، وحدة، إلخ (اختياري)">
                                 </div>
                                 <div class="col-12 form-group">
-                                    <input type="text" class="form-control" placeholder="Town / City">
+                                    <input type="text" class="form-control" placeholder="المدينة">
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <input type="text" class="form-control" placeholder="Country">
+                                    <input type="text" class="form-control" placeholder="البلد">
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <input type="text" class="form-control" placeholder="Postcode / Zip">
+                                    <input type="text" class="form-control" placeholder="الرمز البريدي ">
                                 </div>
                                 <div class="col-12 form-group">
-                                    <input type="text" class="form-control" placeholder="Email Address">
-                                    <input type="text" class="form-control" placeholder="Phone number">
+                                    <input type="text" class="form-control" placeholder="الإيميل">
+                                    <input type="text" class="form-control" placeholder=" الهاتف">
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 form-group">
-                            <textarea cols="20" rows="5" class="form-control" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                            <textarea cols="20" rows="5" class="form-control" placeholder="ملاحظات حول طلبك، على سبيل المثال، ملاحظات خاصة بالتوصيل."></textarea>
                         </div>
                     </div>
+                    
                 </div>
             </form>
-            <h4 class="mt-4 pt-lg-2">Your Order</h4>
+            <h4 class="mt-4 pt-lg-2">طلبك</h4>
             <form action="#" class="woocommerce-cart-form">
                 <table class="cart_table mb-20">
                     <thead>
                         <tr>
-                            <th class="cart-col-image">Image</th>
-                            <th class="cart-col-productname">Product Name</th>
-                            <th class="cart-col-price">Price</th>
-                            <th class="cart-col-quantity">Quantity</th>
-                            <th class="cart-col-total">Total</th>
+                            <th class="cart-col-image">الصورة</th>
+                            <th class="cart-col-productname">اسم المنتج</th>
+                            <th class="cart-col-price">السعر</th>
+                            <th class="cart-col-quantity">الكمية</th>
+                            <th class="cart-col-total">الإجمالي</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="cart_item">
-                            <td data-title="Product">
-                                <a class="cart-productimage" href="shop-details.html"><img width="91" height="91" src="assets/img/product/product_thumb_1_1.jpg" alt="Image"></a>
+                            <td data-title="المنتج">
+                                <a class="cart-productimage" href="shop-details.html"><img width="91" height="91" src="assets/img/product/product_thumb_1_1.jpg" alt="الصورة"></a>
                             </td>
-                            <td data-title="Name">
-                                <a class="cart-productname" href="shop-details.html">Cereal of Technology</a>
+                            <td data-title="الاسم">
+                                <a class="cart-productname" href="shop-details.html">حبوب التقنية</a>
                             </td>
-                            <td data-title="Price">
-                                <span class="amount"><bdi><span>$</span>18</bdi></span>
+                            <td data-title="السعر">
+                                <span class="amount"><bdi>18 <span>ر.س</span></bdi></span>
                             </td>
-                            <td data-title="Quantity">
+                            <td data-title="الكمية">
                                 <strong class="product-quantity">01</strong>
                             </td>
-                            <td data-title="Total">
-                                <span class="amount"><bdi><span>$</span>18</bdi></span>
+                            <td data-title="الإجمالي">
+                                <span class="amount"><bdi>18 <span>ر.س</span></bdi></span>
                             </td>
                         </tr>
                     </tbody>
                     <tfoot class="checkout-ordertable">
                         <tr class="cart-subtotal">
-                            <th>Subtotal</th>
-                            <td data-title="Subtotal" colspan="4"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>281.05</bdi></span></td>
+                            <th>المجموع الفرعي</th>
+                            <td data-title="المجموع الفرعي" colspan="4"><span class="woocommerce-Price-amount amount"><bdi>281.05 <span class="woocommerce-Price-currencySymbol">ر.س</span></bdi></span></td>
                         </tr>
                         <tr class="woocommerce-shipping-totals shipping">
-                            <th>Shipping</th>
-                            <td data-title="Shipping" colspan="4"> Enter your address to view shipping options.
+                            <th>الشحن</th>
+                            <td data-title="الشحن" colspan="4">أدخل عنوانك لعرض خيارات الشحن.
                             </td>
                         </tr>
                         <tr class="order-total">
-                            <th>Total</th>
-                            <td data-title="Total" colspan="4"><strong><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>281.05</bdi></span></strong>
+                            <th>المجموع</th>
+                            <td data-title="المجموع" colspan="4"><strong><span class="woocommerce-Price-amount amount"><bdi>281.05 <span class="woocommerce-Price-currencySymbol">ر.س</span></bdi></span></strong>
                             </td>
                         </tr>
                     </tfoot>
                 </table>
             </form>
+            
             <div class="mt-lg-3 mb-30">
                 <div class="woocommerce-checkout-payment">
                     <ul class="wc_payment_methods payment_methods methods">
                         <li class="wc_payment_method payment_method_bacs">
                             <input id="payment_method_bacs" type="radio" class="input-radio" name="payment_method" value="bacs" checked="checked">
-                            <label for="payment_method_bacs">Direct bank transfer</label>
+                            <label for="payment_method_bacs">تحويل مصرفي مباشر</label>
                             <div class="payment_box payment_method_bacs">
-                                <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
+                                <p>قم بالدفع مباشرةً في حساب البنك الخاص بنا. يُرجى استخدام معرف الطلب الخاص بك كمرجع للدفع. لن يتم شحن طلبك حتى تتم عملية تحويل الأموال في حسابنا.
                                 </p>
                             </div>
                         </li>
                         <li class="wc_payment_method payment_method_cheque">
                             <input id="payment_method_cheque" type="radio" class="input-radio" name="payment_method" value="cheque">
-                            <label for="payment_method_cheque">Cheque Payment</label>
+                            <label for="payment_method_cheque">دفع بالشيك</label>
                             <div class="payment_box payment_method_cheque">
-                                <p>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                                <p>يرجى إرسال شيك إلى اسم المتجر، شارع المتجر، مدينة المتجر، مقاطعة المتجر، الرمز البريدي للمتجر.</p>
                             </div>
                         </li>
                         <li class="wc_payment_method payment_method_cod">
                             <input id="payment_method_cod" type="radio" class="input-radio" name="payment_method">
-                            <label for="payment_method_cod">Credit Cart</label>
+                            <label for="payment_method_cod">الدفع نقدًا عند التسليم</label>
                             <div class="payment_box payment_method_cod">
-                                <p>Pay with cash upon delivery.</p>
+                                <p>ادفع نقدًا عند التسليم.</p>
                             </div>
                         </li>
                         <li class="wc_payment_method payment_method_paypal">
-                            <input id="payment_method_paypal" type="radio" class="input-radio" name="payment_method" value="paypal">
-                            <label for="payment_method_paypal">Paypal</label>
+                            <input id="payment_method_paypal" type="radio" class "input-radio" name="payment_method" value="paypal">
+                            <label for="payment_method_paypal">باي بال</label>
                             <div class="payment_box payment_method_paypal">
-                                <p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</p>
+                                <p>ادفع عبر باي بال؛ يمكنك الدفع باستخدام بطاقتك الائتمانية إذا لم تمتلك حساب باي بال.</p>
                             </div>
                         </li>
                     </ul>
                     <div class="form-row place-order">
-                        <button type="submit" class="th-btn">Place order</button>
+                        <button type="submit" class="th-btn">تأكيد الطلب</button>
                     </div>
                 </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <!-- Scroll To Top  -->
+    <div class="scroll-top text-center mb-4">
+        العودة إلى الأعلى
+        <svg width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.2398 5.53203C10.1733 5.60021 10.0865 5.63361 9.99976 5.63361C9.91298 5.63361 9.82619 5.59952 9.75975 5.53203L5.59284 1.25565V12.9402C5.59284 13.1322 5.44097 13.2881 5.25385 13.2881C5.06672 13.2881 4.91485 13.1322 4.91485 12.9402V1.25565L0.747947 5.53203C0.61574 5.66771 0.400797 5.66771 0.268589 5.53203C0.136382 5.39634 0.136382 5.17578 0.268589 5.0401L5.0145 0.169509C5.14671 0.0338289 5.36165 0.0338289 5.49386 0.169509L10.2398 5.0401C10.372 5.17647 10.372 5.39634 10.2398 5.53203Z" fill="#ADB5BD"/>
+            </svg>
+            
+    </div>
+    <!--==============================
+			Footer Area
+	==============================-->
+    <div class="moblie-social d-block d-md-none">
+        <div class="">
+            <h6 class="text-center">تابعنا على</h6>
+            <div class="footer-links d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+                <a href="#">
+                    <svg width="18" height="18" viewBox="0 0 41 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30.1451 0H22.0556V32.6956C22.0556 36.5913 18.9444 39.7913 15.0725 39.7913C11.2007 39.7913 8.08938 36.5913 8.08938 32.6956C8.08938 28.8696 11.1315 25.7391 14.8651 25.6V17.3913C6.63744 17.5304 0 24.2783 0 32.6956C0 41.1827 6.77571 48 15.1417 48C23.5075 48 30.2833 41.1131 30.2833 32.6956V15.9304C33.3255 18.1565 37.059 19.4783 41 19.5479V11.3391C34.9157 11.1304 30.1451 6.12173 30.1451 0Z" fill="white"/>
+                        </svg>
+                                               
+                </a>
+                <a href="#">
+                    <svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M47.8265 34.9152C47.4955 34.0082 46.8582 33.5179 46.135 33.1257C46.0001 33.0521 45.8776 32.9786 45.7673 32.9296C45.5466 32.8192 45.326 32.7089 45.1054 32.5986C42.8501 31.3974 41.085 29.902 39.8716 28.1125C39.5284 27.6099 39.2219 27.0706 38.9768 26.519C38.8665 26.2249 38.8787 26.0533 38.9523 25.8939C39.0258 25.7714 39.1239 25.6733 39.2464 25.5875C39.6387 25.3301 40.0309 25.0727 40.3006 24.9011C40.7786 24.5824 41.1708 24.3373 41.416 24.1657C42.3353 23.516 42.9849 22.8296 43.3894 22.0574C43.9655 20.9788 44.039 19.7163 43.5977 18.5764C42.9849 16.9585 41.465 15.9656 39.6142 15.9656C39.2219 15.9656 38.842 16.0024 38.4497 16.0882C38.3517 16.1127 38.2414 16.1372 38.1433 16.1617C38.1556 15.0586 38.131 13.8942 38.033 12.742C37.6898 8.70937 36.2679 6.60114 34.7971 4.9219C33.8533 3.86778 32.7501 2.97301 31.5122 2.27435C29.2814 0.999606 26.7441 0.349976 23.9863 0.349976C21.2284 0.349976 18.7034 0.999606 16.4726 2.27435C15.2346 2.97301 14.1315 3.86778 13.1877 4.9219C11.7168 6.60114 10.3073 8.72163 9.95179 12.742C9.85373 13.8942 9.82922 15.0586 9.84148 16.1617C9.74342 16.1372 9.64536 16.1127 9.53505 16.0882C9.15507 16.0024 8.76285 15.9656 8.38287 15.9656C6.53204 15.9656 5.01215 16.9707 4.39929 18.5764C3.95803 19.7163 4.03157 20.9788 4.60766 22.0574C5.01215 22.8296 5.66178 23.516 6.58107 24.1657C6.82621 24.3373 7.20618 24.5824 7.69647 24.9011C7.95387 25.0727 8.33384 25.3178 8.71382 25.563C8.84864 25.6488 8.95896 25.7591 9.04476 25.8939C9.1183 26.0533 9.13056 26.2249 9.00799 26.5436C8.76284 27.0829 8.46867 27.6099 8.12547 28.1002C6.93653 29.8407 5.22052 31.3239 3.03874 32.5128C1.88657 33.1257 0.685365 33.5302 0.170564 34.9152C-0.209408 35.9571 0.035735 37.1338 1.00405 38.1389C1.35951 38.5066 1.77625 38.8253 2.22977 39.0704C3.17357 39.5852 4.17866 39.9897 5.23278 40.2716C5.45341 40.3329 5.64952 40.4187 5.83338 40.5413C6.18884 40.8477 6.13981 41.3135 6.60558 41.9999C6.83847 42.3553 7.1449 42.6618 7.4881 42.9069C8.48093 43.5933 9.59633 43.6301 10.773 43.6791C11.8394 43.7159 13.0406 43.7649 14.4257 44.2184C15.0017 44.4023 15.5901 44.77 16.2765 45.199C17.9312 46.2163 20.1865 47.6014 23.974 47.6014C27.7615 47.6014 30.029 46.2041 31.696 45.1867C32.3824 44.77 32.9708 44.4023 33.5223 44.2184C34.8951 43.7649 36.1086 43.7159 37.175 43.6791C38.3517 43.6301 39.4671 43.5933 40.4599 42.9069C40.8767 42.6127 41.2198 42.245 41.465 41.8037C41.8082 41.2277 41.7959 40.8232 42.1146 40.5413C42.2862 40.4187 42.4823 40.3329 42.6785 40.2839C43.7326 40.0019 44.7622 39.5975 45.7182 39.0704C46.1963 38.813 46.6375 38.4698 47.0052 38.0653L47.0175 38.0531C47.9736 37.0725 48.2064 35.9203 47.8265 34.9152ZM44.468 36.717C42.4211 37.8447 41.0483 37.7221 39.9941 38.4085C39.0871 38.9846 39.6264 40.2348 38.9768 40.6883C38.1678 41.2399 35.7899 40.6516 32.7256 41.6689C30.1884 42.5024 28.5827 44.9171 24.023 44.9171C19.4634 44.9171 17.8944 42.5147 15.3204 41.6689C12.2561 40.6516 9.87825 41.2522 9.06927 40.6883C8.41964 40.2348 8.9467 38.9846 8.05193 38.4085C6.98556 37.7221 5.62501 37.8447 3.57806 36.717C2.26654 35.9938 3.01423 35.5526 3.44323 35.3442C10.8711 31.7529 12.06 26.2004 12.1091 25.7836C12.1703 25.2811 12.2439 24.8888 11.6923 24.3863C11.1653 23.896 8.81187 22.4374 8.14999 21.9839C7.07135 21.2239 6.59333 20.4763 6.94878 19.5447C7.19393 18.9073 7.79453 18.6622 8.41964 18.6622C8.61576 18.6622 8.81187 18.6867 9.00799 18.7235C10.1969 18.9809 11.3491 19.5692 12.011 19.7408C12.0968 19.7653 12.1703 19.7776 12.2561 19.7776C12.6116 19.7776 12.7342 19.5937 12.7097 19.1893C12.6361 17.89 12.4523 15.365 12.6606 12.9994C12.9425 9.75123 13.9844 8.13328 15.2346 6.71145C15.8352 6.02505 18.6421 3.05881 24.023 3.05881C29.4039 3.05881 32.2108 6.01279 32.8114 6.69919C34.0617 8.12103 35.1035 9.73897 35.3854 12.9871C35.5938 15.3528 35.4099 17.8777 35.3241 19.177C35.2996 19.606 35.4222 19.7653 35.7777 19.7653C35.8635 19.7653 35.937 19.7531 36.0228 19.7286C36.6847 19.5692 37.8369 18.9686 39.0258 18.7112C39.2219 18.6622 39.418 18.6499 39.6142 18.6499C40.2393 18.6499 40.8399 18.8951 41.085 19.5325C41.4405 20.464 40.9625 21.2117 39.8838 21.9716C39.2342 22.4251 36.8808 23.8838 36.3415 24.374C35.7899 24.8766 35.8635 25.2688 35.9248 25.7714C35.9738 26.1881 37.1627 31.7406 44.5906 35.332C45.0318 35.5403 45.7673 35.9938 44.468 36.717Z" fill="white"/>
+                        </svg>
+                                                        
+
+                </a>
+                <a href="#">
+                    <svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M47.5219 14.4001C47.5219 14.4001 47.0531 11.0907 45.6094 9.6376C43.7812 7.7251 41.7375 7.71572 40.8 7.60322C34.0875 7.11572 24.0094 7.11572 24.0094 7.11572H23.9906C23.9906 7.11572 13.9125 7.11572 7.2 7.60322C6.2625 7.71572 4.21875 7.7251 2.39062 9.6376C0.946875 11.0907 0.4875 14.4001 0.4875 14.4001C0.4875 14.4001 0 18.2907 0 22.172V25.8095C0 29.6907 0.478125 33.5813 0.478125 33.5813C0.478125 33.5813 0.946875 36.8907 2.38125 38.3438C4.20937 40.2563 6.60938 40.1907 7.67813 40.397C11.5219 40.7626 24 40.8751 24 40.8751C24 40.8751 34.0875 40.8563 40.8 40.3782C41.7375 40.2657 43.7812 40.2563 45.6094 38.3438C47.0531 36.8907 47.5219 33.5813 47.5219 33.5813C47.5219 33.5813 48 29.7001 48 25.8095V22.172C48 18.2907 47.5219 14.4001 47.5219 14.4001ZM19.0406 30.2251V16.7345L32.0062 23.5032L19.0406 30.2251Z" fill="white"/>
+                        </svg>
+                                        
+
+                </a>
+                <a href="#">
+                    <svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M36.6526 3.80786H43.3995L28.6594 20.6548L46 43.5798H32.4225L21.7881 29.6759L9.61989 43.5798H2.86886L18.6349 25.5601L2 3.80786H15.9222L25.5348 16.5165L36.6526 3.80786ZM34.2846 39.5414H38.0232L13.8908 7.63413H9.87892L34.2846 39.5414Z" fill="white"/>
+                        </svg>
+                </a>
+                <a href="#">
+                    <svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_437_7342)">
+                        <path d="M48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 35.9789 8.77641 45.908 20.25 47.7084V30.9375H14.1562V24H20.25V18.7125C20.25 12.6975 23.8331 9.375 29.3152 9.375C31.9402 9.375 34.6875 9.84375 34.6875 9.84375V15.75H31.6613C28.68 15.75 27.75 17.6002 27.75 19.5V24H34.4062L33.3422 30.9375H27.75V47.7084C39.2236 45.908 48 35.9789 48 24Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_437_7342">
+                        <rect width="48" height="48" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        
+                        
+                </a>
+                <a href="#">
+                    <svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_437_7336)">
+                        <path d="M24 4.32187C30.4125 4.32187 31.1719 4.35 33.6938 4.4625C36.0375 4.56562 37.3031 4.95938 38.1469 5.2875C39.2625 5.71875 40.0688 6.24375 40.9031 7.07812C41.7469 7.92188 42.2625 8.71875 42.6938 9.83438C43.0219 10.6781 43.4156 11.9531 43.5188 14.2875C43.6313 16.8187 43.6594 17.5781 43.6594 23.9813C43.6594 30.3938 43.6313 31.1531 43.5188 33.675C43.4156 36.0188 43.0219 37.2844 42.6938 38.1281C42.2625 39.2438 41.7375 40.05 40.9031 40.8844C40.0594 41.7281 39.2625 42.2438 38.1469 42.675C37.3031 43.0031 36.0281 43.3969 33.6938 43.5C31.1625 43.6125 30.4031 43.6406 24 43.6406C17.5875 43.6406 16.8281 43.6125 14.3063 43.5C11.9625 43.3969 10.6969 43.0031 9.85313 42.675C8.7375 42.2438 7.93125 41.7188 7.09688 40.8844C6.25313 40.0406 5.7375 39.2438 5.30625 38.1281C4.97813 37.2844 4.58438 36.0094 4.48125 33.675C4.36875 31.1438 4.34063 30.3844 4.34063 23.9813C4.34063 17.5688 4.36875 16.8094 4.48125 14.2875C4.58438 11.9437 4.97813 10.6781 5.30625 9.83438C5.7375 8.71875 6.2625 7.9125 7.09688 7.07812C7.94063 6.23438 8.7375 5.71875 9.85313 5.2875C10.6969 4.95938 11.9719 4.56562 14.3063 4.4625C16.8281 4.35 17.5875 4.32187 24 4.32187ZM24 0C17.4844 0 16.6688 0.028125 14.1094 0.140625C11.5594 0.253125 9.80625 0.665625 8.2875 1.25625C6.70312 1.875 5.3625 2.69062 4.03125 4.03125C2.69063 5.3625 1.875 6.70313 1.25625 8.27813C0.665625 9.80625 0.253125 11.55 0.140625 14.1C0.028125 16.6687 0 17.4844 0 24C0 30.5156 0.028125 31.3312 0.140625 33.8906C0.253125 36.4406 0.665625 38.1938 1.25625 39.7125C1.875 41.2969 2.69063 42.6375 4.03125 43.9688C5.3625 45.3 6.70313 46.125 8.27813 46.7344C9.80625 47.325 11.55 47.7375 14.1 47.85C16.6594 47.9625 17.475 47.9906 23.9906 47.9906C30.5063 47.9906 31.3219 47.9625 33.8813 47.85C36.4313 47.7375 38.1844 47.325 39.7031 46.7344C41.2781 46.125 42.6188 45.3 43.95 43.9688C45.2812 42.6375 46.1063 41.2969 46.7156 39.7219C47.3063 38.1938 47.7188 36.45 47.8313 33.9C47.9438 31.3406 47.9719 30.525 47.9719 24.0094C47.9719 17.4938 47.9438 16.6781 47.8313 14.1188C47.7188 11.5688 47.3063 9.81563 46.7156 8.29688C46.125 6.70312 45.3094 5.3625 43.9688 4.03125C42.6375 2.7 41.2969 1.875 39.7219 1.26562C38.1938 0.675 36.45 0.2625 33.9 0.15C31.3313 0.028125 30.5156 0 24 0Z" fill="white"/>
+                        <path d="M24 11.6719C17.1938 11.6719 11.6719 17.1938 11.6719 24C11.6719 30.8062 17.1938 36.3281 24 36.3281C30.8062 36.3281 36.3281 30.8062 36.3281 24C36.3281 17.1938 30.8062 11.6719 24 11.6719ZM24 31.9969C19.5844 31.9969 16.0031 28.4156 16.0031 24C16.0031 19.5844 19.5844 16.0031 24 16.0031C28.4156 16.0031 31.9969 19.5844 31.9969 24C31.9969 28.4156 28.4156 31.9969 24 31.9969Z" fill="white"/>
+                        <path d="M39.6937 11.1843C39.6937 12.778 38.4 14.0624 36.8156 14.0624C35.2219 14.0624 33.9375 12.7687 33.9375 11.1843C33.9375 9.59053 35.2313 8.30615 36.8156 8.30615C38.4 8.30615 39.6937 9.5999 39.6937 11.1843Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_437_7336">
+                        <rect width="48" height="48" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        
+              
+                </a>
             </div>
         </div>
     </div>
     <!--==============================
 			Footer Area
 	==============================-->
-    <footer class="footer-wrapper footer-layout7" data-bg-src="assets/img/update_2/bg/footer_bg_1.jpg">
-        <div class="widget-area">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-md-6 col-xl-auto">
-                        <div class="widget footer-widget">
-                            <div class="th-widget-about">
-                                <div class="about-logo">
-                                    <a href="index.html"><img src="assets/img/logo-white3.svg" alt="كوخ المرح"></a>
-                                </div>
-                                <p class="about-text">Centric applications productize front end portals visualize front end is results and value added</p>
-                                <div class="working-time">
-                                    <span class="title">WE ARE AVAILABLE</span>
-                                    <p class="desc">Mon-Sat: 09.00 am to 6.30 pm</p>
-                                </div>
-                                <div class="th-social  footer-social">
-                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
-                                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="https://www.behance.net/"><i class="fa-brands fa-behance"></i></a>
-                                </div>
-                            </div>
+    <footer class="footer-wrapper footer-layout1">
+        <div class="container">
+            <div class="widget-area">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="logo">
+                            <img src="assets/img/logo-footer.svg" alt="Logo">
                         </div>
+                        <p class="text-white mt-3">تعد كوخ المرح الرائدة في مجال الترفيه الممتع و الهادف , حيث انطلقت منذ عام 2012 لترسم لإسمها بصمة واضحة في مجال الترفيه لتنوع الاصناف وجودة المنتجات</p>
                     </div>
-                    <div class="col-md-6 col-xl-2">
-                        <div class="widget widget_nav_menu  footer-widget">
-                            <h3 class="widget_title">Quick link</h3>
-                            <div class="menu-all-pages-container">
-                                <ul class="menu">
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="booking.html">Work Gallery</a></li>
-                                    <li><a href="service.html">Client Feedback</a></li>
-                                    <li><a href="service.html">Our Services</a></li>
-                                    <li><a href="team.html">Our Team</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                </ul>
-                            </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h6>روابط مهمة</h6>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#" class="text-white">الأسئلة الشائعة</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">من نحن</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">طريقة الطلب</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">الشروط و الأحكام</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h6>خدمة العملاء</h6>
+                        <div class="footer-links d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+                            <a href="#">
+                                <svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 48L3.374 35.674C1.292 32.066 0.198 27.976 0.2 23.782C0.206 10.67 10.876 0 23.986 0C30.348 0.002 36.32 2.48 40.812 6.976C45.302 11.472 47.774 17.448 47.772 23.804C47.766 36.918 37.096 47.588 23.986 47.588C20.006 47.586 16.084 46.588 12.61 44.692L0 48ZM13.194 40.386C16.546 42.376 19.746 43.568 23.978 43.57C34.874 43.57 43.75 34.702 43.756 23.8C43.76 12.876 34.926 4.02 23.994 4.016C13.09 4.016 4.22 12.884 4.216 23.784C4.214 28.234 5.518 31.566 7.708 35.052L5.71 42.348L13.194 40.386ZM35.968 29.458C35.82 29.21 35.424 29.062 34.828 28.764C34.234 28.466 31.312 27.028 30.766 26.83C30.222 26.632 29.826 26.532 29.428 27.128C29.032 27.722 27.892 29.062 27.546 29.458C27.2 29.854 26.852 29.904 26.258 29.606C25.664 29.308 23.748 28.682 21.478 26.656C19.712 25.08 18.518 23.134 18.172 22.538C17.826 21.944 18.136 21.622 18.432 21.326C18.7 21.06 19.026 20.632 19.324 20.284C19.626 19.94 19.724 19.692 19.924 19.294C20.122 18.898 20.024 18.55 19.874 18.252C19.724 17.956 18.536 15.03 18.042 13.84C17.558 12.682 17.068 12.838 16.704 12.82L15.564 12.8C15.168 12.8 14.524 12.948 13.98 13.544C13.436 14.14 11.9 15.576 11.9 18.502C11.9 21.428 14.03 24.254 14.326 24.65C14.624 25.046 18.516 31.05 24.478 33.624C25.896 34.236 27.004 34.602 27.866 34.876C29.29 35.328 30.586 35.264 31.61 35.112C32.752 34.942 35.126 33.674 35.622 32.286C36.118 30.896 36.118 29.706 35.968 29.458Z" fill="white"/>
+                                </svg>                        
+                            </a>
+                            <a href="#">
+                                <svg width="18" height="18" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M28.6189 21.6787C28.5864 21.4937 28.5493 21.3308 28.5079 21.1857C28.2873 20.3967 27.5975 19.7972 26.7522 19.6565L20.3391 18.5893C19.5338 18.4531 18.7166 18.7668 18.2192 19.4019C18.1437 19.4967 18.0727 19.5944 18.0046 19.6936C17.7648 20.0444 17.365 20.1761 17.0112 20.0222C13.6004 18.5389 10.9047 15.8432 9.4228 12.4325C9.26884 12.0787 9.39757 11.682 9.74546 11.4451C9.87722 11.3548 10.0045 11.2601 10.1304 11.1594C10.7492 10.6591 11.0556 9.85966 10.9313 9.07064L9.93946 2.7718C9.80918 1.94281 9.24071 1.26781 8.45907 1.00875C8.25922 0.943615 8.0268 0.881413 7.75737 0.832562C5.99275 0.517251 4.18668 1.01768 2.79955 2.20935C1.33989 3.46468 0.531588 5.28549 0.583401 7.20549C0.901684 19.0304 10.4161 28.5445 22.2415 28.8643C22.2992 28.8657 22.3554 28.8657 22.4131 28.8657C24.2547 28.8657 25.9957 28.0678 27.2126 26.66C28.4146 25.2715 28.9269 23.4551 28.6189 21.6787ZM26.0904 25.6963C25.1282 26.8095 23.747 27.4432 22.28 27.3869C11.2392 27.0894 2.35833 18.2073 2.06225 7.16845C2.02228 5.69551 2.64263 4.29957 3.76329 3.33587C4.60563 2.61199 5.64924 2.22562 6.71511 2.22562C6.97418 2.22562 7.23473 2.24782 7.4938 2.29519C7.68477 2.32924 7.84912 2.37218 7.98976 2.41807C8.24439 2.50245 8.42939 2.72742 8.4738 3.00572L9.46717 9.30456C9.50862 9.5725 9.40498 9.84191 9.19773 10.0107C9.10594 10.0862 9.00976 10.1573 8.91058 10.2239C7.97201 10.8619 7.62409 12.0136 8.06376 13.0246C9.69663 16.7817 12.6634 19.7483 16.4206 21.3826C17.4302 21.8193 18.5834 21.4729 19.2274 20.53C19.2762 20.4589 19.328 20.3878 19.3828 20.3183C19.5456 20.1066 19.8181 20.006 20.0949 20.0504L26.5079 21.1176C26.7892 21.165 27.0142 21.3486 27.0808 21.5855C27.1104 21.6876 27.1356 21.8016 27.1578 21.9319C27.3932 23.2701 27.0038 24.6408 26.0904 25.6963Z" fill="#F8F9FA"/>
+                                </svg>                                    
+
+                            </a>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-xl-auto">
-                        <div class="widget footer-widget">
-                            <h3 class="widget_title">Contact Details</h3>
-                            <div class="th-widget-about">
-                                <h4 class="footer-info-title">Phone Number</h4>
-                                <p class="footer-info"><i class="fa-sharp fa-solid fa-phone"></i><a class="text-inherit" href="tel:+468254762443">+468 254 762 443</a></p>
-                                <h4 class="footer-info-title">Email Address</h4>
-                                <p class="footer-info"><i class="fas fa-envelope"></i><a class="text-inherit" href="mailto:info@email.com">info@كوخ المرح.com</a></p>
-                                <h4 class="footer-info-title">Office Location</h4>
-                                <p class="footer-info"><i class="fas fa-map-marker-alt"></i>25 Street, 145 City Road New Town DD14, USA</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-3">
-                        <div class="widget footer-widget">
-                            <h4 class="widget_title">Newsletter</h4>
-                            <div class="newsletter-widget">
-                                <p class="md-20">Sign Up to get updates & news about us . Get Latest Deals from Walker's Inbox to our mail address.</p>
-                                <div class="footer-search-contact mt-25">
-                                    <form>
-                                        <input class="form-control" type="email" placeholder="Enter your email">
-                                    </form>
-                                    <div class="footer-btn mt-10">
-                                        <button type="submit" class="th-btn style3 fw-btn">Subscribe Now <i class="fa-regular fa-arrow-right"></i></button>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>  
+                    <div class="col-12 col-md-6 col-lg-3 d-none d-md-block">
+                        <h6>تابعنا على</h6>
+                        <div class="footer-links d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+                            <a href="#">
+                                <svg width="18" height="18" viewBox="0 0 41 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.1451 0H22.0556V32.6956C22.0556 36.5913 18.9444 39.7913 15.0725 39.7913C11.2007 39.7913 8.08938 36.5913 8.08938 32.6956C8.08938 28.8696 11.1315 25.7391 14.8651 25.6V17.3913C6.63744 17.5304 0 24.2783 0 32.6956C0 41.1827 6.77571 48 15.1417 48C23.5075 48 30.2833 41.1131 30.2833 32.6956V15.9304C33.3255 18.1565 37.059 19.4783 41 19.5479V11.3391C34.9157 11.1304 30.1451 6.12173 30.1451 0Z" fill="white"/>
+                                    </svg>
+                                                           
+                            </a>
+                            <a href="#">
+                                <svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M47.8265 34.9152C47.4955 34.0082 46.8582 33.5179 46.135 33.1257C46.0001 33.0521 45.8776 32.9786 45.7673 32.9296C45.5466 32.8192 45.326 32.7089 45.1054 32.5986C42.8501 31.3974 41.085 29.902 39.8716 28.1125C39.5284 27.6099 39.2219 27.0706 38.9768 26.519C38.8665 26.2249 38.8787 26.0533 38.9523 25.8939C39.0258 25.7714 39.1239 25.6733 39.2464 25.5875C39.6387 25.3301 40.0309 25.0727 40.3006 24.9011C40.7786 24.5824 41.1708 24.3373 41.416 24.1657C42.3353 23.516 42.9849 22.8296 43.3894 22.0574C43.9655 20.9788 44.039 19.7163 43.5977 18.5764C42.9849 16.9585 41.465 15.9656 39.6142 15.9656C39.2219 15.9656 38.842 16.0024 38.4497 16.0882C38.3517 16.1127 38.2414 16.1372 38.1433 16.1617C38.1556 15.0586 38.131 13.8942 38.033 12.742C37.6898 8.70937 36.2679 6.60114 34.7971 4.9219C33.8533 3.86778 32.7501 2.97301 31.5122 2.27435C29.2814 0.999606 26.7441 0.349976 23.9863 0.349976C21.2284 0.349976 18.7034 0.999606 16.4726 2.27435C15.2346 2.97301 14.1315 3.86778 13.1877 4.9219C11.7168 6.60114 10.3073 8.72163 9.95179 12.742C9.85373 13.8942 9.82922 15.0586 9.84148 16.1617C9.74342 16.1372 9.64536 16.1127 9.53505 16.0882C9.15507 16.0024 8.76285 15.9656 8.38287 15.9656C6.53204 15.9656 5.01215 16.9707 4.39929 18.5764C3.95803 19.7163 4.03157 20.9788 4.60766 22.0574C5.01215 22.8296 5.66178 23.516 6.58107 24.1657C6.82621 24.3373 7.20618 24.5824 7.69647 24.9011C7.95387 25.0727 8.33384 25.3178 8.71382 25.563C8.84864 25.6488 8.95896 25.7591 9.04476 25.8939C9.1183 26.0533 9.13056 26.2249 9.00799 26.5436C8.76284 27.0829 8.46867 27.6099 8.12547 28.1002C6.93653 29.8407 5.22052 31.3239 3.03874 32.5128C1.88657 33.1257 0.685365 33.5302 0.170564 34.9152C-0.209408 35.9571 0.035735 37.1338 1.00405 38.1389C1.35951 38.5066 1.77625 38.8253 2.22977 39.0704C3.17357 39.5852 4.17866 39.9897 5.23278 40.2716C5.45341 40.3329 5.64952 40.4187 5.83338 40.5413C6.18884 40.8477 6.13981 41.3135 6.60558 41.9999C6.83847 42.3553 7.1449 42.6618 7.4881 42.9069C8.48093 43.5933 9.59633 43.6301 10.773 43.6791C11.8394 43.7159 13.0406 43.7649 14.4257 44.2184C15.0017 44.4023 15.5901 44.77 16.2765 45.199C17.9312 46.2163 20.1865 47.6014 23.974 47.6014C27.7615 47.6014 30.029 46.2041 31.696 45.1867C32.3824 44.77 32.9708 44.4023 33.5223 44.2184C34.8951 43.7649 36.1086 43.7159 37.175 43.6791C38.3517 43.6301 39.4671 43.5933 40.4599 42.9069C40.8767 42.6127 41.2198 42.245 41.465 41.8037C41.8082 41.2277 41.7959 40.8232 42.1146 40.5413C42.2862 40.4187 42.4823 40.3329 42.6785 40.2839C43.7326 40.0019 44.7622 39.5975 45.7182 39.0704C46.1963 38.813 46.6375 38.4698 47.0052 38.0653L47.0175 38.0531C47.9736 37.0725 48.2064 35.9203 47.8265 34.9152ZM44.468 36.717C42.4211 37.8447 41.0483 37.7221 39.9941 38.4085C39.0871 38.9846 39.6264 40.2348 38.9768 40.6883C38.1678 41.2399 35.7899 40.6516 32.7256 41.6689C30.1884 42.5024 28.5827 44.9171 24.023 44.9171C19.4634 44.9171 17.8944 42.5147 15.3204 41.6689C12.2561 40.6516 9.87825 41.2522 9.06927 40.6883C8.41964 40.2348 8.9467 38.9846 8.05193 38.4085C6.98556 37.7221 5.62501 37.8447 3.57806 36.717C2.26654 35.9938 3.01423 35.5526 3.44323 35.3442C10.8711 31.7529 12.06 26.2004 12.1091 25.7836C12.1703 25.2811 12.2439 24.8888 11.6923 24.3863C11.1653 23.896 8.81187 22.4374 8.14999 21.9839C7.07135 21.2239 6.59333 20.4763 6.94878 19.5447C7.19393 18.9073 7.79453 18.6622 8.41964 18.6622C8.61576 18.6622 8.81187 18.6867 9.00799 18.7235C10.1969 18.9809 11.3491 19.5692 12.011 19.7408C12.0968 19.7653 12.1703 19.7776 12.2561 19.7776C12.6116 19.7776 12.7342 19.5937 12.7097 19.1893C12.6361 17.89 12.4523 15.365 12.6606 12.9994C12.9425 9.75123 13.9844 8.13328 15.2346 6.71145C15.8352 6.02505 18.6421 3.05881 24.023 3.05881C29.4039 3.05881 32.2108 6.01279 32.8114 6.69919C34.0617 8.12103 35.1035 9.73897 35.3854 12.9871C35.5938 15.3528 35.4099 17.8777 35.3241 19.177C35.2996 19.606 35.4222 19.7653 35.7777 19.7653C35.8635 19.7653 35.937 19.7531 36.0228 19.7286C36.6847 19.5692 37.8369 18.9686 39.0258 18.7112C39.2219 18.6622 39.418 18.6499 39.6142 18.6499C40.2393 18.6499 40.8399 18.8951 41.085 19.5325C41.4405 20.464 40.9625 21.2117 39.8838 21.9716C39.2342 22.4251 36.8808 23.8838 36.3415 24.374C35.7899 24.8766 35.8635 25.2688 35.9248 25.7714C35.9738 26.1881 37.1627 31.7406 44.5906 35.332C45.0318 35.5403 45.7673 35.9938 44.468 36.717Z" fill="white"/>
+                                    </svg>
+                                                                    
+
+                            </a>
+                            <a href="#">
+                                <svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M47.5219 14.4001C47.5219 14.4001 47.0531 11.0907 45.6094 9.6376C43.7812 7.7251 41.7375 7.71572 40.8 7.60322C34.0875 7.11572 24.0094 7.11572 24.0094 7.11572H23.9906C23.9906 7.11572 13.9125 7.11572 7.2 7.60322C6.2625 7.71572 4.21875 7.7251 2.39062 9.6376C0.946875 11.0907 0.4875 14.4001 0.4875 14.4001C0.4875 14.4001 0 18.2907 0 22.172V25.8095C0 29.6907 0.478125 33.5813 0.478125 33.5813C0.478125 33.5813 0.946875 36.8907 2.38125 38.3438C4.20937 40.2563 6.60938 40.1907 7.67813 40.397C11.5219 40.7626 24 40.8751 24 40.8751C24 40.8751 34.0875 40.8563 40.8 40.3782C41.7375 40.2657 43.7812 40.2563 45.6094 38.3438C47.0531 36.8907 47.5219 33.5813 47.5219 33.5813C47.5219 33.5813 48 29.7001 48 25.8095V22.172C48 18.2907 47.5219 14.4001 47.5219 14.4001ZM19.0406 30.2251V16.7345L32.0062 23.5032L19.0406 30.2251Z" fill="white"/>
+                                    </svg>
+                                                    
+
+                            </a>
+                            <a href="#">
+                                <svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M36.6526 3.80786H43.3995L28.6594 20.6548L46 43.5798H32.4225L21.7881 29.6759L9.61989 43.5798H2.86886L18.6349 25.5601L2 3.80786H15.9222L25.5348 16.5165L36.6526 3.80786ZM34.2846 39.5414H38.0232L13.8908 7.63413H9.87892L34.2846 39.5414Z" fill="white"/>
+                                    </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_437_7342)">
+                                    <path d="M48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 35.9789 8.77641 45.908 20.25 47.7084V30.9375H14.1562V24H20.25V18.7125C20.25 12.6975 23.8331 9.375 29.3152 9.375C31.9402 9.375 34.6875 9.84375 34.6875 9.84375V15.75H31.6613C28.68 15.75 27.75 17.6002 27.75 19.5V24H34.4062L33.3422 30.9375H27.75V47.7084C39.2236 45.908 48 35.9789 48 24Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_437_7342">
+                                    <rect width="48" height="48" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                                    
+                                    
+                            </a>
+                            <a href="#">
+                                <svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_437_7336)">
+                                    <path d="M24 4.32187C30.4125 4.32187 31.1719 4.35 33.6938 4.4625C36.0375 4.56562 37.3031 4.95938 38.1469 5.2875C39.2625 5.71875 40.0688 6.24375 40.9031 7.07812C41.7469 7.92188 42.2625 8.71875 42.6938 9.83438C43.0219 10.6781 43.4156 11.9531 43.5188 14.2875C43.6313 16.8187 43.6594 17.5781 43.6594 23.9813C43.6594 30.3938 43.6313 31.1531 43.5188 33.675C43.4156 36.0188 43.0219 37.2844 42.6938 38.1281C42.2625 39.2438 41.7375 40.05 40.9031 40.8844C40.0594 41.7281 39.2625 42.2438 38.1469 42.675C37.3031 43.0031 36.0281 43.3969 33.6938 43.5C31.1625 43.6125 30.4031 43.6406 24 43.6406C17.5875 43.6406 16.8281 43.6125 14.3063 43.5C11.9625 43.3969 10.6969 43.0031 9.85313 42.675C8.7375 42.2438 7.93125 41.7188 7.09688 40.8844C6.25313 40.0406 5.7375 39.2438 5.30625 38.1281C4.97813 37.2844 4.58438 36.0094 4.48125 33.675C4.36875 31.1438 4.34063 30.3844 4.34063 23.9813C4.34063 17.5688 4.36875 16.8094 4.48125 14.2875C4.58438 11.9437 4.97813 10.6781 5.30625 9.83438C5.7375 8.71875 6.2625 7.9125 7.09688 7.07812C7.94063 6.23438 8.7375 5.71875 9.85313 5.2875C10.6969 4.95938 11.9719 4.56562 14.3063 4.4625C16.8281 4.35 17.5875 4.32187 24 4.32187ZM24 0C17.4844 0 16.6688 0.028125 14.1094 0.140625C11.5594 0.253125 9.80625 0.665625 8.2875 1.25625C6.70312 1.875 5.3625 2.69062 4.03125 4.03125C2.69063 5.3625 1.875 6.70313 1.25625 8.27813C0.665625 9.80625 0.253125 11.55 0.140625 14.1C0.028125 16.6687 0 17.4844 0 24C0 30.5156 0.028125 31.3312 0.140625 33.8906C0.253125 36.4406 0.665625 38.1938 1.25625 39.7125C1.875 41.2969 2.69063 42.6375 4.03125 43.9688C5.3625 45.3 6.70313 46.125 8.27813 46.7344C9.80625 47.325 11.55 47.7375 14.1 47.85C16.6594 47.9625 17.475 47.9906 23.9906 47.9906C30.5063 47.9906 31.3219 47.9625 33.8813 47.85C36.4313 47.7375 38.1844 47.325 39.7031 46.7344C41.2781 46.125 42.6188 45.3 43.95 43.9688C45.2812 42.6375 46.1063 41.2969 46.7156 39.7219C47.3063 38.1938 47.7188 36.45 47.8313 33.9C47.9438 31.3406 47.9719 30.525 47.9719 24.0094C47.9719 17.4938 47.9438 16.6781 47.8313 14.1188C47.7188 11.5688 47.3063 9.81563 46.7156 8.29688C46.125 6.70312 45.3094 5.3625 43.9688 4.03125C42.6375 2.7 41.2969 1.875 39.7219 1.26562C38.1938 0.675 36.45 0.2625 33.9 0.15C31.3313 0.028125 30.5156 0 24 0Z" fill="white"/>
+                                    <path d="M24 11.6719C17.1938 11.6719 11.6719 17.1938 11.6719 24C11.6719 30.8062 17.1938 36.3281 24 36.3281C30.8062 36.3281 36.3281 30.8062 36.3281 24C36.3281 17.1938 30.8062 11.6719 24 11.6719ZM24 31.9969C19.5844 31.9969 16.0031 28.4156 16.0031 24C16.0031 19.5844 19.5844 16.0031 24 16.0031C28.4156 16.0031 31.9969 19.5844 31.9969 24C31.9969 28.4156 28.4156 31.9969 24 31.9969Z" fill="white"/>
+                                    <path d="M39.6937 11.1843C39.6937 12.778 38.4 14.0624 36.8156 14.0624C35.2219 14.0624 33.9375 12.7687 33.9375 11.1843C33.9375 9.59053 35.2313 8.30615 36.8156 8.30615C38.4 8.30615 39.6937 9.5999 39.6937 11.1843Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_437_7336">
+                                    <rect width="48" height="48" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                                    
+                                    
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+            <p class="copyright-text text-center py-3">الحقوق محفوظة | 2023 كوخ المرح</p>
         </div>
-        <div class="copyright-wrap">
-            <div class="container">
-                <p class="copyright-text">© 2023 <a href="https://themeforest.net/user/themeholy">كوخ المرح</a>. All Rights Reserved.</p>
-            </div>
-        </div>
-        <div class="footer-shape"><img src="assets/img/shape/footer_shape.png" alt="shape">
-        </div>
+
+ 
     </footer>
 
 
@@ -915,44 +1072,31 @@ Checkout Arae
 			Code End  Here 
 	******************************** -->
 
-    <!-- Scroll To Top -->
-    <div class="scroll-top">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
-            </path>
-        </svg>
-    </div>
 
-
-
-    <!--==============================
-    All Js File
+   <!--  All Js File
 ============================== -->
-    <!-- Jquery -->
-    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
-    <!-- Slick Slider -->
-    <script src="assets/js/slick.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- Magnific Popup -->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <!-- Counter Up -->
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <!-- Isotope Filter -->
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/jquery-ui.min.js"></script>
-    <!-- Nice Select -->
-    <script src="assets/js/nice-select.min.js"></script>
-    <!-- Date Time Picker -->
-    <script src="assets/js/jquery.datetimepicker.min.js"></script>
-
-
-
-    <!-- Wow -->
-    <script src="assets/js/wow.min.js"></script>
-    <!-- Main Js File -->
-    <script src="assets/js/main.js"></script>
+     <!-- Jquery -->
+     <script defer src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+     <!-- Slick Slider -->
+     <script defer src="assets/js/slick.min.js"></script>
+     <!-- Bootstrap -->
+     <script defer src="assets/js/bootstrap.min.js"></script>
+     <!-- Counter Up -->
+     <script defer src="assets/js/jquery.counterup.min.js"></script>
+     <!-- Isotope Filter -->
+     <script defer src="assets/js/imagesloaded.pkgd.min.js"></script>
+     <script defer src="assets/js/isotope.pkgd.min.js"></script>
+     <!-- Nice Select -->
+     <script defer src="assets/js/nice-select.min.js"></script>
+     <!-- Date Time Picker -->
+     <script defer src="assets/js/jquery.datetimepicker.min.js"></script>
+ 
+ 
+ 
+     <!-- Wow -->
+     <script defer src="assets/js/wow.min.js"></script>
+     <!-- Main Js File -->
+     <script  defer src="assets/js/main.js"></script>
 
 </body>
 

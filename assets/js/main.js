@@ -762,24 +762,6 @@
     });
   }
 
-  /*----------- 14. Date Time Picker ----------*/
-  if ($.fn.datetimepicker) {
-    // Only Date Picker
-    $(".date-pick").datetimepicker({
-      timepicker: false,
-      datepicker: true,
-      format: "d-m-y",
-      step: 10
-    });
-
-    // Only Time Picker
-    $(".time-pick").datetimepicker({
-      datepicker: false,
-      format: "H:i",
-      step: 30
-    });
-  }
-
   //======wow js=======
   if ($.fn.WOW) {
     new WOW().init();
@@ -1067,23 +1049,28 @@
       hideIcon.hide();
     }
   });
-  $(".flatpicker").flatpickr({
-    mode: "range",
-    dateFormat: "d.m.Y"
-  });
 
-  $("#price-slider-range").slider({
-    range: true,
-    min: 0,
-    max: 10000,
-    values: [ 0, 10000 ], // Set your default min and max values here
-    slide: function(event, ui) {
-      // Set the value of the price input during sliding
-      $("#price").val(
-        10000 - ui.values[1] + " ر.س - " + (10000 - ui.values[0]) + " ر.س "
-      );
-    }
-  });
+  if ($.fn.flatpickr) {
+    $(".flatpicker").flatpickr({
+      mode: "range",
+      dateFormat: "d.m.Y"
+    });
+    $("#date").flatpickr();
+  }
+  if ($.fn.slider) {
+    $("#price-slider-range").slider({
+      range: true,
+      min: 0,
+      max: 10000,
+      values: [ 0, 10000 ], // Set your default min and max values here
+      slide: function(event, ui) {
+        // Set the value of the price input during sliding
+        $("#price").val(
+          10000 - ui.values[1] + " ر.س - " + (10000 - ui.values[0]) + " ر.س "
+        );
+      }
+    });
+  }
 
   // Set the initial value of the price input
   $("#price").val(

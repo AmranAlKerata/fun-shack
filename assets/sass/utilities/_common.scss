@@ -27,11 +27,12 @@
   z-index: -1;
 }
 
-
 .media-body {
   flex: 1;
 }
-
+.theme-color {
+  color: $theme-color;
+}
 // Update 1
 .shape-mockup-wrap {
   position: relative;
@@ -65,7 +66,7 @@
   text-align: center;
   background-color: $error-color;
   color: $white-color;
-  font-weight: 400;  
+  font-weight: 400;
   font-size: 12px;
   padding: .25em .45em;
   border-radius: 50%;
@@ -121,8 +122,6 @@
     gap: 20px;
     column-gap: 45px;
     align-items: center;
-
-
   }
 
   &.style3 {
@@ -143,7 +142,7 @@
 
 .th-video {
   position: relative;
-  img{
+  img {
     border-radius: 10px;
   }
 
@@ -154,7 +153,7 @@
     transform: translate(-50%, -50%);
     z-index: 2;
 
-    >i {
+    > i {
       width: var(--icon-size, 100px);
       height: var(--icon-size, 100px);
       line-height: var(--icon-size, 100px);
@@ -162,17 +161,15 @@
 
     &:after,
     &:before {
-      background-color: rgba(0, 0, 0, 1);    
+      background-color: rgba(0, 0, 0, 1);
     }
   }
 }
-
 
 .xdsoft_datetimepicker {
   background-color: $white-color;
   z-index: 5;
 }
-
 
 @include md {
   p {
