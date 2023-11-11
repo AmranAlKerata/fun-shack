@@ -6427,7 +6427,6 @@ a.text-theme:hover,
 .breadcumb-menu li:after {
   content: "\f060";
   position: relative;
-  margin-left: 10px;
   font-weight: 600;
   font-size: 15px;
   color: var(--white-color);
