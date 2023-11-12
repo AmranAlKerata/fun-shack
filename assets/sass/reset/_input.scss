@@ -78,7 +78,7 @@ input {
 
 [class*="col-"].form-group {
   > i {
-    right: calc((var(--bs-gutter-x) / 2) + 25px);
+    left: calc((var(--bs-gutter-x) / 2) + 25px);
   }
 
   .style2 {

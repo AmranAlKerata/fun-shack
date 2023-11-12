@@ -5,7 +5,6 @@
   ==================================*/
   /*
     01. On Load Function
-    02. Preloader
     03. Mobile Menu Active
     04. Sticky fix
     05. Scroll To Top
@@ -35,21 +34,6 @@
   $(window).on("load", function() {
     $(".preloader").fadeOut();
   });
-
-  // $('select').niceSelect();
-  if ($(".nice-select").length) {
-    $(".nice-select").niceSelect();
-  }
-
-  /*---------- 02. Preloader ----------*/
-  if ($(".preloader").length > 0) {
-    $(".preloaderCls").each(function() {
-      $(this).on("click", function(e) {
-        e.preventDefault();
-        $(".preloader").css("display", "none");
-      });
-    });
-  }
 
   /*---------- 03. Mobile Menu Active ----------*/
 
@@ -414,201 +398,6 @@
     $(slick.$slides).find("[data-ani]").removeClass("th-animated");
     $(slick.$slides[currentSlide]).find("[data-ani]").addClass("th-animated");
   });
-
-  /*----------- 09. Ajax Contact Form ----------*/
-  var form = ".ajax-contact";
-  var invalidCls = "is-invalid";
-  var $email = '[name="email"]';
-  var $validation =
-    '[name="name"],[name="email"],[name="subject"],[name="message"]'; // Must be use (,) without any space
-  var formMessages = $(".form-messages");
-
-  function sendContact() {
-    var formData = $(form).serialize();
-    var valid;
-    valid = validateContact();
-    if (valid) {
-      jQuery
-        .ajax({
-          url: $(form).attr("action"),
-          data: formData,
-          type: "POST"
-        })
-        .done(function(response) {
-          // Make sure that the formMessages div has the 'success' class.
-          formMessages.removeClass("error");
-          formMessages.addClass("success");
-          // Set the message text.
-          formMessages.text(response);
-          // Clear the form.
-          $(form + ' input:not([type="submit"]),' + form + " textarea").val("");
-        })
-        .fail(function(data) {
-          // Make sure that the formMessages div has the 'error' class.
-          formMessages.removeClass("success");
-          formMessages.addClass("error");
-          // Set the message text.
-          if (data.responseText !== "") {
-            formMessages.html(data.responseText);
-          } else {
-            formMessages.html(
-              "Oops! An error occured and your message could not be sent."
-            );
-          }
-        });
-    }
-  }
-
-  function validateContact() {
-    var valid = true;
-    var formInput;
-
-    function unvalid($validation) {
-      $validation = $validation.split(",");
-      for (var i = 0; i < $validation.length; i++) {
-        formInput = form + " " + $validation[i];
-        if (!$(formInput).val()) {
-          $(formInput).addClass(invalidCls);
-          valid = false;
-        } else {
-          $(formInput).removeClass(invalidCls);
-          valid = true;
-        }
-      }
-    }
-    unvalid($validation);
-
-    if (
-      !$($email).val() ||
-      !$($email).val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)
-    ) {
-      $($email).addClass(invalidCls);
-      valid = false;
-    } else {
-      $($email).removeClass(invalidCls);
-      valid = true;
-    }
-    return valid;
-  }
-
-  $(form).on("submit", function(element) {
-    element.preventDefault();
-    sendContact();
-  });
-
-  if ($(".ajax-booking").length > 0) {
-    var form = ".ajax-booking";
-    var $email = '[name="email"]';
-    var invalidCls = "is-invalid";
-    var $validation =
-      '[name="name"],[name="number"],[name="email"],[name="s-destination"],[name="e-destination"],[name="passenger"],[name="date"],[name="time"],[name="vehicle"],[name="message"]'; // Must be use (,) without any space
-    var formMessages = $(".form-messages");
-
-    function sendContact() {
-      var formData = $(form).serialize();
-      var valid;
-      valid = validateContact();
-      if (valid) {
-        jQuery
-          .ajax({
-            url: $(form).attr("action"),
-            data: formData,
-            type: "POST"
-          })
-          .done(function(response) {
-            // Make sure that the formMessages div has the 'success' class.
-            formMessages.removeClass("error");
-            formMessages.addClass("success");
-            // Set the message text.
-            formMessages.text(response);
-            // Clear the form.
-            $(form + ' input:not([type="submit"]),' + form + " textarea").val(
-              ""
-            );
-          })
-          .fail(function(data) {
-            // Make sure that the formMessages div has the 'error' class.
-            formMessages.removeClass("success");
-            formMessages.addClass("error");
-            // Set the message text.
-            if (data.responseText !== "") {
-              formMessages.html(data.responseText);
-            } else {
-              formMessages.html(
-                "Oops! An error occured and your message could not be sent."
-              );
-            }
-          });
-      }
-    }
-
-    function validateContact() {
-      var valid = true;
-      var formInput;
-
-      function unvalid($validation) {
-        $validation = $validation.split(",");
-        for (var i = 0; i < $validation.length; i++) {
-          formInput = form + " " + $validation[i];
-          if (!$(formInput).val()) {
-            $(formInput).addClass(invalidCls);
-            valid = false;
-          } else {
-            $(formInput).removeClass(invalidCls);
-            valid = true;
-          }
-        }
-      }
-      unvalid($validation);
-      if (
-        !$($email).val() ||
-        !$($email).val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)
-      ) {
-        $($email).addClass(invalidCls);
-        valid = false;
-      } else {
-        $($email).removeClass(invalidCls);
-        valid = true;
-      }
-      return valid;
-    }
-
-    $(form).on("submit", function(element) {
-      element.preventDefault();
-      sendContact();
-    });
-  }
-
-  /*---------- 11. Search Box Popup ----------*/
-  function popupSarchBox($searchBox, $searchOpen, $searchCls, $toggleCls) {
-    $($searchOpen).on("click", function(e) {
-      e.preventDefault();
-      $($searchBox).addClass($toggleCls);
-      $("html, body").css("overflow", "hidden"); // Disable body scroll
-    });
-    $($searchBox).on("click", function(e) {
-      e.stopPropagation();
-      $($searchBox).removeClass($toggleCls);
-      $($searchBox).find("input").val("");
-      $("html, body").css("overflow", "auto"); // Enable body scroll
-    });
-    $($searchBox).find("form").on("click", function(e) {
-      e.stopPropagation();
-      $($searchBox).addClass($toggleCls);
-    });
-    $($searchCls).on("click", function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      $($searchBox).removeClass($toggleCls);
-      $("html, body").css("overflow", "auto"); // Enable body scroll
-    });
-  }
-  popupSarchBox(
-    ".popup-search-box",
-    ".searchBoxToggler",
-    ".searchClose",
-    "show"
-  );
 
   /*---------- 12. Popup Sidemenu ----------*/
   function popupSideMenu($sideMenu, $sideMunuOpen, $sideMenuCls, $toggleCls) {
@@ -1053,9 +842,11 @@
   if ($.fn.flatpickr) {
     $(".flatpicker").flatpickr({
       mode: "range",
-      dateFormat: "d.m.Y"
+      dateFormat: "d/m/Y"
     });
-    $("#date").flatpickr();
+    $("#date").flatpickr({
+      dateFormat: "d/m/Y"
+    });
   }
   if ($.fn.slider) {
     $("#price-slider-range").slider({
@@ -1073,19 +864,21 @@
   }
 
   // Set the initial value of the price input
-  $("#price").val(
-    10000 -
-      $("#price-slider-range").slider("values", 1) +
-      " ر.س - " +
-      (10000 - $("#price-slider-range").slider("values", 0)) +
-      " ر.س "
-  );
+  if ($("#price").length > 0) {
+    $("#price").val(
+      10000 -
+        $("#price-slider-range").slider("values", 1) +
+        " ر.س - " +
+        (10000 - $("#price-slider-range").slider("values", 0)) +
+        " ر.س "
+    );
 
-  // Apply the RTL styles to the slider
-  $("#price-slider-range").css({
-    direction: "rtl",
-    "unicode-bidi": "bidi-override"
-  });
+    // Apply the RTL styles to the slider
+    $("#price-slider-range").css({
+      direction: "rtl",
+      "unicode-bidi": "bidi-override"
+    });
+  }
   // Function to check if the screen width is less than or equal to 1024px
   function checkWidth() {
     return $(window).width() <= 1024;
@@ -1114,28 +907,29 @@
     }
   });
 
-  // /*----------- 00. Right Click Disable ----------*/
-  // window.addEventListener('contextmenu', function (e) {
-  //   // do something here...
-  //   e.preventDefault();
-  // }, false);
+  const select2Select = $(".select-2-select");
 
-  // /*----------- 00. Inspect Element Disable ----------*/
-  // document.onkeydown = function (e) {
-  //   if (event.keyCode == 123) {
-  //     return false;
-  //   }
-  //   if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-  //     return false;
-  //   }
-  //   if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-  //     return false;
-  //   }
-  //   if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-  //     return false;
-  //   }
-  //   if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-  //     return false;
-  //   }
-  // }
+  // Select 2
+  if (select2Select.length > 0) {
+    // Make sure to add "select-2-select" class to any select box
+    select2Select.select2();
+
+    $("#location").on("shown.bs.modal", function() {
+      // Make sure to add "select-2-select" class to any select box
+      $(".model-loction-select").select2();
+    });
+  }
 })(jQuery);
+
+$.fn.modal.Constructor.prototype._enforceFocus = function() {
+  $(document).on("focusin.bs.modal", (e) => {
+    if (
+      document !== e.target &&
+      this._element !== e.target &&
+      !this._element.contains(e.target) &&
+      !$(e.target).closest(".select2-dropdown").length
+    ) {
+      this._element.focus();
+    }
+  });
+};

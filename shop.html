@@ -23,8 +23,8 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
     <!-- Fontawesome Icon -->
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <!-- Slick Slider -->
-    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="assets/css/select2.min.css">
     <!-- FlatPicker -->
     <link rel="stylesheet" href="assets/css/flatpickr.min.css">
     <!-- Theme Custom CSS -->
@@ -56,7 +56,9 @@
 
             </button>
             <div class="mobile-logo">
-                <a href="index.html"><img src="assets/img/logo.svg" alt="كوخ المرح"></a>
+                <a href="index.html">
+                    <img src="assets/img/logo.svg" alt="كوخ المرح">
+                </a>
             </div>
             <div class="th-mobile-menu">
                 <ul>
@@ -106,147 +108,6 @@
 
             </div>
         </div>
-    </div>
-    <div class="popup-search-box">
-        <div class="popup-content">
-            <form action="#">
-                <button class="searchClose">
-                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M12.7302 1.58314L7.81394 6.50024L12.7284 11.4155C13.0905 11.7777 13.0905 12.3666 12.7284 12.7288C12.5464 12.9108 12.3086 13 12.0709 13C11.8332 13 11.5954 12.909 11.4134 12.7288L6.50091 7.81357L1.58658 12.7288C1.40457 12.9108 1.16683 13 0.929105 13C0.691375 13 0.453638 12.909 0.271626 12.7288C-0.0905418 12.3666 -0.0905418 11.7777 0.271626 11.4155L5.18595 6.50024L0.271626 1.58501C-0.0905418 1.22277 -0.0905418 0.63391 0.271626 0.271676C0.633793 -0.0905585 1.2226 -0.0905585 1.58477 0.271676L6.49909 5.1869L11.4134 0.271676C11.7756 -0.0905585 12.3643 -0.0905585 12.7264 0.271676C13.0886 0.63391 13.0924 1.2209 12.7302 1.58314Z"
-                            fill="#b3261e" />
-                    </svg>
-
-                </button>
-
-                <input type="text" placeholder="البحث...">
-                <a href="#" class="show-all-result">عرض الكل</a>
-                <span class="search-icon">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M19.5302 18.469L14.8362 13.775C16.0302 12.344 16.7502 10.505 16.7502 8.5C16.7502 3.951 13.0492 0.25 8.50024 0.25C3.95124 0.25 0.250244 3.951 0.250244 8.5C0.250244 13.049 3.95124 16.75 8.50024 16.75C10.5052 16.75 12.3442 16.0301 13.7752 14.8361L18.4692 19.53C18.6152 19.676 18.8072 19.75 18.9992 19.75C19.1912 19.75 19.3832 19.677 19.5292 19.53C19.8232 19.237 19.8232 18.762 19.5302 18.469ZM1.75024 8.5C1.75024 4.778 4.77824 1.75 8.50024 1.75C12.2222 1.75 15.2502 4.778 15.2502 8.5C15.2502 12.222 12.2222 15.25 8.50024 15.25C4.77824 15.25 1.75024 12.222 1.75024 8.5Z"
-                            fill="#ADB5BD" />
-                    </svg>
-                </span>
-                <ul class="m-0 list-unstyled">
-                    <li class="new">
-                        <a href="#" class="d-flex align-items-end justify-content-start gap-2">
-                            <div class="search-list-img">
-                                <img src="assets/img/product-1.png" alt="Person">
-
-                            </div>
-                            <div class="search-list-content">
-                                <h6>
-                                    الزحليقه العملاقه مسارين زرقاء 24×9
-                                </h6>
-                                <span class="price">
-                                    2000 ر.س
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="new">
-                        <a href="#" class="d-flex align-items-end justify-content-start gap-2">
-                            <div class="search-list-img">
-                                <img src="assets/img/product-1.png" alt="Person">
-
-                            </div>
-                            <div class="search-list-content">
-                                <h6>
-                                    الزحليقه العملاقه مسارين زرقاء 24×9
-                                </h6>
-                                <span class="price">
-                                    2000 ر.س
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="d-flex align-items-end justify-content-start gap-2">
-                            <div class="search-list-img">
-                                <img src="assets/img/product-1.png" alt="Person">
-
-                            </div>
-                            <div class="search-list-content">
-                                <h6>
-                                    الزحليقه العملاقه مسارين زرقاء 24×9
-                                </h6>
-                                <span class="price">
-                                    2000 ر.س
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="d-flex align-items-end justify-content-start gap-2">
-                            <div class="search-list-img">
-                                <img src="assets/img/product-1.png" alt="Person">
-
-                            </div>
-                            <div class="search-list-content">
-                                <h6>
-                                    الزحليقه العملاقه مسارين زرقاء 24×9
-                                </h6>
-                                <span class="price">
-                                    2000 ر.س
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="d-flex align-items-end justify-content-start gap-2">
-                            <div class="search-list-img">
-                                <img src="assets/img/product-1.png" alt="Person">
-
-                            </div>
-                            <div class="search-list-content">
-                                <h6>
-                                    الزحليقه العملاقه مسارين زرقاء 24×9
-                                </h6>
-                                <span class="price">
-                                    2000 ر.س
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="d-flex align-items-end justify-content-start gap-2">
-                            <div class="search-list-img">
-                                <img src="assets/img/product-1.png" alt="Person">
-
-                            </div>
-                            <div class="search-list-content">
-                                <h6>
-                                    الزحليقه العملاقه مسارين زرقاء 24×9
-                                </h6>
-                                <span class="price">
-                                    2000 ر.س
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="d-flex align-items-end justify-content-start gap-2">
-                            <div class="search-list-img">
-                                <img src="assets/img/product-1.png" alt="Person">
-
-                            </div>
-                            <div class="search-list-content">
-                                <h6>
-                                    الزحليقه العملاقه مسارين زرقاء 24×9
-                                </h6>
-                                <span class="price">
-                                    2000 ر.س
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <!-- Add more list items here -->
-                </ul>
-            </form>
-        </div>
-
     </div>
 
     <!--==============================
@@ -366,7 +227,7 @@ Header Area
             <!-- Main Menu Area -->
             <div class="menu-area">
                 <div class="container py-3 py-lg-0">
-                    <div class="row gx-20 align-items-center justify-content-between">
+                    <div class="row flex-nowrap gx-20 align-items-center justify-content-between">
 
                         <div class="col-auto">
                             <div class="header-logo">
@@ -382,13 +243,14 @@ Header Area
                                 <a href="index.html">
                                     <img src="assets/img/logo.svg" alt="كوخ المرح">
                                 </a>
+                            
                             </div>
 
                         </div>
 
                         <div class="col-auto d-block d-lg-none">
                             <div class="header-button">
-                                <button type="button" class="icon-btn searchBoxToggler">
+                                <button type="button" class="icon-btn searchBoxToggler" data-bs-toggle="modal" data-bs-target="#popupSearch" > 
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -408,15 +270,13 @@ Header Area
                                     <span class="badge">2</span>
                                 </a>
 
-                                <a href="#" class="icon-btn">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.75052 13.0012V16.0012C8.75052 16.4152 8.41452 16.7512 8.00052 16.7512C7.58652 16.7512 7.25052 16.4152 7.25052 16.0012V13.0012C7.25052 12.5872 7.58652 12.2512 8.00052 12.2512C8.41452 12.2512 8.75052 12.5872 8.75052 13.0012ZM12.0005 12.2512C11.5865 12.2512 11.2505 12.5872 11.2505 13.0012V16.0012C11.2505 16.4152 11.5865 16.7512 12.0005 16.7512C12.4145 16.7512 12.7505 16.4152 12.7505 16.0012V13.0012C12.7505 12.5872 12.4145 12.2512 12.0005 12.2512ZM18.1975 10.4652L17.4305 16.4752C17.1925 18.3422 15.5935 19.7502 13.7105 19.7502H6.31253C4.43653 19.7502 2.83751 18.3472 2.59451 16.4872L1.8045 10.4652C0.887504 10.0182 0.249512 9.08623 0.249512 8.00023C0.249512 6.48323 1.48251 5.25023 2.99951 5.25023H4.57553L7.35651 0.614242C7.56951 0.259242 8.03053 0.143162 8.38553 0.357162C8.74053 0.570162 8.85652 1.03122 8.64252 1.38622L6.32352 5.25023H13.6745L11.3555 1.38622C11.1425 1.03122 11.2575 0.570162 11.6125 0.357162C11.9665 0.144162 12.4275 0.259242 12.6415 0.614242L15.4225 5.25023H17.0005C18.5175 5.25023 19.7505 6.48323 19.7505 8.00023C19.7505 9.08623 19.1135 10.0182 18.1975 10.4652ZM16.6485 10.7512H3.35553L4.08252 16.2932C4.22852 17.4092 5.18753 18.2512 6.31253 18.2512H13.7105C14.8395 18.2512 15.7995 17.4062 15.9415 16.2862L16.6485 10.7512ZM18.2505 8.00121C18.2505 7.31221 17.6895 6.75121 17.0005 6.75121H3.00052C2.31152 6.75121 1.75052 7.31221 1.75052 8.00121C1.75052 8.69021 2.31152 9.25121 3.00052 9.25121H17.0005C17.6895 9.25121 18.2505 8.69021 18.2505 8.00121Z"
-                                            fill="#000" />
-                                    </svg>
-
-                                    <span class="badge">5</span></a>
+          
+                                    <button type="button" class="header-location border border-0 bg-transparent"  data-bs-toggle="modal" data-bs-target="#location">
+                                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.00049 3.99951C5.79449 3.99951 4.00049 5.79351 4.00049 7.99951C4.00049 10.2055 5.79449 11.9995 8.00049 11.9995C10.2065 11.9995 12.0005 10.2055 12.0005 7.99951C12.0005 5.79351 10.2065 3.99951 8.00049 3.99951ZM8.00049 9.99951C6.89749 9.99951 6.00049 9.10251 6.00049 7.99951C6.00049 6.89651 6.89749 5.99951 8.00049 5.99951C9.10349 5.99951 10.0005 6.89651 10.0005 7.99951C10.0005 9.10251 9.10349 9.99951 8.00049 9.99951ZM7.99649 -0.000488281C3.43749 -0.000488281 0.000488281 3.43851 0.000488281 7.99951C0.000488281 14.3255 4.81248 18.2595 6.88148 19.6565C7.21948 19.8855 7.60849 20.0005 7.99649 20.0005C8.38349 20.0005 8.77049 19.8864 9.10849 19.6584C11.1805 18.2594 15.9995 14.3235 15.9995 7.99951C16.0005 3.43851 12.5595 -0.000488281 7.99649 -0.000488281ZM8.0015 17.9995C6.1975 16.7805 2.00049 13.3665 2.00049 7.99951C2.00049 4.52251 4.52149 1.99951 7.99649 1.99951C11.4195 1.99951 14.0005 4.57851 14.0005 7.99951C14.0005 13.3635 9.79749 16.7805 8.0015 17.9995Z" fill="#010101"/>
+                                            </svg>
+                                        الرياض
+                                    </button>
                             </div>
                         </div>
                         <div class="col-auto d-none d-lg-block">
@@ -479,7 +339,7 @@ Header Area
 
                         <div class="col-auto d-none d-lg-block">
                             <div class="header-button">
-                                <button type="button" class="icon-btn searchBoxToggler">
+                                <button type="button" class="icon-btn searchBoxToggler" data-bs-toggle="modal" data-bs-target="#popupSearch" >
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -700,6 +560,13 @@ Header Area
                                     </svg>
 
                                     <span class="badge">5</span></a>
+
+                                    <button type="button" class="header-location border border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#location">
+                                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.00049 3.99951C5.79449 3.99951 4.00049 5.79351 4.00049 7.99951C4.00049 10.2055 5.79449 11.9995 8.00049 11.9995C10.2065 11.9995 12.0005 10.2055 12.0005 7.99951C12.0005 5.79351 10.2065 3.99951 8.00049 3.99951ZM8.00049 9.99951C6.89749 9.99951 6.00049 9.10251 6.00049 7.99951C6.00049 6.89651 6.89749 5.99951 8.00049 5.99951C9.10349 5.99951 10.0005 6.89651 10.0005 7.99951C10.0005 9.10251 9.10349 9.99951 8.00049 9.99951ZM7.99649 -0.000488281C3.43749 -0.000488281 0.000488281 3.43851 0.000488281 7.99951C0.000488281 14.3255 4.81248 18.2595 6.88148 19.6565C7.21948 19.8855 7.60849 20.0005 7.99649 20.0005C8.38349 20.0005 8.77049 19.8864 9.10849 19.6584C11.1805 18.2594 15.9995 14.3235 15.9995 7.99951C16.0005 3.43851 12.5595 -0.000488281 7.99649 -0.000488281ZM8.0015 17.9995C6.1975 16.7805 2.00049 13.3665 2.00049 7.99951C2.00049 4.52251 4.52149 1.99951 7.99649 1.99951C11.4195 1.99951 14.0005 4.57851 14.0005 7.99951C14.0005 13.3635 9.79749 16.7805 8.0015 17.9995Z" fill="#010101"/>
+                                            </svg>
+                                        الرياض
+                                    </button>
                             </div>
                         </div>
                     </div>
@@ -789,7 +656,7 @@ Product Area
 
                             <div class="col-md-4 col">
                                 <form class="woocommerce-ordering" method="get">
-                                    <select name="orderby" class="form-select nice-select" aria-label="ترتيب المتجر">
+                                    <select name="orderby" class="select-2-select form-select" aria-label="ترتيب المتجر">
                                         <option value="menu_order" selected="selected">الترتيب
                                             الافتراضي</option>
                                         <option value="date"> حسب الأحدث</option>
@@ -1738,18 +1605,18 @@ Product Area
 
                                     <div class="w-100">
                                         <h6 class="text-start w-100">المدينة</h6>
-                                        <select id="city" name="city" class="form-select nice-select">
-                                            <option value disabled selected>المدينة</option>
-                                            <option value="الرياض">الرياض</option>
-                                            <option value="جدة">جدة</option>
-                                            <option value="المدينة">المدينة</option>
-                                            <option value="مكة">مكة</option>
-
-                                        </select>
+                                        <select class="select-2-select form-select" name="city" id="city">
+                                            <option value="">المدينة</option>
+                                            <option value="1">الرياض</option>
+                                            <option value="2">جدة</option>
+                                            <option value="3">المدينة المنورة</option>
+                                            <option value="4">الشرقية</option>
+                                            <option value="5">الخبر</option>
+                                         </select>
                                     </div>
                                     <div class="w-100">
                                         <h6 class="text-start w-100">الفئات</h6>
-                                        <select id="category" name="category" class="form-select nice-select">
+                                        <select id="category" name="category" class="select-2-select form-select">
                                             <option value disabled selected>التصنيفات</option>
                                             <option value="مائية">مائية</option>
                                             <option value="هوائية">هوائية</option>
@@ -1759,7 +1626,7 @@ Product Area
                                     </div>
                                     <div class="w-100">
                                         <h6 class="text-start w-100">القياسات</h6>
-                                        <select id="length" name="length" class="form-select nice-select">
+                                        <select id="length" name="length" class="select-2-select form-select">
                                             <option value disabled selected>الطول</option>
                                             <option value="0.5">0.5</option>
                                             <option value="1">1</option>
@@ -1768,9 +1635,10 @@ Product Area
                                             <option value="2.5">2.5</option>
                                         </select>
                                     </div>
+                            
                                     <div class="w-100">
-                                        <select id="height" name="height" class="form-select nice-select">
-                                            <option value disabled selected>الإرتفاع</option>
+                                        <select id="width" name="width" class="select-2-select form-select">
+                                            <option value disabled selected>العرض</option>
                                             <option value="0.5">0.5</option>
                                             <option value="1">1</option>
                                             <option value="1.5">1.5</option>
@@ -1778,9 +1646,10 @@ Product Area
                                             <option value="2.5">2.5</option>
                                         </select>
                                     </div>
+
                                     <div class="w-100">
-                                        <select id="width" name="width" class="form-select nice-select">
-                                            <option value disabled selected>العرض</option>
+                                        <select id="height" name="height" class="select-2-select form-select">
+                                            <option value disabled selected>الإرتفاع</option>
                                             <option value="0.5">0.5</option>
                                             <option value="1">1</option>
                                             <option value="1.5">1.5</option>
@@ -1795,12 +1664,13 @@ Product Area
                                         <input type="text" id="price" class="mt-4" readonly disabled>
                                     </div>
                                     <div class="w-100">
-                                        <h6 class="text-start w-100">التاريخ</h6>
+                                        <h6 class="text-start w-100">تاريخ
+                                            الحجز</h6>
                                         <input type="text" id="dateRange" name="dateRange"
                                             class="form-control flatpicker" placeholder="التاريخ">
-                                        </div>
-                                        <button type="submit" class="th-btn w-100">تطبيق
-                                            الفلاتر</button>
+                                    </div>
+                                    <button type="submit" class="th-btn w-100">تطبيق
+                                        الفلاتر</button>
                                 </form>
                             </div>
 
@@ -2039,28 +1909,211 @@ Product Area
 
     </footer>
 
+    <!-- Search Box Model -->
+    <div class="modal fade" id="popupSearch" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="popupSearchLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable popup-search-box">
+            <div class="modal-content popup-content">
+                <form action="#">
+                    <button class="searchClose" type="button" data-bs-dismiss="modal" aria-label="Close">
+                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.7302 1.58314L7.81394 6.50024L12.7284 11.4155C13.0905 11.7777 13.0905 12.3666 12.7284 12.7288C12.5464 12.9108 12.3086 13 12.0709 13C11.8332 13 11.5954 12.909 11.4134 12.7288L6.50091 7.81357L1.58658 12.7288C1.40457 12.9108 1.16683 13 0.929105 13C0.691375 13 0.453638 12.909 0.271626 12.7288C-0.0905418 12.3666 -0.0905418 11.7777 0.271626 11.4155L5.18595 6.50024L0.271626 1.58501C-0.0905418 1.22277 -0.0905418 0.63391 0.271626 0.271676C0.633793 -0.0905585 1.2226 -0.0905585 1.58477 0.271676L6.49909 5.1869L11.4134 0.271676C11.7756 -0.0905585 12.3643 -0.0905585 12.7264 0.271676C13.0886 0.63391 13.0924 1.2209 12.7302 1.58314Z"
+                                fill="#b3261e" />
+                        </svg>
+
+                    </button>
+
+                    <input type="text" placeholder="البحث...">
+                    <a href="#" class="show-all-result">عرض الكل</a>
+                    <span class="search-icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.5302 18.469L14.8362 13.775C16.0302 12.344 16.7502 10.505 16.7502 8.5C16.7502 3.951 13.0492 0.25 8.50024 0.25C3.95124 0.25 0.250244 3.951 0.250244 8.5C0.250244 13.049 3.95124 16.75 8.50024 16.75C10.5052 16.75 12.3442 16.0301 13.7752 14.8361L18.4692 19.53C18.6152 19.676 18.8072 19.75 18.9992 19.75C19.1912 19.75 19.3832 19.677 19.5292 19.53C19.8232 19.237 19.8232 18.762 19.5302 18.469ZM1.75024 8.5C1.75024 4.778 4.77824 1.75 8.50024 1.75C12.2222 1.75 15.2502 4.778 15.2502 8.5C15.2502 12.222 12.2222 15.25 8.50024 15.25C4.77824 15.25 1.75024 12.222 1.75024 8.5Z"
+                                fill="#ADB5BD" />
+                        </svg>
+                    </span>
+                    <ul class="m-0 list-unstyled">
+                        <li class="new">
+                            <a href="#" class="d-flex align-items-end justify-content-start gap-2">
+                                <div class="search-list-img">
+                                    <img src="assets/img/product-1.png" alt="Person">
+
+                                </div>
+                                <div class="search-list-content">
+                                    <h6>
+                                        الزحليقه العملاقه مسارين
+                                        زرقاء 24×9
+                                    </h6>
+                                    <span class="price">
+                                        2000 ر.س
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="new">
+                            <a href="#" class="d-flex align-items-end justify-content-start gap-2">
+                                <div class="search-list-img">
+                                    <img src="assets/img/product-1.png" alt="Person">
+
+                                </div>
+                                <div class="search-list-content">
+                                    <h6>
+                                        الزحليقه العملاقه مسارين
+                                        زرقاء 24×9
+                                    </h6>
+                                    <span class="price">
+                                        2000 ر.س
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex align-items-end justify-content-start gap-2">
+                                <div class="search-list-img">
+                                    <img src="assets/img/product-1.png" alt="Person">
+
+                                </div>
+                                <div class="search-list-content">
+                                    <h6>
+                                        الزحليقه العملاقه مسارين
+                                        زرقاء 24×9
+                                    </h6>
+                                    <span class="price">
+                                        2000 ر.س
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex align-items-end justify-content-start gap-2">
+                                <div class="search-list-img">
+                                    <img src="assets/img/product-1.png" alt="Person">
+
+                                </div>
+                                <div class="search-list-content">
+                                    <h6>
+                                        الزحليقه العملاقه مسارين
+                                        زرقاء 24×9
+                                    </h6>
+                                    <span class="price">
+                                        2000 ر.س
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex align-items-end justify-content-start gap-2">
+                                <div class="search-list-img">
+                                    <img src="assets/img/product-1.png" alt="Person">
+
+                                </div>
+                                <div class="search-list-content">
+                                    <h6>
+                                        الزحليقه العملاقه مسارين
+                                        زرقاء 24×9
+                                    </h6>
+                                    <span class="price">
+                                        2000 ر.س
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex align-items-end justify-content-start gap-2">
+                                <div class="search-list-img">
+                                    <img src="assets/img/product-1.png" alt="Person">
+
+                                </div>
+                                <div class="search-list-content">
+                                    <h6>
+                                        الزحليقه العملاقه مسارين
+                                        زرقاء 24×9
+                                    </h6>
+                                    <span class="price">
+                                        2000 ر.س
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex align-items-end justify-content-start gap-2">
+                                <div class="search-list-img">
+                                    <img src="assets/img/product-1.png" alt="Person">
+
+                                </div>
+                                <div class="search-list-content">
+                                    <h6>
+                                        الزحليقه العملاقه مسارين
+                                        زرقاء 24×9
+                                    </h6>
+                                    <span class="price">
+                                        2000 ر.س
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <!-- Add more list items here -->
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+
+   
+<!-- Location Model -->
+
+<div class="modal fade" id="location" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="locationLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="locationLabel">تعديل المدينة</h5>
+          <button type="button" class="bg-transparent border border-0" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.53 9.53003L13.06 12L15.53 14.47C15.823 14.763 15.823 15.238 15.53 15.531C15.384 15.677 15.192 15.751 15 15.751C14.808 15.751 14.616 15.678 14.47 15.531L12 13.061L9.53003 15.531C9.38403 15.677 9.192 15.751 9 15.751C8.808 15.751 8.61597 15.678 8.46997 15.531C8.17697 15.238 8.17697 14.763 8.46997 14.47L10.94 12L8.46997 9.53003C8.17697 9.23703 8.17697 8.76199 8.46997 8.46899C8.76297 8.17599 9.23801 8.17599 9.53101 8.46899L12.001 10.939L14.471 8.46899C14.764 8.17599 15.239 8.17599 15.532 8.46899C15.825 8.76199 15.823 9.23703 15.53 9.53003ZM21.75 9V15C21.75 18.722 18.722 21.75 15 21.75H9C5.278 21.75 2.25 18.722 2.25 15V9C2.25 5.278 5.278 2.25 9 2.25H15C18.722 2.25 21.75 5.278 21.75 9ZM20.25 9C20.25 6.105 17.895 3.75 15 3.75H9C6.105 3.75 3.75 6.105 3.75 9V15C3.75 17.895 6.105 20.25 9 20.25H15C17.895 20.25 20.25 17.895 20.25 15V9Z" fill="#f00"></path>
+            </svg>
+          </button>
+        </div>
+        <form id="filterForm" action="#">
+            <div class="modal-body">
+                <div class="w-100">
+                    <h6 class="text-start w-100">المدينة</h6>
+                    <select class=" form-select w-100 model-loction-select" name="header-location">
+                       <option value="">المدينة</option>
+                       <option value="1">الرياض</option>
+                       <option value="2">جدة</option>
+                       <option value="3">المدينة المنورة</option>
+                       <option value="4">الشرقية</option>
+                       <option value="5">الخبر</option>
+                    </select>
+                    </div>
+            </div>
+            <div class="modal-footer justify-content-center align-items-center">
+            <button type="submit" class="th-btn">تغيير المدينة</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
     <!--==============================
     All Js File
 ============================== -->
     <!-- Jquery -->
     <script defer src="assets/js/vendor/jquery-3.6.0.min.js"></script>
-    <!-- Slick Slider -->
-    <script defer src="assets/js/slick.min.js"></script>
     <!-- Bootstrap -->
     <script defer src="assets/js/bootstrap.min.js"></script>
     <!-- Jquery UI -->
     <script defer src="assets/js/jquery-ui.js"></script>
     <!-- Jquery UI Toch Punch -->
     <script defer src="assets/js/jquery.ui.touch-punch.min.js"></script>
-    <!-- Counter Up -->
-    <script defer src="assets/js/jquery.counterup.min.js"></script>
-    <!-- Isotope Filter -->
-    <script defer src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script defer src="assets/js/isotope.pkgd.min.js"></script>
-    <!-- Nice Select -->
-    <script defer src="assets/js/nice-select.min.js"></script>
     <!-- FlatPicker -->
     <script defer src="assets/js/flatpickr.js"></script>
+     <!-- Select2 -->
+     <script defer src="assets/js/select2.min.js"></script>
     <!-- Wow -->
     <script defer src="assets/js/wow.min.js"></script>
     <!-- Main Js File -->

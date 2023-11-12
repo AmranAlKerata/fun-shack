@@ -11,7 +11,7 @@ blockquote,
   color: $title-color;
   font-family: $body-font;
   font-style: italic;
-  border: 1px solid #BDBDBD;
+  border: 1px solid #bdbdbd;
   border-radius: 0px;
 
   &.blockquote-content {
@@ -20,7 +20,7 @@ blockquote,
     font-weight: 600;
     font-family: $title-font;
     color: $title-color;
-    background-color: var(--quote-bg, #F5F5F5);
+    background-color: var(--quote-bg, #f5f5f5);
     padding: 50px 40px 38px 160px;
     margin: 35px 0;
     line-height: 1.667;
@@ -87,7 +87,9 @@ blockquote,
     height: 20px;
     width: 25px;
     background-color: $theme-color;
-    clip-path: path("M2.21945 18.2759C0.775335 16.6762 0 14.8819 0 11.9734C0 6.8553 3.44484 2.26804 8.45438 0L9.70641 2.01506C5.03057 4.65307 4.11643 8.07633 3.75189 10.2347C4.5048 9.82818 5.49044 9.68633 6.45645 9.77992C8.98576 10.0241 10.9795 12.1898 10.9795 14.8819C10.9795 16.2393 10.4625 17.5411 9.54219 18.5009C8.62192 19.4608 7.37376 20 6.07229 20C5.35256 19.9934 4.64126 19.8376 3.97981 19.5416C3.31836 19.2457 2.71996 18.8154 2.21945 18.2759ZM16.24 18.2759C14.7959 16.6762 14.0205 14.8819 14.0205 11.9734C14.0205 6.8553 17.4654 2.26804 22.4749 0L23.7269 2.01506C19.0511 4.65307 18.137 8.07633 17.7724 10.2347C18.5253 9.82818 19.511 9.68633 20.477 9.77992C23.0063 10.0241 25 12.1898 25 14.8819C25 16.2393 24.483 17.5411 23.5627 18.5009C22.6424 19.4608 21.3943 20 20.0928 20C19.3731 19.9934 18.6618 19.8376 18.0003 19.5416C17.3389 19.2457 16.7405 18.8154 16.24 18.2759Z");
+    clip-path: path(
+      "M2.21945 18.2759C0.775335 16.6762 0 14.8819 0 11.9734C0 6.8553 3.44484 2.26804 8.45438 0L9.70641 2.01506C5.03057 4.65307 4.11643 8.07633 3.75189 10.2347C4.5048 9.82818 5.49044 9.68633 6.45645 9.77992C8.98576 10.0241 10.9795 12.1898 10.9795 14.8819C10.9795 16.2393 10.4625 17.5411 9.54219 18.5009C8.62192 19.4608 7.37376 20 6.07229 20C5.35256 19.9934 4.64126 19.8376 3.97981 19.5416C3.31836 19.2457 2.71996 18.8154 2.21945 18.2759ZM16.24 18.2759C14.7959 16.6762 14.0205 14.8819 14.0205 11.9734C14.0205 6.8553 17.4654 2.26804 22.4749 0L23.7269 2.01506C19.0511 4.65307 18.137 8.07633 17.7724 10.2347C18.5253 9.82818 19.511 9.68633 20.477 9.77992C23.0063 10.0241 25 12.1898 25 14.8819C25 16.2393 24.483 17.5411 23.5627 18.5009C22.6424 19.4608 21.3943 20 20.0928 20C19.3731 19.9934 18.6618 19.8376 18.0003 19.5416C17.3389 19.2457 16.7405 18.8154 16.24 18.2759Z"
+    );
   }
 
   p {
@@ -125,7 +127,7 @@ blockquote,
       position: relative;
       left: 0;
       bottom: 0;
-      padding: 0 0 0 45px;
+      padding: 0 45px 0 0;
       line-height: 1;
       font-weight: 600;
       margin-top: 20px;
@@ -137,7 +139,7 @@ blockquote,
       &:before {
         content: '';
         position: absolute;
-        left: 0;
+        right: 0;
         bottom: 8px;
         width: 30px;
         height: 2px;
@@ -152,11 +154,10 @@ blockquote,
 }
 
 .blog-meta {
-
   span,
   a {
     display: inline-block;
-    margin-right: 26px;
+    margin-left: 26px;
     font-size: 14px;
     color: $body-color;
 
@@ -165,7 +166,7 @@ blockquote,
     }
 
     i {
-      margin-right: 10px;
+      margin-left: 10px;
       color: $theme-color;
     }
   }
@@ -370,9 +371,8 @@ blockquote,
   margin-bottom: 40px;
   &.style2 {
     padding: 0;
-    box-shadow: none; 
+    box-shadow: none;
   }
-
 
   &:not(.has-post-thumbnail) {
     padding: var(--blog-space-y, 40px) var(--blog-space-x, 40px);
@@ -403,7 +403,7 @@ blockquote,
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
-    margin: 0 15px 0 0;
+    margin: 0 0 0 15px;
     display: inline-block;
   }
 
@@ -419,7 +419,6 @@ blockquote,
       border-bottom: 1px solid var(--smoke-color);
       padding: 30px 0;
 
-
       .tagcloud {
         a {
           display: inline-block;
@@ -428,7 +427,7 @@ blockquote,
           font-weight: 600;
           line-height: 1;
           padding: 10.5px 15px;
-          margin-right: 5px;
+          margin-left: 5px;
           margin-bottom: 10px;
           color: var(--body-color);
           background-color: var(--white-color);
@@ -443,8 +442,7 @@ blockquote,
       }
     }
 
-
-    >.row {
+    > .row {
       align-items: center;
       --bs-gutter-y: 20px;
     }
@@ -462,7 +460,7 @@ blockquote,
 
     li {
       display: inline-block;
-      margin-right: 13px;
+      margin-left: 13px;
 
       &:last-child {
         margin-right: 0;
@@ -511,7 +509,7 @@ blockquote,
       font-weight: 400;
       text-transform: uppercase;
       background-color: var(--white-color);
-      color: #74757B;
+      color: #74757b;
       padding: 12px 16px;
       display: block;
       text-align: center;
@@ -520,7 +518,9 @@ blockquote,
       width: 110px;
       bottom: -17px;
       left: -4px;
-      clip-path: path("M105.433 37.039C108.448 44.3185 110 52.1207 110 60H50L0 60V26.8338C2.20445 23.5104 4.74004 20.4071 7.57359 17.5736C13.1451 12.0021 19.7595 7.58251 27.039 4.56723C34.3185 1.55195 42.1207 0 50 0C57.8793 0 65.6815 1.55195 72.961 4.56723C80.2405 7.58251 86.8549 12.0021 92.4264 17.5736C97.9979 23.1451 102.417 29.7595 105.433 37.039Z");
+      clip-path: path(
+        "M105.433 37.039C108.448 44.3185 110 52.1207 110 60H50L0 60V26.8338C2.20445 23.5104 4.74004 20.4071 7.57359 17.5736C13.1451 12.0021 19.7595 7.58251 27.039 4.56723C34.3185 1.55195 42.1207 0 50 0C57.8793 0 65.6815 1.55195 72.961 4.56723C80.2405 7.58251 86.8549 12.0021 92.4264 17.5736C97.9979 23.1451 102.417 29.7595 105.433 37.039Z"
+      );
     }
 
     .month {
@@ -539,7 +539,6 @@ blockquote,
       line-height: 40px;
       background-color: $theme-color;
       color: $title-color;
-
 
       &:hover {
         background-color: $title-color;
@@ -565,7 +564,7 @@ blockquote,
       font-weight: 400;
       text-transform: uppercase;
       background-color: var(--white-color);
-      color: #74757B;
+      color: #74757b;
       padding: 12px 16px;
       display: block;
       text-align: center;
@@ -574,7 +573,9 @@ blockquote,
       width: 110px;
       bottom: -17px;
       left: -4px;
-      clip-path: path("M105.433 37.039C108.448 44.3185 110 52.1207 110 60H50L0 60V26.8338C2.20445 23.5104 4.74004 20.4071 7.57359 17.5736C13.1451 12.0021 19.7595 7.58251 27.039 4.56723C34.3185 1.55195 42.1207 0 50 0C57.8793 0 65.6815 1.55195 72.961 4.56723C80.2405 7.58251 86.8549 12.0021 92.4264 17.5736C97.9979 23.1451 102.417 29.7595 105.433 37.039Z");
+      clip-path: path(
+        "M105.433 37.039C108.448 44.3185 110 52.1207 110 60H50L0 60V26.8338C2.20445 23.5104 4.74004 20.4071 7.57359 17.5736C13.1451 12.0021 19.7595 7.58251 27.039 4.56723C34.3185 1.55195 42.1207 0 50 0C57.8793 0 65.6815 1.55195 72.961 4.56723C80.2405 7.58251 86.8549 12.0021 92.4264 17.5736C97.9979 23.1451 102.417 29.7595 105.433 37.039Z"
+      );
     }
 
     .month {
@@ -593,7 +594,6 @@ blockquote,
       line-height: 40px;
       background-color: $theme-color;
       color: $title-color;
-
 
       &:hover {
         background-color: $title-color;
@@ -637,7 +637,7 @@ blockquote,
 @include ml {
   .blog-single {
     --blog-space-y: 30px;
-    --blog-space-x: 30px; 
+    --blog-space-x: 30px;
 
     .blog-audio,
     .blog-img {
@@ -645,7 +645,7 @@ blockquote,
     }
 
     .blog-title {
-      font-size: 25px; 
+      font-size: 25px;
     }
   }
 }
@@ -665,20 +665,16 @@ blockquote,
   }
 
   .blog-single {
-    --blog-space-x: 30px; 
+    --blog-space-x: 30px;
   }
 
   .blog-inner-title {
-    font-size: 20px; 
+    font-size: 20px;
   }
-
 }
-
 
 @include sm {
   blockquote {
-
-
     &:before {
       height: 60px;
       width: 100%;
@@ -705,7 +701,7 @@ blockquote,
     --blog-space-x: 30px;
 
     .blog-title {
-      font-size: 20px;  
+      font-size: 20px;
       line-height: 1.6;
     }
 
@@ -714,7 +710,6 @@ blockquote,
     }
   }
 }
-
 
 @include xs {
   .blog-author .media-body {
@@ -752,39 +747,38 @@ blockquote,
   margin-bottom: 50px;
 
   @include lg {
-      gap: 25px;
+    gap: 25px;
   }
 
   @include md {
-      display: block;
+    display: block;
   }
 
   .blog-img {
-      min-width: 50%;
+    min-width: 50%;
 
-      @include md {
-          min-width: 100%;
-          margin-bottom: 30px;
-      }
+    @include md {
+      min-width: 100%;
+      margin-bottom: 30px;
+    }
 
-      img {
-          width: 100%;
-          object-fit: cover; 
-      }
-
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
   }
 
   .blog-meta {
-      display: block;
-      margin-top: -0.3rem;
+    display: block;
+    margin-top: -0.3rem;
   }
 
   .blog-title {
-      @include xl {
-          font-size: 36px;
-      }
-      @include md {
-        font-size: 26px;
+    @include xl {
+      font-size: 36px;
+    }
+    @include md {
+      font-size: 26px;
     }
   }
 }
