@@ -130,6 +130,17 @@
   &.radius-btn2 {
     border-radius: 0px 0px 20px 0px;
   }
+  &.outline {
+    background-color: transparent;
+    color: $theme-color;
+    border: 1px solid $theme-color;
+    &::before {
+      background-color: $theme-color;
+    }
+    &:hover {
+      color: $white-color;
+    }
+  }
 }
 
 .home3 {
