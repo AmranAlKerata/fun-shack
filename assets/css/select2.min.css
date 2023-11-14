@@ -154,15 +154,15 @@
   width: 1px !important;
   white-space: nowrap !important;
 }
-.select2-container--default .select2-selection--single {
-  background-color: #fff;
-  border-radius: 5px;
-}
+
 .select2-container--default
   .select2-selection--single
   .select2-selection__rendered {
   color: #444;
   line-height: 28px;
+  background-color: #fff;
+  border-radius: 10px !important;
+  border: 1px solid;
 }
 .select2-container--default
   .select2-selection--single

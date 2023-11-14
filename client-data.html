@@ -662,10 +662,10 @@ padding-left: 0;
 ============================== -->
     <div class="breadcumb-wrapper " data-bg-src="assets/img/breadcumb.png">
         <div class="container z-index-common">
-            <h1 class="breadcumb-title">الدفع</h1>
+            <h1 class="breadcumb-title">البيانات</h1>
             <ul class="breadcumb-menu">
                 <li><a href="index.html">الرئيسية</a></li>
-                <li>الدفع</li>
+                <li>البيانات</li>
             </ul>
         </div>
     </div>
@@ -685,129 +685,88 @@ Checkout Arae
                     <span>الوقت المتبقي لإتمام الطلب</span>
                 </div>
               </div>
-             
-              <div class="row">
-   
-                <div class="col">
-                    <h4 class="mt-4 pt-lg-2">الملخص</h4>
-                    <form action="#" class="woocommerce-cart-form">
-                        <table class="cart_table mb-20">
-                       
-                            <tfoot class="checkout-ordertable">
-                                <tr class="cart-subtotal">
-                                    <th>الطلب</th>
-                                    <td data-title="الطلب" colspan="4"><strong><span class="woocommerce-Price-amount">1430 ر.س
-                                    </span></strong>
-                                    </td>
-                                </tr>
-                                <tr class="woocommerce-shipping-totals shipping">
-                                    <th>التوصيل</th>
-                                    <td data-title="التوصيل" colspan="4"><strong><span class="woocommerce-Price-amount">0
-                                    </span></strong>
-                                    </td>
-                                </tr>
-                                <tr class="order-total">
-                                    <th>الخصم</th>
-                                    <td data-title="الخصم" colspan="4"><strong><span class="woocommerce-Price-amount ">0
-                                    </span></strong>
-                                    </td>
-                                </tr>
-                                <tr class="order-total">
-                                    <th>الضريبة (15%)</th>
-                                    <td data-title="الضريبة (15%)" colspan="4"><strong><span class="woocommerce-Price-amount">214.5 ر.س
-                                    </span></strong>
-                                    </td>
-                                </tr>
-                                <tr class="order-total">
-                                    <th class="fw-bold theme-color">الإجمالي</th>
-                                    <td data-title="الإجمالي" colspan="4"><strong><span class="woocommerce-Price-amount amount">1644.5 ر.س
-                                        </span></strong>
-                                    </td>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </form>
-                    <h4 class="mt-4 pt-lg-2">هل لديك كود خصم؟</h4>
-                    <div class="th-cart-coupon d-flex align-items-center flex-column flex-sm-row gap-4"><input type="text" class="form-control" placeholder="ادخل الكود"> <button type="submit" class="th-btn">تطبيق</button></div>
-                </div>
-              </div>
 
-            
-            <div class="mt-lg-3 mb-30">
-                <div class="woocommerce-checkout-payment">
-                    <h4 class="mt-4 pt-lg-2">طرق الدفع</h4>
-                    <form action="payment-done.html">
-                        <div class="payment-methods mt-5 gap-4">
-                                <label class="image-radio apple-pay" for="applePay">
-                                <input type="radio" id="applePay" name="payment-method" class="hidden-radio">
-                                  <img src="assets/img/payments/pay.svg" class="image-radio" alt="Apple Pay">
-                                </label>
-
-                                <label class="image-radio google-pay" for="googlePay">
-                                <input type="radio" id="googlePay" name="payment-method" class="hidden-radio">
-                                  <img src="assets/img/payments/google.svg" alt="Google Pay">
-                                </label>
-
-                                <label class="image-radio mada" for="mada">
-                                <input type="radio" id="mada" name="payment-method" class="hidden-radio">
-                                  <img src="assets/img/payments/mada.svg" alt="Mada Pay">
-                                </label>
-                                 
-                                <label class="image-radio visa" for="visa">
-                                <input type="radio" id="visa" name="payment-method" class="hidden-radio">
-                                  <img src="assets/img/payments/visa.svg" alt="visa">
-                                </label>
-                                   
-                                <label class="image-radio cash" for="cash">
-                                <input type="radio" id="cash" name="payment-method" class="hidden-radio">
-                                  <img src="assets/img/payments/cash.svg" alt="cash">
-                                </label>
-                                
-                                <label class="image-radio bank" for="bank">
-                                <input type="radio" id="bank" name="payment-method" class="hidden-radio">
-                                  <img src="assets/img/payments/transfer.svg"  alt="bank">
-                                </label>
-                        </div>
-                        <div class="row mt-5">
-                            <div class="col-12 col-lg-6">
-                                <div class="row">
-                                    <div class="col-12 form-group">
-                                        <label for="card-number">رقم البطاقة</label>
-                                        <input type="text" name="card-number" class="form-control" placeholder="*****">
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                        <label for="m-y">الشهر / السنة</label>
-                                        <input type="text" name="m-y" class="form-control" placeholder="الشهر / السنة">
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                        <label for="code">رمز التحقق (خلف البطاقة)</label>
-                                        <input type="text" name="code" class="form-control" placeholder="رمز التحقق (خلف البطاقة)" >
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                     <div class="custom-checkbox">
-                                        <input type="checkbox" id="save-info" name="save-info">
-                                        <label for="save-info">حفظ بيانات البطاقة</label>
-                                    </div>
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                     <div class="custom-checkbox">
-                                        <input type="checkbox" id="terms" name="terms">
-                                        <label for="terms">أوافق على الشرط والأحكام .</label>
-                                    </div>
-                                    </div>
-                             
-                                    <div class="form-row place-order">
-                                        <button type="submit" class="th-btn w-100">الدفع</button>
-                                    </div>
-                                </div>
+            <form action="checkout.html" class="woocommerce-checkout client-data mt-40">
+                <h2 class="h4">تفاصيل الفاتورة</h2>
+                <div class="row gap-5">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label for="first-name">الإسم الأول</label>
+                                <input type="text" name="first-name" class="form-control" value="محمد" disabled readonly>
                             </div>
-                            <div class="col-6"></div>
+                            <div class="col-md-6 form-group">
+                                <label for="last-name">الإسم الأخير</label>
+                                <input type="text" name="last-name" class="form-control" value="عبد العزيز" disabled readonly>
+                            </div>
+                            <div class="col-12 form-group">
+                                <label for="phone">رقم الهاتف</label>
+                                <input type="text" name="phone" class="form-control" value="05123456789" disabled readonly>
+                            </div>
+                            <div class="col-12 form-group">
+                                <label for="region">المنطقة</label>
+                                <input name="region" type="text" class="form-control" value="الشرقية" disabled readonly>
+                            </div>
+                            <div class="col-12 form-group">
+                                <label for="city">المدينة</label>
+                                <input name="city" type="text" class="form-control" value="الرياض" disabled readonly>
+                            </div>
+                            <div class="col-12 form-group">
+                                <label for="address">الحي</label>
+                                <input name="address" type="text" class="form-control" value="الصحافة" disabled readonly>
+                            </div>
+                          
                         </div>
-
-                    </form>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-12 form-group">
+                                <label for="phone">جوال الحارس/احتياطي</label>
+                                <input type="number" class="text-start form-control" placeholder="05XXXXXXXX">
+                            </div>
+                            <div class="col-12 form-group">
+                                <label for="address">وقت التوصيل</label>
+                                <select name="address" class="form-select select-2-select w-100">
+                                <option value="0">10:00ص - 12:00م</option>
+                                <option value="1">10:00ص - 12:00م</option>
+                                <option value="2">10:00ص - 12:00م</option>
+                                <option value="3">10:00ص - 12:00م</option>
+                                <option value="4">10:00ص - 12:00م</option>
+                
+                                </select>
+                            </div>
+                            <div class="col-12 form-group">
+                                <label for="place-type">نوع المكان</label>
+                                <select name="place-type" class="form-select select-2-select w-100">
+                                    <option value="0">شالية/استراحة</option>
+                                    <option value="1">شالية/استراحة</option>
+                                    <option value="2">شالية/استراحة</option>
+                                    <option value="3">شالية/استراحة</option>
+                                    <option value="4">شالية/استراحة</option>
+                
+                                </select>
+                            </div>
+                            <div class="col-12 form-group">
+                                <label for="location-url">رابط اللوكيشن</label>
+                                <input name="location-url" type="url" class=" form-control" placeholder="https://maps.app.goo.gl/mpdJhPyD88jywhPF7">
+                            </div>
+                          
+                            <div class="col-12 form-group">
+                                <label for="notes">ملاحظات</label>
+                                <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
+                            </div>
+                          
+                        </div>
+                    </div>
+                    
+             
                 </div>
-            </div>
-            
+                <div class="text-center mt-5">
+                    <button class="th-btn" type="submit">التالي</button>
+
+                </div>
+            </form>
+
         </div>
 
     </div>

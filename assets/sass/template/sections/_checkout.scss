@@ -166,6 +166,12 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .woocommerce-checkout {
+  &.client-data {
+    .th-btn {
+      max-width: 200px;
+      width: 100%;
+    }
+  }
   .form-group {
     input:not(:last-child) {
       margin-bottom: var(--bs-gutter-x);
@@ -250,5 +256,25 @@ span.select2-selection.select2-selection--single:focus {
     td {
       padding: 5px 20px 5px 60px;
     }
+  }
+}
+
+.payment-methods {
+  display: grid;
+
+  // For large screens (lg)
+  grid-template-columns: repeat(6, 1fr); // 6 items in one row
+
+  // For small screens (sm)
+  @include sm {
+    grid-template-columns: repeat(3, 1fr); // 3x3 grid
+  }
+
+  // For extra small screens (xs)
+  @include xs {
+    grid-template-columns: repeat(2, 1fr); // 2x2x2 grid
+  }
+  .image-radio {
+    text-align: center;
   }
 }

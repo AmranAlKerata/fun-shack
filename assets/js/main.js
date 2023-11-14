@@ -913,11 +913,40 @@
   if (select2Select.length > 0) {
     // Make sure to add "select-2-select" class to any select box
     select2Select.select2();
+  }
+  $("#location, #cartFilters").on("shown.bs.modal", function() {
+    // Make sure to add "select-2-select" class to any select box
+    $(".model-loction-select").select2();
+  });
 
-    $("#location").on("shown.bs.modal", function() {
-      // Make sure to add "select-2-select" class to any select box
-      $(".model-loction-select").select2();
-    });
+  // Function to start the countdown timer
+  function startCountdown(duration) {
+    let time = duration * 60; // Convert minutes to seconds
+
+    const interval = setInterval(() => {
+      const minutes = String(Math.floor(time / 60)).padStart(2, "0");
+      const seconds = String(time % 60).padStart(2, "0");
+
+      // Update the countdown display on the web page
+      $(".cart-timer").text(`${minutes}:${seconds}`);
+
+      // Decrement the time
+      time--;
+
+      // Check if the countdown is finished
+      if (time < 0) {
+        // Stop the countdown
+        clearInterval(interval);
+
+        // Execute any desired action after countdown ends
+        alert("Time is up!");
+      }
+    }, 1000); // Update every 1000 milliseconds (1 second)
+  }
+
+  if ($(".cart-timer")) {
+    // Start the countdown with 20 minutes
+    startCountdown(20);
   }
 })(jQuery);
 

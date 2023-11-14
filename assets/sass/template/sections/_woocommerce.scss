@@ -53,6 +53,10 @@
     .edit-filters {
       left: 50px;
       top: 10px;
+      @include md {
+        left: 10px;
+        top: 7px;
+      }
     }
   }
 }

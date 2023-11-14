@@ -129,7 +129,9 @@ textarea {
   min-height: 150px;
   padding-top: 16px;
   padding-bottom: 17px;
-  border-radius: 0;
+  border-radius: 10px;
+  border: 1px solid;
+  resize: none;
 }
 
 input[type="checkbox"] {
@@ -226,6 +228,29 @@ input[type="radio"] {
   }
 }
 
+.image-radio {
+  display: inline-block;
+  cursor: pointer;
+  img {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+    border: 1px solid;
+    border-radius: 10px;
+    transition: all .1s ease-in-out;
+  }
+}
+
+.image-radio input[type='radio'] {
+  display: none;
+}
+
+.image-radio input[type='radio']:checked + img {
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  // border: 2px solid $theme-color;
+}
 label {
   margin-bottom: 0.5em;
   margin-top: -0.3em;
