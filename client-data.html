@@ -27,46 +27,6 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
-<style>
-    .woocommerce-message a, .woocommerce-info a {
-        text-decoration: none;
-    }
-input[type=checkbox] ~ label {
-    padding-right: 30px;
-    padding-left: 0;
-}
-input[type=checkbox] ~ label:before {
-    right: 0px;
-    left: auto;
-}
-.form-select, select {
-    background-position: left 26px center;
-
-}
-.checkout-ordertable th {
-    text-align: right;
-}
-.woocommerce-checkout-payment {
-    text-align: right;
-}
-input[type=radio] ~ label {
-    padding-right: 30px;
-    padding-left: 0;
-}
-input[type=radio] ~ label::before {
-    right: 0;
-    left: auto;
-}
-@media (max-width: 767px) {
-.cart_table td {
-padding-right: 25%;
-padding-left: 0;
-}}
-.cart_table td:before {
-    right: 15px;
-    left: auto;
-}
-</style>
 <body class="">
 
 
@@ -688,7 +648,7 @@ Checkout Arae
 
             <form action="checkout.html" class="woocommerce-checkout client-data mt-40">
                 <h2 class="h4">تفاصيل الفاتورة</h2>
-                <div class="row gap-5">
+                <div class="row gap-5 flex-column flex-md-row">
                     <div class="col">
                         <div class="row">
                             <div class="col-md-6 form-group">

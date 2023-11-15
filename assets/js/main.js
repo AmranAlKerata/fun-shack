@@ -948,6 +948,57 @@
     // Start the countdown with 20 minutes
     startCountdown(20);
   }
+
+  function initializeZoom() {
+    $(".product-big-img").trigger("zoom.destroy"); // Destroy the existing zoom instance
+    $(".product-big-img").zoom({
+      on: "mouseover",
+      magnify: 1.5,
+      touch: true
+    });
+  }
+
+  $(".thumbnail").on("click", (event) => {
+    const clickedElement = $(event.currentTarget);
+    const type = clickedElement.data("type");
+
+    const mainImage = $("#main-media");
+    const mainVideo = $("#main-video"); // Assuming you have a separate video element
+
+    if (type === "image") {
+      mainImage.show().attr("src", clickedElement.attr("src"));
+      mainVideo.hide();
+      if (mainVideo.length > 0) {
+        mainVideo.get(0).pause();
+      }
+    } else if (type === "video") {
+      mainImage.hide();
+      mainVideo.show().attr("src", clickedElement.attr("src"));
+      mainVideo.get(0).play();
+    }
+
+    $(".thumbnail").removeClass("active");
+    clickedElement.addClass("active");
+
+    if (type === "image") {
+      initializeZoom();
+    } else {
+      $(".product-big-img").trigger("zoom.destroy");
+    }
+  });
+
+  function initializeZoom() {
+    $(".product-big-img").trigger("zoom.destroy"); // Destroy the existing zoom instance
+    $(".product-big-img").zoom({
+      on: "mouseover",
+      magnify: 1.5,
+      touch: true
+    });
+  }
+
+  if ($(".product-big-img").length > 0) {
+    initializeZoom();
+  }
 })(jQuery);
 
 $.fn.modal.Constructor.prototype._enforceFocus = function() {

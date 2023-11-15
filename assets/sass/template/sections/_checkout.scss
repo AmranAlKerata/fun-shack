@@ -188,12 +188,12 @@ span.select2-selection.select2-selection--single:focus {
   }
 
   th {
-    text-align: left;
+    text-align: right;
   }
 }
 
 .woocommerce-checkout-payment {
-  text-align: left;
+  text-align: right;
 
   ul {
     margin: 0;
@@ -249,13 +249,6 @@ span.select2-selection.select2-selection--single:focus {
 
   .woocommerce-checkout-payment ul input[type="radio"] ~ label img {
     max-width: 150px;
-  }
-
-  .checkout-ordertable {
-    th,
-    td {
-      padding: 5px 20px 5px 60px;
-    }
   }
 }
 

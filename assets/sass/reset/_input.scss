@@ -12,6 +12,7 @@ input {
   border-radius: 10px;
   font-size: 16px;
   width: 100%;
+  text-align: right;
 
   &:focus {
     outline: 0;
@@ -50,7 +51,7 @@ input {
   > i {
     display: inline-block;
     position: absolute;
-    right: 25px;
+    left: 25px;
     top: 19px;
     font-size: 16px;
     color: $body-color;
@@ -156,7 +157,7 @@ input[type="checkbox"] {
 
   ~ label {
     position: relative;
-    padding-left: 30px;
+    padding-right: 30px;
     cursor: pointer;
     display: block;
 
@@ -165,7 +166,7 @@ input[type="checkbox"] {
       font-family: $icon-font;
       font-weight: 700;
       position: absolute;
-      left: 0px;
+      right: 0px;
       top: 3.5px;
       background-color: $white-color;
       border: 1px solid $border-color;
@@ -200,7 +201,7 @@ input[type="radio"] {
       content: '\f111';
       position: absolute;
       font-family: $icon-font;
-      right: -8px;
+      right: 0;
       top: -2px;
       width: 20px;
       height: 20px;

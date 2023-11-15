@@ -458,6 +458,7 @@ input {
   border-radius: 10px;
   font-size: 16px;
   width: 100%;
+  text-align: right;
 }
 select:focus,
 .form-control:focus,
@@ -544,7 +545,7 @@ input.style2 ~ i {
 .form-group > i {
   display: inline-block;
   position: absolute;
-  right: 25px;
+  left: 25px;
   top: 19px;
   font-size: 16px;
   color: var(--body-color);
@@ -629,7 +630,7 @@ input[type=checkbox]:checked ~ label:before {
 }
 input[type=checkbox] ~ label {
   position: relative;
-  padding-left: 30px;
+  padding-right: 30px;
   cursor: pointer;
   display: block;
 }
@@ -638,7 +639,7 @@ input[type=checkbox] ~ label:before {
   font-family: var(--icon-font);
   font-weight: 700;
   position: absolute;
-  left: 0px;
+  right: 0px;
   top: 3.5px;
   background-color: var(--white-color);
   border: 1px solid var(--border-color);
@@ -671,7 +672,7 @@ input[type=radio] ~ label::before {
   content: "\f111";
   position: absolute;
   font-family: var(--icon-font);
-  right: -8px;
+  right: 0;
   top: -2px;
   width: 20px;
   height: 20px;
@@ -877,7 +878,7 @@ textarea.is-invalid {
   line-height: 0;
   border-radius: 9999px;
   border: none;
-  background-color: var(--dots-bg, #D8D8D8);
+  background-color: var(--dots-bg, #d8d8d8);
   -webkit-transition: all ease 0.4s;
   transition: all ease 0.4s;
   position: relative;
@@ -923,7 +924,7 @@ textarea.is-invalid {
   font-size: var(--icon-font-size, 20px);
   margin-top: calc(var(--icon-size, 56px) / -2);
   z-index: 2;
-  border-radius: 0;
+  border-radius: 50%;
 }
 .slick-arrow.default {
   position: relative;
@@ -938,6 +939,9 @@ textarea.is-invalid {
   background-color: var(--theme-color);
   color: var(--title-color);
   border-color: transparent;
+}
+.slick-arrow:hover i {
+  color: var(--white-color);
 }
 
 .home3 .slick-arrow:hover {
@@ -1606,7 +1610,7 @@ textarea.is-invalid {
   transition: 0.5s ease;
 }
 .th-btn > i {
-  margin-left: 5px;
+  margin-right: 5px;
 }
 .th-btn:hover, .th-btn.active {
   color: var(--white-color);
@@ -6481,6 +6485,7 @@ a.text-theme:hover,
   z-index: 1;
   font-size: 18px;
   font-weight: 600;
+  border-radius: 50%;
 }
 .th-pagination span.active, .th-pagination span:hover,
 .th-pagination a.active,
@@ -7342,7 +7347,8 @@ blockquote cite.block-cite:before,
 .th-comments-wrap textarea,
 .th-comments-wrap input {
   height: 55px;
-  padding: 0 25px 0 25px;
+  padding-left: 45px;
+  padding-right: 25px;
   padding-right: 45px;
   border: 1px solid transparent;
   color: var(--body-color);
@@ -9122,7 +9128,7 @@ table.woocommerce-product-attributes {
 
 .rating-select label {
   margin: 0;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 .rating-select p.stars {
   margin-bottom: 0;
@@ -9226,7 +9232,6 @@ table.woocommerce-product-attributes {
   display: block;
   color: var(--theme-color);
   font-weight: bold;
-  margin-bottom: -0.4em;
   font-family: var(--body-font);
 }
 .th-product .price del {
@@ -9929,7 +9934,7 @@ table.woocommerce-product-attributes {
 .product-about > .price del {
   color: var(--body-color);
   font-weight: 500;
-  margin-left: 15px;
+  margin-right: 15px;
 }
 .summary-content .product-rating,
 .product-about .product-rating {
@@ -9947,6 +9952,13 @@ table.woocommerce-product-attributes {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
   margin-bottom: 24px;
+  /* Medium devices */
+}
+@media (max-width: 991px) {
+  .summary-content .product-rating,
+  .product-about .product-rating {
+    display: block;
+  }
 }
 .summary-content .product-rating .star-rating,
 .product-about .product-rating .star-rating {
@@ -10252,6 +10264,89 @@ table.woocommerce-product-attributes {
     max-width: 130px;
   }
 }
+.product-gallery {
+  /* Medium devices */
+}
+@media (max-width: 991px) {
+  .product-gallery {
+    text-align: center;
+  }
+}
+.product-gallery .product-thumbnails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 10px;
+  margin-top: 10px;
+  /* Medium devices */
+}
+@media (max-width: 991px) {
+  .product-gallery .product-thumbnails {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.product-gallery .product-thumbnails .thumbnail {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* Medium devices */
+}
+@media (max-width: 991px) {
+  .product-gallery .product-thumbnails .thumbnail {
+    width: 75px;
+    height: 75px;
+  }
+}
+.product-gallery .product-thumbnails .thumbnail:hover {
+  opacity: 0.6;
+}
+.product-gallery .product-thumbnails .thumbnail.active {
+  border-color: var(--theme-color);
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.product-gallery .product-big-img {
+  display: inline-block;
+  position: relative;
+  background-color: var(--white-color);
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  max-width: 500px;
+  max-height: 500px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.product-gallery #main-video {
+  cursor: default;
+  width: 500px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.product-gallery .zoomImg {
+  background-color: var(--white-color);
+}
+
+.product-page-form > .row {
+  row-gap: 30px;
+}
+
 /*------------------- 4.00. Cart  -------------------*/
 .woocommerce-cart-form {
   text-align: center;
@@ -10525,7 +10620,6 @@ table.woocommerce-product-attributes {
   }
   .cart_table .checkout-ordertable td {
     text-align: left;
-    padding-left: 20px;
   }
   .cart_table thead {
     display: none;
@@ -10592,18 +10686,12 @@ table.woocommerce-product-attributes {
   row-gap: 30px;
 }
 .actions > .th-btn {
-  font-size: 16px;
-  padding: 14px 28px;
-  margin-left: 15px;
   /* Small devices */
 }
 @media (max-width: 767px) {
   .actions > .th-btn {
-    margin-top: 15px;
+    width: 100%;
   }
-}
-.actions > .th-btn:last-child {
-  margin-right: 0;
 }
 
 .th-cart-coupon {
@@ -10820,11 +10908,11 @@ span.select2-selection.select2-selection--single:focus {
   padding: 5px 20px;
 }
 .checkout-ordertable th {
-  text-align: left;
+  text-align: right;
 }
 
 .woocommerce-checkout-payment {
-  text-align: left;
+  text-align: right;
 }
 .woocommerce-checkout-payment ul {
   margin: 0;
@@ -10873,10 +10961,6 @@ span.select2-selection.select2-selection--single:focus {
   }
   .woocommerce-checkout-payment ul input[type=radio] ~ label img {
     max-width: 150px;
-  }
-  .checkout-ordertable th,
-  .checkout-ordertable td {
-    padding: 5px 20px 5px 60px;
   }
 }
 .payment-methods {
@@ -11936,7 +12020,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .style3.info-card {
-  border-right: 1px solid #2E3341;
+  border-right: 1px solid #2e3341;
   gap: 15px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -11947,7 +12031,7 @@ span.select2-selection.select2-selection--single:focus {
   padding: 55px 0;
 }
 .style3.info-card:first-child {
-  border-left: 1px solid #2E3341;
+  border-left: 1px solid #2e3341;
 }
 .style3 .info-card_icon i {
   width: 45px;
@@ -11959,7 +12043,7 @@ span.select2-selection.select2-selection--single:focus {
 .style3 .info-card_text {
   margin-bottom: 0px;
   font-size: 14px;
-  color: #ADADAD;
+  color: #adadad;
 }
 .style3 .info-card_link {
   font-size: 18px;
@@ -11983,7 +12067,7 @@ span.select2-selection.select2-selection--single:focus {
         -ms-flex-pack: start;
             justify-content: flex-start;
     border-right: none;
-    border-bottom: 1px solid #2E3341;
+    border-bottom: 1px solid #2e3341;
     width: 100%;
     max-width: 280px;
     margin: 0 auto;
@@ -12063,7 +12147,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 .contact-box.style2 .contact-box_content {
   position: relative;
-  background-color: #F7F4ED;
+  background-color: #f7f4ed;
   text-align: center;
   display: block;
   z-index: 9;
@@ -12149,16 +12233,16 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .contact-form-wrapper {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 .contact-form-wrapper .contact-form {
-  padding: 50px 50px 50px 0px;
+  padding: 50px 0px 50px 50px;
   /* Large devices */
   /* Medium devices */
 }
 @media (max-width: 1199px) {
   .contact-form-wrapper .contact-form {
-    padding: 35px 35px 35px 0;
+    padding: 35px 0 35px 35px;
   }
 }
 @media (max-width: 991px) {
@@ -12178,12 +12262,12 @@ span.select2-selection.select2-selection--single:focus {
   min-height: 120px;
 }
 .contact-form-wrapper .map-sec {
-  margin-right: 30px;
+  margin-left: 30px;
   /* Medium devices */
 }
 @media (max-width: 991px) {
   .contact-form-wrapper .map-sec {
-    margin-right: 0;
+    margin-left: 0;
   }
 }
 .contact-form-wrapper .map-sec iframe {
@@ -12197,6 +12281,11 @@ span.select2-selection.select2-selection--single:focus {
   .contact-form-wrapper .map-sec iframe {
     height: 350px;
   }
+}
+.contact-form-wrapper .select2-selection__rendered {
+  border-color: #818181 !important;
+  height: 55px;
+  color: var(--body-color) !important;
 }
 
 .contact-form .form-group > i {
@@ -14281,9 +14370,9 @@ span.select2-selection.select2-selection--single:focus {
 
 /*------------------- 4.00. Simple Sections  -------------------*/
 .checklist ul {
-  padding-left: 0;
+  padding-right: 0;
   list-style: none;
-  text-align: left;
+  text-align: right;
   margin-bottom: 0;
 }
 .checklist li {
@@ -14291,7 +14380,7 @@ span.select2-selection.select2-selection--single:focus {
   margin-bottom: 10px;
   font-weight: 400;
   position: relative;
-  padding-left: 28px;
+  padding-right: 25px;
 }
 .checklist li:before {
   content: "\f058";
@@ -14299,7 +14388,7 @@ span.select2-selection.select2-selection--single:focus {
   font-weight: 500;
   color: var(--theme-color);
   position: absolute;
-  left: 0;
+  right: 0;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
@@ -14395,7 +14484,7 @@ span.select2-selection.select2-selection--single:focus {
   color: var(--title-color);
 }
 .tab-menu3 .th-btn.active, .tab-menu3 .th-btn:hover {
-  color: var(--title-color);
+  color: var(--white-color);
 }
 .tab-menu3 .th-btn:before {
   background-color: var(--theme-color);

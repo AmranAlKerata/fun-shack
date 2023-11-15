@@ -36,7 +36,6 @@
     display: block;
     color: $theme-color;
     font-weight: bold;
-    margin-bottom: -0.4em;
     font-family: $body-font;
 
     del {
@@ -798,7 +797,7 @@
     del {
       color: $body-color;
       font-weight: 500;
-      margin-left: 15px;
+      margin-right: 15px;
     }
   }
 
@@ -813,6 +812,9 @@
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     margin-bottom: 24px;
+    @include md {
+      display: block;
+    }
 
     .star-rating {
       width: 125px;
@@ -1157,5 +1159,70 @@
 @include vxs {
   .th-product.list-view .product-img {
     max-width: 130px;
+  }
+}
+
+.product-gallery {
+  @include md {
+    text-align: center;
+  }
+  .product-thumbnails {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    margin-top: 10px;
+    @include md {
+      justify-content: center;
+    }
+
+    .thumbnail {
+      cursor: pointer;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      transition: all .2s ease-in-out;
+      border: 1px solid $border-color;
+      border-radius: 5px;
+      box-sizing: border-box;
+      @include md {
+        width: 75px;
+        height: 75px;
+      }
+      &:hover {
+        opacity: .6;
+      }
+      &.active {
+        border-color: $theme-color;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+    }
+  }
+
+  .product-big-img {
+    display: inline-block;
+    position: relative;
+    background-color: $white-color;
+    cursor: zoom-in;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  #main-video {
+    cursor: default;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+  }
+  .zoomImg {
+    background-color: $white-color;
+  }
+}
+.product-page-form {
+  > .row {
+    row-gap: 30px;
   }
 }

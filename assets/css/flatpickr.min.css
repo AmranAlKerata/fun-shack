@@ -766,6 +766,7 @@ span.flatpickr-weekday {
 }
 .flatpickr-input[readonly] {
   cursor: pointer;
+  background-color: #fff;
 }
 @-webkit-keyframes fpFadeInDown {
   from {
