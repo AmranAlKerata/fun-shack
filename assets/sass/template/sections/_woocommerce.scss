@@ -462,3 +462,27 @@ table.woocommerce-product-attributes {
     }
   }
 }
+.edit-order-page {
+  .quantity {
+    input,
+    i {
+      font-size: 12px;
+    }
+    .qty-input {
+      height: 40px !important;
+    }
+    .qty-btn {
+      height: 8px !important;
+    }
+    .quantity-plus {
+      top: 0 !important;
+    }
+    .quantity-minus {
+      bottom: 19px !important;
+    }
+  }
+  .remove-item {
+    top: 0;
+    left: 30px;
+  }
+}

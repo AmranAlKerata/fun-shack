@@ -703,8 +703,8 @@
   }
 }
 
-@include lg {
-  .widget {
+@include md {
+  .sidebar-shop .widget {
     --widget-padding-y: 30px;
     --widget-padding-x: 30px;
     &_search {

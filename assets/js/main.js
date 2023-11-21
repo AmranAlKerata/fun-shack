@@ -142,23 +142,26 @@
   });
 
   /*---------- 04. Sticky fix ----------*/
-  $(window).on("scroll", function() {
-    var topPos = $(this).scrollTop();
-    sticky();
-    if (topPos > 150) {
-      $(".sticky-wrapper").addClass("will-sticky");
-      sticky();
-    } else {
-      $(".sticky-wrapper").removeClass("sticky");
-      $(".sticky-wrapper").removeClass("will-sticky");
-    }
+  // Sticky fix
+  let lastTopPos = 0; // Store the last scroll position
 
-    function sticky() {
-      if (topPos > 400) {
+  $(window).on("scroll", () => {
+    const currentTopPos = $(window).scrollTop();
+
+    // Determine scroll direction and apply classes accordingly
+    if (currentTopPos > lastTopPos) {
+      // Scrolling down
+      $(".sticky-wrapper").removeClass("sticky");
+    } else {
+      // Scrolling up
+      if (currentTopPos > 150) {
         $(".sticky-wrapper").addClass("sticky");
-        $(".sticky-wrapper").removeClass("will-sticky");
+      } else {
+        $(".sticky-wrapper").removeClass("sticky");
       }
     }
+
+    lastTopPos = currentTopPos; // Update the last scroll position
   });
 
   /*---------- 05. Scroll To Top ----------*/
@@ -743,9 +746,12 @@
   }
 
   // Set position when click on bootstrap Tab
-  $('[data-bs-toggle="tab"]').on("shown.bs.tab", function(e) {
-    $(".th-carousel").slick("setPosition");
-  });
+
+  if ($.fn.slick) {
+    $('[data-bs-toggle="tab"]').on("shown.bs.tab", function(e) {
+      $(".th-carousel").slick("setPosition");
+    });
+  }
 
   /*----------- 00. Woocommerce Toggle ----------*/
   // Ship To Different Address
@@ -847,6 +853,7 @@
     $("#date").flatpickr({
       dateFormat: "d/m/Y"
     });
+    $("#birth").flatpickr({});
   }
   if ($.fn.slider) {
     $("#price-slider-range").slider({
@@ -914,10 +921,19 @@
     // Make sure to add "select-2-select" class to any select box
     select2Select.select2();
   }
-  $("#location, #cartFilters").on("shown.bs.modal", function() {
-    // Make sure to add "select-2-select" class to any select box
-    $(".model-loction-select").select2();
-  });
+  if ($(".model-loction-select").length > 0) {
+    $("#location, #cartFilters").on("shown.bs.modal", function() {
+      // Make sure to add "select-2-select" class to any select box
+      $(".model-loction-select").select2();
+    });
+  }
+
+  if ($(".filters-select2").length > 0) {
+    $(".filter-model").on("shown.bs.modal", function() {
+      // Make sure to add "select-2-select" class to any select box
+      $(".filters-select2").select2();
+    });
+  }
 
   // Function to start the countdown timer
   function startCountdown(duration) {
@@ -944,7 +960,7 @@
     }, 1000); // Update every 1000 milliseconds (1 second)
   }
 
-  if ($(".cart-timer")) {
+  if ($(".cart-timer").length > 0) {
     // Start the countdown with 20 minutes
     startCountdown(20);
   }
@@ -999,6 +1015,36 @@
   if ($(".product-big-img").length > 0) {
     initializeZoom();
   }
+
+  $("#backArrow").on("click", () => {
+    window.history.back();
+  });
+
+  // Add click event listener to the profile image
+  $("#profile-image").click(() => {
+    // Trigger the click event on the hidden file input
+    // This opens the file dialog when the image is clicked
+    $("#profile-image-upload").trigger("click");
+  });
+
+  // Add change event listener to the file input
+  $("#profile-image-upload").change(function() {
+    // Check if any file is selected
+    if (this.files && this.files[0]) {
+      // Create a FileReader object to read the file
+      let reader = new FileReader();
+
+      // Define what happens once the FileReader reads the file
+      reader.onload = (e) => {
+        // Update the src attribute of the profile image with the new file data
+        $("#profile-image").attr("src", e.target.result);
+      };
+
+      // Read the file as a data URL (base64)
+      // This is necessary to display the image in the <img> tag
+      reader.readAsDataURL(this.files[0]);
+    }
+  });
 })(jQuery);
 
 $.fn.modal.Constructor.prototype._enforceFocus = function() {

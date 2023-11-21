@@ -27,6 +27,46 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
+<style>
+    .woocommerce-message a, .woocommerce-info a {
+        text-decoration: none;
+    }
+input[type=checkbox] ~ label {
+    padding-right: 30px;
+    padding-left: 0;
+}
+input[type=checkbox] ~ label:before {
+    right: 0px;
+    left: auto;
+}
+.form-select, select {
+    background-position: left 26px center;
+
+}
+.checkout-ordertable th {
+    text-align: right;
+}
+.woocommerce-checkout-payment {
+    text-align: right;
+}
+input[type=radio] ~ label {
+    padding-right: 30px;
+    padding-left: 0;
+}
+input[type=radio] ~ label::before {
+    right: 0;
+    left: auto;
+}
+@media (max-width: 767px) {
+.cart_table td {
+padding-right: 25%;
+padding-left: 0;
+}}
+.cart_table td:before {
+    right: 15px;
+    left: auto;
+}
+</style>
 <body class="">
 
 
@@ -617,119 +657,162 @@
             </span>
         </a>
     </div>
-    <!--==============================
-    Breadcumb
-============================== -->
-    <div class="breadcumb-wrapper " data-bg-src="assets/img/breadcumb.png">
-        <div class="container z-index-common">
-            <h1 class="breadcumb-title">البيانات</h1>
-            <ul class="breadcumb-menu">
-                <li><a href="index.html">الرئيسية</a></li>
-                <li>البيانات</li>
-            </ul>
-        </div>
-    </div>
-    <!--==============================
-Checkout Arae
-==============================-->
+   
+    <!-- Notifications -->
 
-    <div class="th-checkout-wrapper space-top space-extra-bottom">
+    <div class="notifications-page mt-5">
         <div class="container">
-            <div class="alert alert-primary d-flex align-items-center position-sticky" role="alert">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 0C4.486 0 0 4.486 0 10C0 15.514 4.486 20 10 20C15.514 20 20 15.514 20 10C20 4.486 15.514 0 10 0ZM10 18C5.589 18 2 14.411 2 10C2 5.589 5.589 2 10 2C14.411 2 18 5.589 18 10C18 14.411 14.411 18 10 18ZM15 10C15 10.553 14.552 11 14 11H10C9.448 11 9 10.553 9 10V5C9 4.447 9.448 4 10 4C10.552 4 11 4.447 11 5V9H14C14.552 9 15 9.447 15 10Z" fill="#41416E"/>
-                    </svg>
-                    
-                <div>
-                    <span class="ms-3 cart-timer">20:00</span>
-                    <span>الوقت المتبقي لإتمام الطلب</span>
-                </div>
-              </div>
-
-            <form action="checkout.html" class="woocommerce-checkout client-data mt-40">
-                <h2 class="h4">تفاصيل الفاتورة</h2>
-                <div class="row gap-5 flex-column flex-md-row">
-                    <div class="col">
-                        <div class="row">
-                            <div class="col-md-6 form-group">
-                                <label for="first-name">الإسم الأول</label>
-                                <input type="text" name="first-name" class="form-control" value="محمد" disabled readonly>
+            <div class="row justify-content-center">   
+            <div class="col-xl-9 col-lg-8">
+                <ul class="m-0 list-unstyled">
+                    <li class="new">
+                        <a href="#" class="d-flex align-items-center justify-content-start gap-2">
+                            <div class="notification-img">
+                                <img src="assets/img/person.jpg" alt="Person">
+    
                             </div>
-                            <div class="col-md-6 form-group">
-                                <label for="last-name">الإسم الأخير</label>
-                                <input type="text" name="last-name" class="form-control" value="عبد العزيز" disabled readonly>
+                            <div class="notification-content">
+                                <h6>
+                                    خالد رد على تعليقك
+                                    في منتج نطيطة الكور
+                                </h6>
+                                <p>هذا هو نص تجريبي لما يمكن كتابته في وصف الإشعار</p>
+                                <span>
+                                    2023-09-20
+                                </span>
                             </div>
-                            <div class="col-12 form-group">
-                                <label for="phone">رقم الهاتف</label>
-                                <input type="text" name="phone" class="form-control" value="05123456789" disabled readonly>
+                        </a>
+                    </li>
+                    <li class="new">
+                        <a href="#" class="d-flex align-items-center justify-content-start gap-2">
+                            <div class="notification-img">
+                                <img src="assets/img/person.jpg" alt="Person">
+    
                             </div>
-                            <div class="col-12 form-group">
-                                <label for="region">المنطقة</label>
-                                <input name="region" type="text" class="form-control" value="الشرقية" disabled readonly>
+                            <div class="notification-content">
+                                <h6>
+                                    خالد رد على تعليقك
+                                    في منتج نطيطة الكور
+                                </h6>
+                                <span>
+                                    2023-09-20
+                                </span>
                             </div>
-                            <div class="col-12 form-group">
-                                <label for="city">المدينة</label>
-                                <input name="city" type="text" class="form-control" value="الرياض" disabled readonly>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex align-items-center justify-content-start gap-2">
+                            <div class="notification-img">
+                                <img src="assets/img/person.jpg" alt="Person">
+    
                             </div>
-                            <div class="col-12 form-group">
-                                <label for="address">الحي</label>
-                                <input name="address" type="text" class="form-control" value="الصحافة" disabled readonly>
+                            <div class="notification-content">
+                                <h6>
+                                    خالد رد على تعليقك
+                                    في منتج نطيطة الكور
+                                </h6>
+                                <span>
+                                    2023-09-20
+                                </span>
                             </div>
-                          
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="row">
-                            <div class="col-12 form-group">
-                                <label for="phone">جوال الحارس/احتياطي</label>
-                                <input type="number" class="text-start form-control" placeholder="05XXXXXXXX">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex align-items-center justify-content-start gap-2">
+                            <div class="notification-img">
+                                <img src="assets/img/person.jpg" alt="Person">
+    
                             </div>
-                            <div class="col-12 form-group">
-                                <label for="address">وقت التوصيل</label>
-                                <select name="address" class="form-select select-2-select w-100">
-                                <option value="0">10:00ص - 12:00م</option>
-                                <option value="1">10:00ص - 12:00م</option>
-                                <option value="2">10:00ص - 12:00م</option>
-                                <option value="3">10:00ص - 12:00م</option>
-                                <option value="4">10:00ص - 12:00م</option>
-                
-                                </select>
+                            <div class="notification-content">
+                                <h6>
+                                    خالد رد على تعليقك
+                                    في منتج نطيطة الكور
+                                </h6>
+                                <span>
+                                    2023-09-20
+                                </span>
                             </div>
-                            <div class="col-12 form-group">
-                                <label for="place-type">نوع المكان</label>
-                                <select name="place-type" class="form-select select-2-select w-100">
-                                    <option value="0">شالية/استراحة</option>
-                                    <option value="1">شالية/استراحة</option>
-                                    <option value="2">شالية/استراحة</option>
-                                    <option value="3">شالية/استراحة</option>
-                                    <option value="4">شالية/استراحة</option>
-                
-                                </select>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex align-items-center justify-content-start gap-2">
+                            <div class="notification-img">
+                                <img src="assets/img/person.jpg" alt="Person">
+    
                             </div>
-                            <div class="col-12 form-group">
-                                <label for="location-url">رابط اللوكيشن</label>
-                                <input name="location-url" type="url" class=" form-control" placeholder="https://maps.app.goo.gl/mpdJhPyD88jywhPF7">
+                            <div class="notification-content">
+                                <h6>
+                                    خالد رد على تعليقك
+                                    في منتج نطيطة الكور
+                                </h6>
+                                <span>
+                                    2023-09-20
+                                </span>
                             </div>
-                          
-                            <div class="col-12 form-group">
-                                <label for="notes">ملاحظات</label>
-                                <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex align-items-center justify-content-start gap-2">
+                            <div class="notification-img">
+                                <img src="assets/img/person.jpg" alt="Person">
+    
                             </div>
-                          
-                        </div>
-                    </div>
-                    
-             
-                </div>
-                <div class="text-center mt-5">
-                    <button class="th-btn" type="submit">التالي</button>
-
-                </div>
-            </form>
-
+                            <div class="notification-content">
+                                <h6>
+                                    خالد رد على تعليقك
+                                    في منتج نطيطة الكور
+                                </h6>
+                                <span>
+                                    2023-09-20
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex align-items-center justify-content-start gap-2">
+                            <div class="notification-img">
+                                <img src="assets/img/person.jpg" alt="Person">
+    
+                            </div>
+                            <div class="notification-content">
+                                <h6>
+                                    خالد رد على تعليقك
+                                    في منتج نطيطة الكور
+                                </h6>
+                                <span>
+                                    2023-09-20
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex align-items-center justify-content-start gap-2">
+                            <div class="notification-img">
+                                <img src="assets/img/person.jpg" alt="Person">
+    
+                            </div>
+                            <div class="notification-content">
+                                <h6>
+                                    خالد رد على تعليقك
+                                    في منتج نطيطة الكور
+                                </h6>
+                                <span>
+                                    2023-09-20
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+    
+                    <!-- Add more list items here -->
+                </ul>
+            </div> 
+            </div>
         </div>
-
     </div>
+
+
+
+
     <!-- Scroll To Top  -->
     <div class="scroll-top text-center mb-4">
         العودة إلى الأعلى

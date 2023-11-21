@@ -1,17 +1,12 @@
 .th-menu-wrapper {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -100%;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.60);
   z-index: 999999;
-  width: 0;
   width: 100%;
   height: 100%;
-  transition: all ease 0.8s;
-  opacity: 0;
-  visibility: hidden;
-
+  transition: all linear .1s;
 
   // Mobile Menu Logo
   .mobile-logo {
@@ -19,7 +14,7 @@
     padding-top: 40px;
     display: block;
     text-align: center;
-    background-color: rgba(#c8931c, 0.1); 
+    background-color: rgba(#c8931c, 0.1);
 
     svg {
       max-width: 185px;
@@ -27,7 +22,7 @@
   }
 
   // Menu Close Button
-  .th-menu-toggle  {
+  .th-menu-toggle {
     border: none;
     font-size: 22px;
     position: absolute;
@@ -52,23 +47,16 @@
     height: 100%;
     position: relative;
     right: -110%;
-    opacity: 0;
-    visibility: hidden;
-    transition: all ease 1s;
+    transition: all linear .2s;
     z-index: 1;
   }
 
   &.th-body-visible {
-    opacity: 1;
-    visibility: visible;
     .th-menu-area {
-      right: 0;
-      opacity: 1;
-      visibility: visible;
+      right: 100%;
     }
   }
 }
-
 
 // Mobile Menu
 .th-mobile-menu {
@@ -109,11 +97,10 @@
         text-transform: capitalize;
         color: $title-color;
         text-align: right;
-
       }
 
       &.th-active {
-        >a {
+        > a {
           color: $theme-color;
 
           &:before {
@@ -134,7 +121,7 @@
     }
 
     .th-item-has-children {
-      >a {
+      > a {
         .th-mean-expand {
           position: absolute;
           left: 0;
@@ -160,7 +147,7 @@
       }
 
       &.th-active {
-        >a {
+        > a {
           .th-mean-expand:before {
             content: '\f068';
           }
@@ -169,10 +156,10 @@
     }
   }
 
-  >ul {
+  > ul {
     padding: 0 40px;
 
-    >li {
+    > li {
       &:last-child {
         border-bottom: none;
       }
@@ -180,9 +167,7 @@
   }
 }
 
-
-
-.th-menu-toggle  {
+.th-menu-toggle {
   width: 50px;
   height: 50px;
   line-height: 51px;
@@ -212,14 +197,13 @@
   }
 }
 
-
 @media (max-width: 400px) {
   .th-menu-wrapper .th-menu-area {
     width: 100%;
     max-width: 270px;
   }
 
-  .th-mobile-menu>ul {
+  .th-mobile-menu > ul {
     padding: 0 20px;
   }
 }

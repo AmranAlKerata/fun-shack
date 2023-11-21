@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>كوخ المرح</title>
-    <meta name="author" content="Taxiar">
+    <meta name="author" content="كوخ المرح">
     <meta name="description" content="كوخ المرح">
     <meta name="keywords" content="كوخ المرح">
     <meta name="robots" content="INDEX,FOLLOW">
@@ -19,15 +19,20 @@
         ============================== -->
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+    <!-- Jquery UI -->
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
     <!-- Fontawesome Icon -->
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <!-- Select2 -->
     <link rel="stylesheet" href="assets/css/select2.min.css">
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- FlatPicker -->
+    <link rel="stylesheet" href="assets/css/flatpickr.min.css">
 
 </head>
-<body class="">
+
+<body class="my-account-page">
 
 
     <!--[if lte IE 9]>
@@ -40,80 +45,77 @@
    		Code Start From Here 
 	******************************** -->
 
-
-
-
-     <!--==============================
+    <!--==============================
     Mobile Menu
   ============================== -->
-  <div class="th-menu-wrapper">
-    <div class="th-menu-area text-center">
-        <button class="th-menu-toggle "><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M16.1925 8.69125L12.8837 12L16.1913 15.3075C16.435 15.5512 16.435 15.9475 16.1913 16.1912C16.0688 16.3137 15.9088 16.3737 15.7488 16.3737C15.5888 16.3737 15.4288 16.3125 15.3063 16.1912L12 12.8838L8.6925 16.1912C8.57 16.3137 8.41 16.3737 8.25 16.3737C8.09 16.3737 7.93 16.3125 7.8075 16.1912C7.56375 15.9475 7.56375 15.5512 7.8075 15.3075L11.115 12L7.8075 8.6925C7.56375 8.44875 7.56375 8.0525 7.8075 7.80875C8.05125 7.565 8.44753 7.565 8.69128 7.80875L11.9988 11.1162L15.3063 7.80875C15.55 7.565 15.9462 7.565 16.19 7.80875C16.4337 8.0525 16.4363 8.4475 16.1925 8.69125ZM23.875 8.25V15.75C23.875 20.23 20.23 23.875 15.75 23.875H8.25C3.77 23.875 0.125 20.23 0.125 15.75V8.25C0.125 3.77 3.77 0.125 8.25 0.125H15.75C20.23 0.125 23.875 3.77 23.875 8.25ZM22.625 8.25C22.625 4.45875 19.5413 1.375 15.75 1.375H8.25C4.45875 1.375 1.375 4.45875 1.375 8.25V15.75C1.375 19.5413 4.45875 22.625 8.25 22.625H15.75C19.5413 22.625 22.625 19.5413 22.625 15.75V8.25Z"
-                    fill="#f00" />
-            </svg>
+    <div class="th-menu-wrapper">
+        <div class="th-menu-area text-center">
+            <button class="th-menu-toggle "><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.1925 8.69125L12.8837 12L16.1913 15.3075C16.435 15.5512 16.435 15.9475 16.1913 16.1912C16.0688 16.3137 15.9088 16.3737 15.7488 16.3737C15.5888 16.3737 15.4288 16.3125 15.3063 16.1912L12 12.8838L8.6925 16.1912C8.57 16.3137 8.41 16.3737 8.25 16.3737C8.09 16.3737 7.93 16.3125 7.8075 16.1912C7.56375 15.9475 7.56375 15.5512 7.8075 15.3075L11.115 12L7.8075 8.6925C7.56375 8.44875 7.56375 8.0525 7.8075 7.80875C8.05125 7.565 8.44753 7.565 8.69128 7.80875L11.9988 11.1162L15.3063 7.80875C15.55 7.565 15.9462 7.565 16.19 7.80875C16.4337 8.0525 16.4363 8.4475 16.1925 8.69125ZM23.875 8.25V15.75C23.875 20.23 20.23 23.875 15.75 23.875H8.25C3.77 23.875 0.125 20.23 0.125 15.75V8.25C0.125 3.77 3.77 0.125 8.25 0.125H15.75C20.23 0.125 23.875 3.77 23.875 8.25ZM22.625 8.25C22.625 4.45875 19.5413 1.375 15.75 1.375H8.25C4.45875 1.375 1.375 4.45875 1.375 8.25V15.75C1.375 19.5413 4.45875 22.625 8.25 22.625H15.75C19.5413 22.625 22.625 19.5413 22.625 15.75V8.25Z"
+                        fill="#f00" />
+                </svg>
 
-        </button>
-        <div class="mobile-logo">
-            <a href="index.html">
-                <img src="assets/img/logo.svg" alt="كوخ المرح">
-            </a>
-        </div>
-        <div class="th-mobile-menu">
-            <ul>
-                <li class="menu-item-has-children">
-                    <a href="index.html">الفئات</a>
-                    <ul class="sub-menu">
-                        <li>
-                            <a href="#">الكل</a>
-                        </li>
-                        <li>
-                            <a href="#">مائية</a>
-                        </li>
-                        <li>
-                            <a href="#">جافة</a>
-                        </li>
-                        <li>
-                            <a href="#">كهربائية</a>
-                        </li>
-                        <li>
-                            <a href="#">متوفرة اليوم</a>
-                        </li>
-                        <li>
-                            <a href="#">بكجات</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">طريقة الطلب</a>
+            </button>
+            <div class="mobile-logo">
+                <a href="index.html">
+                    <img src="assets/img/logo.svg" alt="كوخ المرح">
+                </a>
+            </div>
+            <div class="th-mobile-menu">
+                <ul>
+                    <li class="menu-item-has-children">
+                        <a href="index.html">الفئات</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">الكل</a>
+                            </li>
+                            <li>
+                                <a href="#">مائية</a>
+                            </li>
+                            <li>
+                                <a href="#">جافة</a>
+                            </li>
+                            <li>
+                                <a href="#">كهربائية</a>
+                            </li>
+                            <li>
+                                <a href="#">متوفرة اليوم</a>
+                            </li>
+                            <li>
+                                <a href="#">بكجات</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">طريقة الطلب</a>
 
-                </li>
-                <li>
-                    <a href="#">حجوزاتي</a>
+                    </li>
+                    <li>
+                        <a href="#">حجوزاتي</a>
 
-                </li>
-                <li>
-                    <a href="faq.html">الأسئلة الشائعة</a>
-                </li>
-                <li>
-                    <a href="about.html">من نحن</a>
+                    </li>
+                    <li>
+                        <a href="faq.html">الأسئلة الشائعة</a>
+                    </li>
+                    <li>
+                        <a href="about.html">من نحن</a>
 
-                </li>
-                <li>
-                    <a href="terms.html">الشروط و الأحكام</a>
-                </li>
+                    </li>
+                    <li>
+                        <a href="terms.html">الشروط و الأحكام</a>
+                    </li>
 
-            </ul>
+                </ul>
 
+            </div>
         </div>
     </div>
-</div>
 
     <!--==============================
-    Sidemenu
-    ============================== -->
+Sidemenu
+============================== -->
     <div class="sidemenu-wrapper shopping-cart">
         <div class="sidemenu-content">
             <button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
@@ -220,8 +222,8 @@
         </div>
     </div>
     <!--==============================
-    Header Area
-    ==============================-->
+Header Area
+==============================-->
     <header class="th-header header-layout5">
 
         <div class="sticky-wrapper">
@@ -244,14 +246,15 @@
                                 <a href="index.html">
                                     <img src="assets/img/logo.svg" alt="كوخ المرح">
                                 </a>
-                            
+
                             </div>
 
                         </div>
 
                         <div class="col-auto d-block d-lg-none">
                             <div class="header-button">
-                                <button type="button" class="icon-btn searchBoxToggler" data-bs-toggle="modal" data-bs-target="#popupSearch" > 
+                                <button type="button" class="icon-btn searchBoxToggler" data-bs-toggle="modal"
+                                    data-bs-target="#popupSearch">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -271,13 +274,17 @@
                                     <span class="badge">2</span>
                                 </a>
 
-        
-                                    <button type="button" class="header-location border border-0 bg-transparent"  data-bs-toggle="modal" data-bs-target="#location">
-                                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8.00049 3.99951C5.79449 3.99951 4.00049 5.79351 4.00049 7.99951C4.00049 10.2055 5.79449 11.9995 8.00049 11.9995C10.2065 11.9995 12.0005 10.2055 12.0005 7.99951C12.0005 5.79351 10.2065 3.99951 8.00049 3.99951ZM8.00049 9.99951C6.89749 9.99951 6.00049 9.10251 6.00049 7.99951C6.00049 6.89651 6.89749 5.99951 8.00049 5.99951C9.10349 5.99951 10.0005 6.89651 10.0005 7.99951C10.0005 9.10251 9.10349 9.99951 8.00049 9.99951ZM7.99649 -0.000488281C3.43749 -0.000488281 0.000488281 3.43851 0.000488281 7.99951C0.000488281 14.3255 4.81248 18.2595 6.88148 19.6565C7.21948 19.8855 7.60849 20.0005 7.99649 20.0005C8.38349 20.0005 8.77049 19.8864 9.10849 19.6584C11.1805 18.2594 15.9995 14.3235 15.9995 7.99951C16.0005 3.43851 12.5595 -0.000488281 7.99649 -0.000488281ZM8.0015 17.9995C6.1975 16.7805 2.00049 13.3665 2.00049 7.99951C2.00049 4.52251 4.52149 1.99951 7.99649 1.99951C11.4195 1.99951 14.0005 4.57851 14.0005 7.99951C14.0005 13.3635 9.79749 16.7805 8.0015 17.9995Z" fill="#010101"/>
-                                            </svg>
-                                        الرياض
-                                    </button>
+
+                                <button type="button" class="header-location border border-0 bg-transparent"
+                                    data-bs-toggle="modal" data-bs-target="#location">
+                                    <svg width="16" height="20" viewBox="0 0 16 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.00049 3.99951C5.79449 3.99951 4.00049 5.79351 4.00049 7.99951C4.00049 10.2055 5.79449 11.9995 8.00049 11.9995C10.2065 11.9995 12.0005 10.2055 12.0005 7.99951C12.0005 5.79351 10.2065 3.99951 8.00049 3.99951ZM8.00049 9.99951C6.89749 9.99951 6.00049 9.10251 6.00049 7.99951C6.00049 6.89651 6.89749 5.99951 8.00049 5.99951C9.10349 5.99951 10.0005 6.89651 10.0005 7.99951C10.0005 9.10251 9.10349 9.99951 8.00049 9.99951ZM7.99649 -0.000488281C3.43749 -0.000488281 0.000488281 3.43851 0.000488281 7.99951C0.000488281 14.3255 4.81248 18.2595 6.88148 19.6565C7.21948 19.8855 7.60849 20.0005 7.99649 20.0005C8.38349 20.0005 8.77049 19.8864 9.10849 19.6584C11.1805 18.2594 15.9995 14.3235 15.9995 7.99951C16.0005 3.43851 12.5595 -0.000488281 7.99649 -0.000488281ZM8.0015 17.9995C6.1975 16.7805 2.00049 13.3665 2.00049 7.99951C2.00049 4.52251 4.52149 1.99951 7.99649 1.99951C11.4195 1.99951 14.0005 4.57851 14.0005 7.99951C14.0005 13.3635 9.79749 16.7805 8.0015 17.9995Z"
+                                            fill="#010101" />
+                                    </svg>
+                                    الرياض
+                                </button>
                             </div>
                         </div>
                         <div class="col-auto d-none d-lg-block">
@@ -340,7 +347,8 @@
 
                         <div class="col-auto d-none d-lg-block">
                             <div class="header-button">
-                                <button type="button" class="icon-btn searchBoxToggler" data-bs-toggle="modal" data-bs-target="#popupSearch" >
+                                <button type="button" class="icon-btn searchBoxToggler" data-bs-toggle="modal"
+                                    data-bs-target="#popupSearch">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -562,12 +570,16 @@
 
                                     <span class="badge">5</span></a>
 
-                                    <button type="button" class="header-location border border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#location">
-                                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8.00049 3.99951C5.79449 3.99951 4.00049 5.79351 4.00049 7.99951C4.00049 10.2055 5.79449 11.9995 8.00049 11.9995C10.2065 11.9995 12.0005 10.2055 12.0005 7.99951C12.0005 5.79351 10.2065 3.99951 8.00049 3.99951ZM8.00049 9.99951C6.89749 9.99951 6.00049 9.10251 6.00049 7.99951C6.00049 6.89651 6.89749 5.99951 8.00049 5.99951C9.10349 5.99951 10.0005 6.89651 10.0005 7.99951C10.0005 9.10251 9.10349 9.99951 8.00049 9.99951ZM7.99649 -0.000488281C3.43749 -0.000488281 0.000488281 3.43851 0.000488281 7.99951C0.000488281 14.3255 4.81248 18.2595 6.88148 19.6565C7.21948 19.8855 7.60849 20.0005 7.99649 20.0005C8.38349 20.0005 8.77049 19.8864 9.10849 19.6584C11.1805 18.2594 15.9995 14.3235 15.9995 7.99951C16.0005 3.43851 12.5595 -0.000488281 7.99649 -0.000488281ZM8.0015 17.9995C6.1975 16.7805 2.00049 13.3665 2.00049 7.99951C2.00049 4.52251 4.52149 1.99951 7.99649 1.99951C11.4195 1.99951 14.0005 4.57851 14.0005 7.99951C14.0005 13.3635 9.79749 16.7805 8.0015 17.9995Z" fill="#010101"/>
-                                            </svg>
-                                        الرياض
-                                    </button>
+                                <button type="button" class="header-location border border-0 bg-transparent"
+                                    data-bs-toggle="modal" data-bs-target="#location">
+                                    <svg width="16" height="20" viewBox="0 0 16 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.00049 3.99951C5.79449 3.99951 4.00049 5.79351 4.00049 7.99951C4.00049 10.2055 5.79449 11.9995 8.00049 11.9995C10.2065 11.9995 12.0005 10.2055 12.0005 7.99951C12.0005 5.79351 10.2065 3.99951 8.00049 3.99951ZM8.00049 9.99951C6.89749 9.99951 6.00049 9.10251 6.00049 7.99951C6.00049 6.89651 6.89749 5.99951 8.00049 5.99951C9.10349 5.99951 10.0005 6.89651 10.0005 7.99951C10.0005 9.10251 9.10349 9.99951 8.00049 9.99951ZM7.99649 -0.000488281C3.43749 -0.000488281 0.000488281 3.43851 0.000488281 7.99951C0.000488281 14.3255 4.81248 18.2595 6.88148 19.6565C7.21948 19.8855 7.60849 20.0005 7.99649 20.0005C8.38349 20.0005 8.77049 19.8864 9.10849 19.6584C11.1805 18.2594 15.9995 14.3235 15.9995 7.99951C16.0005 3.43851 12.5595 -0.000488281 7.99649 -0.000488281ZM8.0015 17.9995C6.1975 16.7805 2.00049 13.3665 2.00049 7.99951C2.00049 4.52251 4.52149 1.99951 7.99649 1.99951C11.4195 1.99951 14.0005 4.57851 14.0005 7.99951C14.0005 13.3635 9.79749 16.7805 8.0015 17.9995Z"
+                                            fill="#010101" />
+                                    </svg>
+                                    الرياض
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -617,127 +629,421 @@
             </span>
         </a>
     </div>
+
     <!--==============================
     Breadcumb
 ============================== -->
-    <div class="breadcumb-wrapper " data-bg-src="assets/img/breadcumb.png">
+    <div class="breadcumb-wrapper " data-bg-src="assets/img/breadcumb.png" data-overlay="title" data-opacity="4">
         <div class="container z-index-common">
-            <h1 class="breadcumb-title">البيانات</h1>
+            <h1 class="breadcumb-title">حسابي</h1>
             <ul class="breadcumb-menu">
                 <li><a href="index.html">الرئيسية</a></li>
-                <li>البيانات</li>
+                <li><a href="my-account.html">حسابي</a></li>
+                <li>حجوزاتي</li>
             </ul>
         </div>
     </div>
+
     <!--==============================
-Checkout Arae
-==============================-->
-
-    <div class="th-checkout-wrapper space-top space-extra-bottom">
+    My Account
+    ==============================-->
+    <div class="space-top space-extra-bottom">
         <div class="container">
-            <div class="alert alert-primary d-flex align-items-center position-sticky" role="alert">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 0C4.486 0 0 4.486 0 10C0 15.514 4.486 20 10 20C15.514 20 20 15.514 20 10C20 4.486 15.514 0 10 0ZM10 18C5.589 18 2 14.411 2 10C2 5.589 5.589 2 10 2C14.411 2 18 5.589 18 10C18 14.411 14.411 18 10 18ZM15 10C15 10.553 14.552 11 14 11H10C9.448 11 9 10.553 9 10V5C9 4.447 9.448 4 10 4C10.552 4 11 4.447 11 5V9H14C14.552 9 15 9.447 15 10Z" fill="#41416E"/>
-                    </svg>
-                    
-                <div>
-                    <span class="ms-3 cart-timer">20:00</span>
-                    <span>الوقت المتبقي لإتمام الطلب</span>
-                </div>
-              </div>
+            <ul class="nav nav-tabs border-top justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link fw-bold border border-0 active" id="in-progress-tab" data-bs-toggle="tab" data-bs-target="#in-progress" type="button" role="tab" aria-controls="in-progress" aria-selected="true">في الإنتظار</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link fw-bold border border-0" id="done-tab" data-bs-toggle="tab" data-bs-target="#done" type="button" role="tab" aria-controls="done" aria-selected="false">تم التوصيل</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link fw-bold border border-0" id="unpaid-tab" data-bs-toggle="tab" data-bs-target="#unpaid" type="button" role="tab" aria-controls="unpaid" aria-selected="false">غير مدفوع</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link fw-bold border border-0" id="finshed-tab" data-bs-toggle="tab" data-bs-target="#finshed" type="button" role="tab" aria-controls="finshed" aria-selected="false">مكتمل</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="in-progress" role="tabpanel" aria-labelledby="in-progress-tab">
+                    <div class="order-table mt-5 border-bottom pb-4">
+                        <div class="row">
+                            <div class="col-5 col-lg-5 pe-0">
+                                <p class="name fw-bold">عبد الرحمن سامي الفنتوخ</p>
+                                <p class="order-number"> <span class="fw-bold"> رقم الطلب: </span>00000</p>
+                                <p class="order-date"><span class="fw-bold">بداية الحجز:</span> 20-09-2023</p>
+                            </div>
+                            <div class="col-4 col-lg-4">
+                               <p class="order-total">
+                                <span class="fw-bold">الإجمالي: </span> 2000 ر.س
+                               </p>
 
-            <form action="checkout.html" class="woocommerce-checkout client-data mt-40">
-                <h2 class="h4">تفاصيل الفاتورة</h2>
-                <div class="row gap-5 flex-column flex-md-row">
-                    <div class="col">
-                        <div class="row">
-                            <div class="col-md-6 form-group">
-                                <label for="first-name">الإسم الأول</label>
-                                <input type="text" name="first-name" class="form-control" value="محمد" disabled readonly>
+                                <p class="order-city">
+                                    <span class="fw-bold">المدينة:</span> الرياض
+                                </p>
+                                <p class="order-duration">
+                                    <span class="fw-bold">المدة(بالأيام): </span> 1
+                                </p>
                             </div>
-                            <div class="col-md-6 form-group">
-                                <label for="last-name">الإسم الأخير</label>
-                                <input type="text" name="last-name" class="form-control" value="عبد العزيز" disabled readonly>
+                            <div class="col-3 col-lg-3 ps-0">
+                                <a href="#" class="d-block th-btn outline w-100">
+                                    تعديل الطلب
+                                </a>
+                                <a href="profile-oreder-details.html" class="d-block th-btn outline w-100 mt-4">
+                                    عرض التفاصيل
+                                </a>
                             </div>
-                            <div class="col-12 form-group">
-                                <label for="phone">رقم الهاتف</label>
-                                <input type="text" name="phone" class="form-control" value="05123456789" disabled readonly>
-                            </div>
-                            <div class="col-12 form-group">
-                                <label for="region">المنطقة</label>
-                                <input name="region" type="text" class="form-control" value="الشرقية" disabled readonly>
-                            </div>
-                            <div class="col-12 form-group">
-                                <label for="city">المدينة</label>
-                                <input name="city" type="text" class="form-control" value="الرياض" disabled readonly>
-                            </div>
-                            <div class="col-12 form-group">
-                                <label for="address">الحي</label>
-                                <input name="address" type="text" class="form-control" value="الصحافة" disabled readonly>
-                            </div>
-                          
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="order-table mt-5 border-bottom pb-4">
                         <div class="row">
-                            <div class="col-12 form-group">
-                                <label for="phone">جوال الحارس/احتياطي</label>
-                                <input type="number" class="text-start form-control" placeholder="05XXXXXXXX">
+                            <div class="col-5 col-lg-5 pe-0">
+                                <p class="name fw-bold">عبد الرحمن سامي الفنتوخ</p>
+                                <p class="order-number"> <span class="fw-bold"> رقم الطلب: </span>00000</p>
+                                <p class="order-date"><span class="fw-bold">بداية الحجز:</span> 20-09-2023</p>
                             </div>
-                            <div class="col-12 form-group">
-                                <label for="address">وقت التوصيل</label>
-                                <select name="address" class="form-select select-2-select w-100">
-                                <option value="0">10:00ص - 12:00م</option>
-                                <option value="1">10:00ص - 12:00م</option>
-                                <option value="2">10:00ص - 12:00م</option>
-                                <option value="3">10:00ص - 12:00م</option>
-                                <option value="4">10:00ص - 12:00م</option>
-                
-                                </select>
+                            <div class="col-4 col-lg-4">
+                               <p class="order-total">
+                                <span class="fw-bold">الإجمالي: </span> 2000 ر.س
+                               </p>
+
+                                <p class="order-city">
+                                    <span class="fw-bold">المدينة:</span> الرياض
+                                </p>
+                                <p class="order-duration">
+                                    <span class="fw-bold">المدة(بالأيام): </span> 1
+                                </p>
                             </div>
-                            <div class="col-12 form-group">
-                                <label for="place-type">نوع المكان</label>
-                                <select name="place-type" class="form-select select-2-select w-100">
-                                    <option value="0">شالية/استراحة</option>
-                                    <option value="1">شالية/استراحة</option>
-                                    <option value="2">شالية/استراحة</option>
-                                    <option value="3">شالية/استراحة</option>
-                                    <option value="4">شالية/استراحة</option>
-                
-                                </select>
+                            <div class="col-3 col-lg-3 ps-0">
+                                <a href="#" class="d-block th-btn outline w-100">
+                                    تعديل الطلب
+                                </a>
+                                <a href="profile-oreder-details.html" class="d-block th-btn outline w-100 mt-4">
+                                    عرض التفاصيل
+                                </a>
                             </div>
-                            <div class="col-12 form-group">
-                                <label for="location-url">رابط اللوكيشن</label>
-                                <input name="location-url" type="url" class=" form-control" placeholder="https://maps.app.goo.gl/mpdJhPyD88jywhPF7">
-                            </div>
-                          
-                            <div class="col-12 form-group">
-                                <label for="notes">ملاحظات</label>
-                                <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
-                            </div>
-                          
                         </div>
                     </div>
-                    
-             
+                    <div class="order-table mt-5 border-bottom pb-4">
+                        <div class="row">
+                            <div class="col-5 col-lg-5 pe-0">
+                                <p class="name fw-bold">عبد الرحمن سامي الفنتوخ</p>
+                                <p class="order-number"> <span class="fw-bold"> رقم الطلب: </span>00000</p>
+                                <p class="order-date"><span class="fw-bold">بداية الحجز:</span> 20-09-2023</p>
+                            </div>
+                            <div class="col-4 col-lg-4">
+                               <p class="order-total">
+                                <span class="fw-bold">الإجمالي: </span> 2000 ر.س
+                               </p>
+
+                                <p class="order-city">
+                                    <span class="fw-bold">المدينة:</span> الرياض
+                                </p>
+                                <p class="order-duration">
+                                    <span class="fw-bold">المدة(بالأيام): </span> 1
+                                </p>
+                            </div>
+                            <div class="col-3 col-lg-3 ps-0">
+                                <a href="#" class="d-block th-btn outline w-100">
+                                    تعديل الطلب
+                                </a>
+                                <a href="profile-oreder-details.html" class="d-block th-btn outline w-100 mt-4">
+                                    عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="done" role="tabpanel" aria-labelledby="done-tab">
+                                        <div class="order-table mt-5 border-bottom pb-4">
+                        <div class="row">
+                            <div class="col-5 col-lg-5 pe-0">
+                                <p class="name fw-bold">عبد الرحمن سامي الفنتوخ</p>
+                                <p class="order-number"> <span class="fw-bold"> رقم الطلب: </span>00000</p>
+                                <p class="order-date"><span class="fw-bold">بداية الحجز:</span> 20-09-2023</p>
+                            </div>
+                            <div class="col-4 col-lg-4">
+                               <p class="order-total">
+                                <span class="fw-bold">الإجمالي: </span> 2000 ر.س
+                               </p>
+
+                                <p class="order-city">
+                                    <span class="fw-bold">المدينة:</span> الرياض
+                                </p>
+                                <p class="order-duration">
+                                    <span class="fw-bold">المدة(بالأيام): </span> 1
+                                </p>
+                            </div>
+                            <div class="col-3 col-lg-3 ps-0">
+                                <a href="#" class="d-block th-btn outline w-100">
+                                    تعديل الطلب
+                                </a>
+                                <a href="profile-oreder-details.html" class="d-block th-btn outline w-100 mt-4">
+                                    عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-table mt-5 border-bottom pb-4">
+                        <div class="row">
+                            <div class="col-5 col-lg-5 pe-0">
+                                <p class="name fw-bold">عبد الرحمن سامي الفنتوخ</p>
+                                <p class="order-number"> <span class="fw-bold"> رقم الطلب: </span>00000</p>
+                                <p class="order-date"><span class="fw-bold">بداية الحجز:</span> 20-09-2023</p>
+                            </div>
+                            <div class="col-4 col-lg-4">
+                               <p class="order-total">
+                                <span class="fw-bold">الإجمالي: </span> 2000 ر.س
+                               </p>
+
+                                <p class="order-city">
+                                    <span class="fw-bold">المدينة:</span> الرياض
+                                </p>
+                                <p class="order-duration">
+                                    <span class="fw-bold">المدة(بالأيام): </span> 1
+                                </p>
+                            </div>
+                            <div class="col-3 col-lg-3 ps-0">
+                                <a href="#" class="d-block th-btn outline w-100">
+                                    تعديل الطلب
+                                </a>
+                                <a href="profile-oreder-details.html" class="d-block th-btn outline w-100 mt-4">
+                                    عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-table mt-5 border-bottom pb-4">
+                        <div class="row">
+                            <div class="col-5 col-lg-5 pe-0">
+                                <p class="name fw-bold">عبد الرحمن سامي الفنتوخ</p>
+                                <p class="order-number"> <span class="fw-bold"> رقم الطلب: </span>00000</p>
+                                <p class="order-date"><span class="fw-bold">بداية الحجز:</span> 20-09-2023</p>
+                            </div>
+                            <div class="col-4 col-lg-4">
+                               <p class="order-total">
+                                <span class="fw-bold">الإجمالي: </span> 2000 ر.س
+                               </p>
+
+                                <p class="order-city">
+                                    <span class="fw-bold">المدينة:</span> الرياض
+                                </p>
+                                <p class="order-duration">
+                                    <span class="fw-bold">المدة(بالأيام): </span> 1
+                                </p>
+                            </div>
+                            <div class="col-3 col-lg-3 ps-0">
+                                <a href="#" class="d-block th-btn outline w-100">
+                                    تعديل الطلب
+                                </a>
+                                <a href="profile-oreder-details.html" class="d-block th-btn outline w-100 mt-4">
+                                    عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="unpaid" role="tabpanel" aria-labelledby="unpaid-tab">
+                                       <div class="order-table mt-5 border-bottom pb-4">
+                        <div class="row">
+                            <div class="col-5 col-lg-5 pe-0">
+                                <p class="name fw-bold">عبد الرحمن سامي الفنتوخ</p>
+                                <p class="order-number"> <span class="fw-bold"> رقم الطلب: </span>00000</p>
+                                <p class="order-date"><span class="fw-bold">بداية الحجز:</span> 20-09-2023</p>
+                            </div>
+                            <div class="col-4 col-lg-4">
+                               <p class="order-total">
+                                <span class="fw-bold">الإجمالي: </span> 2000 ر.س
+                               </p>
+
+                                <p class="order-city">
+                                    <span class="fw-bold">المدينة:</span> الرياض
+                                </p>
+                                <p class="order-duration">
+                                    <span class="fw-bold">المدة(بالأيام): </span> 1
+                                </p>
+                            </div>
+                            <div class="col-3 col-lg-3 ps-0">
+                                <a href="#" class="d-block th-btn outline w-100">
+                                    تعديل الطلب
+                                </a>
+                                <a href="profile-oreder-details.html" class="d-block th-btn outline w-100 mt-4">
+                                    عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-table mt-5 border-bottom pb-4">
+                        <div class="row">
+                            <div class="col-5 col-lg-5 pe-0">
+                                <p class="name fw-bold">عبد الرحمن سامي الفنتوخ</p>
+                                <p class="order-number"> <span class="fw-bold"> رقم الطلب: </span>00000</p>
+                                <p class="order-date"><span class="fw-bold">بداية الحجز:</span> 20-09-2023</p>
+                            </div>
+                            <div class="col-4 col-lg-4">
+                               <p class="order-total">
+                                <span class="fw-bold">الإجمالي: </span> 2000 ر.س
+                               </p>
+
+                                <p class="order-city">
+                                    <span class="fw-bold">المدينة:</span> الرياض
+                                </p>
+                                <p class="order-duration">
+                                    <span class="fw-bold">المدة(بالأيام): </span> 1
+                                </p>
+                            </div>
+                            <div class="col-3 col-lg-3 ps-0">
+                                <a href="#" class="d-block th-btn outline w-100">
+                                    تعديل الطلب
+                                </a>
+                                <a href="profile-oreder-details.html" class="d-block th-btn outline w-100 mt-4">
+                                    عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-table mt-5 border-bottom pb-4">
+                        <div class="row">
+                            <div class="col-5 col-lg-5 pe-0">
+                                <p class="name fw-bold">عبد الرحمن سامي الفنتوخ</p>
+                                <p class="order-number"> <span class="fw-bold"> رقم الطلب: </span>00000</p>
+                                <p class="order-date"><span class="fw-bold">بداية الحجز:</span> 20-09-2023</p>
+                            </div>
+                            <div class="col-4 col-lg-4">
+                               <p class="order-total">
+                                <span class="fw-bold">الإجمالي: </span> 2000 ر.س
+                               </p>
+
+                                <p class="order-city">
+                                    <span class="fw-bold">المدينة:</span> الرياض
+                                </p>
+                                <p class="order-duration">
+                                    <span class="fw-bold">المدة(بالأيام): </span> 1
+                                </p>
+                            </div>
+                            <div class="col-3 col-lg-3 ps-0">
+                                <a href="#" class="d-block th-btn outline w-100">
+                                    تعديل الطلب
+                                </a>
+                                <a href="profile-oreder-details.html" class="d-block th-btn outline w-100 mt-4">
+                                    عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="finshed" role="tabpanel" aria-labelledby="finshed-tab">
+                                        <div class="order-table mt-5 border-bottom pb-4">
+                        <div class="row">
+                            <div class="col-5 col-lg-5 pe-0">
+                                <p class="name fw-bold">عبد الرحمن سامي الفنتوخ</p>
+                                <p class="order-number"> <span class="fw-bold"> رقم الطلب: </span>00000</p>
+                                <p class="order-date"><span class="fw-bold">بداية الحجز:</span> 20-09-2023</p>
+                            </div>
+                            <div class="col-4 col-lg-4">
+                               <p class="order-total">
+                                <span class="fw-bold">الإجمالي: </span> 2000 ر.س
+                               </p>
+
+                                <p class="order-city">
+                                    <span class="fw-bold">المدينة:</span> الرياض
+                                </p>
+                                <p class="order-duration">
+                                    <span class="fw-bold">المدة(بالأيام): </span> 1
+                                </p>
+                            </div>
+                            <div class="col-3 col-lg-3 ps-0">
+                                <a href="#" class="d-block th-btn outline w-100">
+                                    تعديل الطلب
+                                </a>
+                                <a href="profile-oreder-details.html" class="d-block th-btn outline w-100 mt-4">
+                                    عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-table mt-5 border-bottom pb-4">
+                        <div class="row">
+                            <div class="col-5 col-lg-5 pe-0">
+                                <p class="name fw-bold">عبد الرحمن سامي الفنتوخ</p>
+                                <p class="order-number"> <span class="fw-bold"> رقم الطلب: </span>00000</p>
+                                <p class="order-date"><span class="fw-bold">بداية الحجز:</span> 20-09-2023</p>
+                            </div>
+                            <div class="col-4 col-lg-4">
+                               <p class="order-total">
+                                <span class="fw-bold">الإجمالي: </span> 2000 ر.س
+                               </p>
+
+                                <p class="order-city">
+                                    <span class="fw-bold">المدينة:</span> الرياض
+                                </p>
+                                <p class="order-duration">
+                                    <span class="fw-bold">المدة(بالأيام): </span> 1
+                                </p>
+                            </div>
+                            <div class="col-3 col-lg-3 ps-0">
+                                <a href="#" class="d-block th-btn outline w-100">
+                                    تعديل الطلب
+                                </a>
+                                <a href="profile-oreder-details.html" class="d-block th-btn outline w-100 mt-4">
+                                    عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-table mt-5 border-bottom pb-4">
+                        <div class="row">
+                            <div class="col-5 col-lg-5 pe-0">
+                                <p class="name fw-bold">عبد الرحمن سامي الفنتوخ</p>
+                                <p class="order-number"> <span class="fw-bold"> رقم الطلب: </span>00000</p>
+                                <p class="order-date"><span class="fw-bold">بداية الحجز:</span> 20-09-2023</p>
+                            </div>
+                            <div class="col-4 col-lg-4">
+                               <p class="order-total">
+                                <span class="fw-bold">الإجمالي: </span> 2000 ر.س
+                               </p>
+
+                                <p class="order-city">
+                                    <span class="fw-bold">المدينة:</span> الرياض
+                                </p>
+                                <p class="order-duration">
+                                    <span class="fw-bold">المدة(بالأيام): </span> 1
+                                </p>
+                            </div>
+                            <div class="col-3 col-lg-3 ps-0">
+                                <a href="#" class="d-block th-btn outline w-100">
+                                    تعديل الطلب
+                                </a>
+                                <a href="profile-oreder-details.html" class="d-block th-btn outline w-100 mt-4">
+                                    عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="text-center mt-5">
-                    <button class="th-btn" type="submit">التالي</button>
-
+                    <a href="#" class="th-btn outline px-5">
+                        عودة للخلف
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
                 </div>
-            </form>
-
+              </div>
         </div>
-
     </div>
-    <!-- Scroll To Top  -->
+
+
+
+
+    <!-- Scroll To Top -->
     <div class="scroll-top text-center mb-4">
         العودة إلى الأعلى
         <svg width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10.2398 5.53203C10.1733 5.60021 10.0865 5.63361 9.99976 5.63361C9.91298 5.63361 9.82619 5.59952 9.75975 5.53203L5.59284 1.25565V12.9402C5.59284 13.1322 5.44097 13.2881 5.25385 13.2881C5.06672 13.2881 4.91485 13.1322 4.91485 12.9402V1.25565L0.747947 5.53203C0.61574 5.66771 0.400797 5.66771 0.268589 5.53203C0.136382 5.39634 0.136382 5.17578 0.268589 5.0401L5.0145 0.169509C5.14671 0.0338289 5.36165 0.0338289 5.49386 0.169509L10.2398 5.0401C10.372 5.17647 10.372 5.39634 10.2398 5.53203Z" fill="#ADB5BD"/>
-            </svg>
-            
+            <path
+                d="M10.2398 5.53203C10.1733 5.60021 10.0865 5.63361 9.99976 5.63361C9.91298 5.63361 9.82619 5.59952 9.75975 5.53203L5.59284 1.25565V12.9402C5.59284 13.1322 5.44097 13.2881 5.25385 13.2881C5.06672 13.2881 4.91485 13.1322 4.91485 12.9402V1.25565L0.747947 5.53203C0.61574 5.66771 0.400797 5.66771 0.268589 5.53203C0.136382 5.39634 0.136382 5.17578 0.268589 5.0401L5.0145 0.169509C5.14671 0.0338289 5.36165 0.0338289 5.49386 0.169509L10.2398 5.0401C10.372 5.17647 10.372 5.39634 10.2398 5.53203Z"
+                fill="#ADB5BD" />
+        </svg>
+
     </div>
+
     <!--==============================
 			Footer Area
 	==============================-->
@@ -747,65 +1053,70 @@ Checkout Arae
             <div class="footer-links d-flex align-items-center justify-content-center justify-content-md-start gap-3">
                 <a href="#">
                     <svg width="18" height="18" viewBox="0 0 41 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M30.1451 0H22.0556V32.6956C22.0556 36.5913 18.9444 39.7913 15.0725 39.7913C11.2007 39.7913 8.08938 36.5913 8.08938 32.6956C8.08938 28.8696 11.1315 25.7391 14.8651 25.6V17.3913C6.63744 17.5304 0 24.2783 0 32.6956C0 41.1827 6.77571 48 15.1417 48C23.5075 48 30.2833 41.1131 30.2833 32.6956V15.9304C33.3255 18.1565 37.059 19.4783 41 19.5479V11.3391C34.9157 11.1304 30.1451 6.12173 30.1451 0Z" fill="white"/>
-                        </svg>
-                                               
+                        <path
+                            d="M30.1451 0H22.0556V32.6956C22.0556 36.5913 18.9444 39.7913 15.0725 39.7913C11.2007 39.7913 8.08938 36.5913 8.08938 32.6956C8.08938 28.8696 11.1315 25.7391 14.8651 25.6V17.3913C6.63744 17.5304 0 24.2783 0 32.6956C0 41.1827 6.77571 48 15.1417 48C23.5075 48 30.2833 41.1131 30.2833 32.6956V15.9304C33.3255 18.1565 37.059 19.4783 41 19.5479V11.3391C34.9157 11.1304 30.1451 6.12173 30.1451 0Z"
+                            fill="white" />
+                    </svg>
                 </a>
                 <a href="#">
                     <svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M47.8265 34.9152C47.4955 34.0082 46.8582 33.5179 46.135 33.1257C46.0001 33.0521 45.8776 32.9786 45.7673 32.9296C45.5466 32.8192 45.326 32.7089 45.1054 32.5986C42.8501 31.3974 41.085 29.902 39.8716 28.1125C39.5284 27.6099 39.2219 27.0706 38.9768 26.519C38.8665 26.2249 38.8787 26.0533 38.9523 25.8939C39.0258 25.7714 39.1239 25.6733 39.2464 25.5875C39.6387 25.3301 40.0309 25.0727 40.3006 24.9011C40.7786 24.5824 41.1708 24.3373 41.416 24.1657C42.3353 23.516 42.9849 22.8296 43.3894 22.0574C43.9655 20.9788 44.039 19.7163 43.5977 18.5764C42.9849 16.9585 41.465 15.9656 39.6142 15.9656C39.2219 15.9656 38.842 16.0024 38.4497 16.0882C38.3517 16.1127 38.2414 16.1372 38.1433 16.1617C38.1556 15.0586 38.131 13.8942 38.033 12.742C37.6898 8.70937 36.2679 6.60114 34.7971 4.9219C33.8533 3.86778 32.7501 2.97301 31.5122 2.27435C29.2814 0.999606 26.7441 0.349976 23.9863 0.349976C21.2284 0.349976 18.7034 0.999606 16.4726 2.27435C15.2346 2.97301 14.1315 3.86778 13.1877 4.9219C11.7168 6.60114 10.3073 8.72163 9.95179 12.742C9.85373 13.8942 9.82922 15.0586 9.84148 16.1617C9.74342 16.1372 9.64536 16.1127 9.53505 16.0882C9.15507 16.0024 8.76285 15.9656 8.38287 15.9656C6.53204 15.9656 5.01215 16.9707 4.39929 18.5764C3.95803 19.7163 4.03157 20.9788 4.60766 22.0574C5.01215 22.8296 5.66178 23.516 6.58107 24.1657C6.82621 24.3373 7.20618 24.5824 7.69647 24.9011C7.95387 25.0727 8.33384 25.3178 8.71382 25.563C8.84864 25.6488 8.95896 25.7591 9.04476 25.8939C9.1183 26.0533 9.13056 26.2249 9.00799 26.5436C8.76284 27.0829 8.46867 27.6099 8.12547 28.1002C6.93653 29.8407 5.22052 31.3239 3.03874 32.5128C1.88657 33.1257 0.685365 33.5302 0.170564 34.9152C-0.209408 35.9571 0.035735 37.1338 1.00405 38.1389C1.35951 38.5066 1.77625 38.8253 2.22977 39.0704C3.17357 39.5852 4.17866 39.9897 5.23278 40.2716C5.45341 40.3329 5.64952 40.4187 5.83338 40.5413C6.18884 40.8477 6.13981 41.3135 6.60558 41.9999C6.83847 42.3553 7.1449 42.6618 7.4881 42.9069C8.48093 43.5933 9.59633 43.6301 10.773 43.6791C11.8394 43.7159 13.0406 43.7649 14.4257 44.2184C15.0017 44.4023 15.5901 44.77 16.2765 45.199C17.9312 46.2163 20.1865 47.6014 23.974 47.6014C27.7615 47.6014 30.029 46.2041 31.696 45.1867C32.3824 44.77 32.9708 44.4023 33.5223 44.2184C34.8951 43.7649 36.1086 43.7159 37.175 43.6791C38.3517 43.6301 39.4671 43.5933 40.4599 42.9069C40.8767 42.6127 41.2198 42.245 41.465 41.8037C41.8082 41.2277 41.7959 40.8232 42.1146 40.5413C42.2862 40.4187 42.4823 40.3329 42.6785 40.2839C43.7326 40.0019 44.7622 39.5975 45.7182 39.0704C46.1963 38.813 46.6375 38.4698 47.0052 38.0653L47.0175 38.0531C47.9736 37.0725 48.2064 35.9203 47.8265 34.9152ZM44.468 36.717C42.4211 37.8447 41.0483 37.7221 39.9941 38.4085C39.0871 38.9846 39.6264 40.2348 38.9768 40.6883C38.1678 41.2399 35.7899 40.6516 32.7256 41.6689C30.1884 42.5024 28.5827 44.9171 24.023 44.9171C19.4634 44.9171 17.8944 42.5147 15.3204 41.6689C12.2561 40.6516 9.87825 41.2522 9.06927 40.6883C8.41964 40.2348 8.9467 38.9846 8.05193 38.4085C6.98556 37.7221 5.62501 37.8447 3.57806 36.717C2.26654 35.9938 3.01423 35.5526 3.44323 35.3442C10.8711 31.7529 12.06 26.2004 12.1091 25.7836C12.1703 25.2811 12.2439 24.8888 11.6923 24.3863C11.1653 23.896 8.81187 22.4374 8.14999 21.9839C7.07135 21.2239 6.59333 20.4763 6.94878 19.5447C7.19393 18.9073 7.79453 18.6622 8.41964 18.6622C8.61576 18.6622 8.81187 18.6867 9.00799 18.7235C10.1969 18.9809 11.3491 19.5692 12.011 19.7408C12.0968 19.7653 12.1703 19.7776 12.2561 19.7776C12.6116 19.7776 12.7342 19.5937 12.7097 19.1893C12.6361 17.89 12.4523 15.365 12.6606 12.9994C12.9425 9.75123 13.9844 8.13328 15.2346 6.71145C15.8352 6.02505 18.6421 3.05881 24.023 3.05881C29.4039 3.05881 32.2108 6.01279 32.8114 6.69919C34.0617 8.12103 35.1035 9.73897 35.3854 12.9871C35.5938 15.3528 35.4099 17.8777 35.3241 19.177C35.2996 19.606 35.4222 19.7653 35.7777 19.7653C35.8635 19.7653 35.937 19.7531 36.0228 19.7286C36.6847 19.5692 37.8369 18.9686 39.0258 18.7112C39.2219 18.6622 39.418 18.6499 39.6142 18.6499C40.2393 18.6499 40.8399 18.8951 41.085 19.5325C41.4405 20.464 40.9625 21.2117 39.8838 21.9716C39.2342 22.4251 36.8808 23.8838 36.3415 24.374C35.7899 24.8766 35.8635 25.2688 35.9248 25.7714C35.9738 26.1881 37.1627 31.7406 44.5906 35.332C45.0318 35.5403 45.7673 35.9938 44.468 36.717Z" fill="white"/>
-                        </svg>
-                                                        
-
+                        <path
+                            d="M47.8265 34.9152C47.4955 34.0082 46.8582 33.5179 46.135 33.1257C46.0001 33.0521 45.8776 32.9786 45.7673 32.9296C45.5466 32.8192 45.326 32.7089 45.1054 32.5986C42.8501 31.3974 41.085 29.902 39.8716 28.1125C39.5284 27.6099 39.2219 27.0706 38.9768 26.519C38.8665 26.2249 38.8787 26.0533 38.9523 25.8939C39.0258 25.7714 39.1239 25.6733 39.2464 25.5875C39.6387 25.3301 40.0309 25.0727 40.3006 24.9011C40.7786 24.5824 41.1708 24.3373 41.416 24.1657C42.3353 23.516 42.9849 22.8296 43.3894 22.0574C43.9655 20.9788 44.039 19.7163 43.5977 18.5764C42.9849 16.9585 41.465 15.9656 39.6142 15.9656C39.2219 15.9656 38.842 16.0024 38.4497 16.0882C38.3517 16.1127 38.2414 16.1372 38.1433 16.1617C38.1556 15.0586 38.131 13.8942 38.033 12.742C37.6898 8.70937 36.2679 6.60114 34.7971 4.9219C33.8533 3.86778 32.7501 2.97301 31.5122 2.27435C29.2814 0.999606 26.7441 0.349976 23.9863 0.349976C21.2284 0.349976 18.7034 0.999606 16.4726 2.27435C15.2346 2.97301 14.1315 3.86778 13.1877 4.9219C11.7168 6.60114 10.3073 8.72163 9.95179 12.742C9.85373 13.8942 9.82922 15.0586 9.84148 16.1617C9.74342 16.1372 9.64536 16.1127 9.53505 16.0882C9.15507 16.0024 8.76285 15.9656 8.38287 15.9656C6.53204 15.9656 5.01215 16.9707 4.39929 18.5764C3.95803 19.7163 4.03157 20.9788 4.60766 22.0574C5.01215 22.8296 5.66178 23.516 6.58107 24.1657C6.82621 24.3373 7.20618 24.5824 7.69647 24.9011C7.95387 25.0727 8.33384 25.3178 8.71382 25.563C8.84864 25.6488 8.95896 25.7591 9.04476 25.8939C9.1183 26.0533 9.13056 26.2249 9.00799 26.5436C8.76284 27.0829 8.46867 27.6099 8.12547 28.1002C6.93653 29.8407 5.22052 31.3239 3.03874 32.5128C1.88657 33.1257 0.685365 33.5302 0.170564 34.9152C-0.209408 35.9571 0.035735 37.1338 1.00405 38.1389C1.35951 38.5066 1.77625 38.8253 2.22977 39.0704C3.17357 39.5852 4.17866 39.9897 5.23278 40.2716C5.45341 40.3329 5.64952 40.4187 5.83338 40.5413C6.18884 40.8477 6.13981 41.3135 6.60558 41.9999C6.83847 42.3553 7.1449 42.6618 7.4881 42.9069C8.48093 43.5933 9.59633 43.6301 10.773 43.6791C11.8394 43.7159 13.0406 43.7649 14.4257 44.2184C15.0017 44.4023 15.5901 44.77 16.2765 45.199C17.9312 46.2163 20.1865 47.6014 23.974 47.6014C27.7615 47.6014 30.029 46.2041 31.696 45.1867C32.3824 44.77 32.9708 44.4023 33.5223 44.2184C34.8951 43.7649 36.1086 43.7159 37.175 43.6791C38.3517 43.6301 39.4671 43.5933 40.4599 42.9069C40.8767 42.6127 41.2198 42.245 41.465 41.8037C41.8082 41.2277 41.7959 40.8232 42.1146 40.5413C42.2862 40.4187 42.4823 40.3329 42.6785 40.2839C43.7326 40.0019 44.7622 39.5975 45.7182 39.0704C46.1963 38.813 46.6375 38.4698 47.0052 38.0653L47.0175 38.0531C47.9736 37.0725 48.2064 35.9203 47.8265 34.9152ZM44.468 36.717C42.4211 37.8447 41.0483 37.7221 39.9941 38.4085C39.0871 38.9846 39.6264 40.2348 38.9768 40.6883C38.1678 41.2399 35.7899 40.6516 32.7256 41.6689C30.1884 42.5024 28.5827 44.9171 24.023 44.9171C19.4634 44.9171 17.8944 42.5147 15.3204 41.6689C12.2561 40.6516 9.87825 41.2522 9.06927 40.6883C8.41964 40.2348 8.9467 38.9846 8.05193 38.4085C6.98556 37.7221 5.62501 37.8447 3.57806 36.717C2.26654 35.9938 3.01423 35.5526 3.44323 35.3442C10.8711 31.7529 12.06 26.2004 12.1091 25.7836C12.1703 25.2811 12.2439 24.8888 11.6923 24.3863C11.1653 23.896 8.81187 22.4374 8.14999 21.9839C7.07135 21.2239 6.59333 20.4763 6.94878 19.5447C7.19393 18.9073 7.79453 18.6622 8.41964 18.6622C8.61576 18.6622 8.81187 18.6867 9.00799 18.7235C10.1969 18.9809 11.3491 19.5692 12.011 19.7408C12.0968 19.7653 12.1703 19.7776 12.2561 19.7776C12.6116 19.7776 12.7342 19.5937 12.7097 19.1893C12.6361 17.89 12.4523 15.365 12.6606 12.9994C12.9425 9.75123 13.9844 8.13328 15.2346 6.71145C15.8352 6.02505 18.6421 3.05881 24.023 3.05881C29.4039 3.05881 32.2108 6.01279 32.8114 6.69919C34.0617 8.12103 35.1035 9.73897 35.3854 12.9871C35.5938 15.3528 35.4099 17.8777 35.3241 19.177C35.2996 19.606 35.4222 19.7653 35.7777 19.7653C35.8635 19.7653 35.937 19.7531 36.0228 19.7286C36.6847 19.5692 37.8369 18.9686 39.0258 18.7112C39.2219 18.6622 39.418 18.6499 39.6142 18.6499C40.2393 18.6499 40.8399 18.8951 41.085 19.5325C41.4405 20.464 40.9625 21.2117 39.8838 21.9716C39.2342 22.4251 36.8808 23.8838 36.3415 24.374C35.7899 24.8766 35.8635 25.2688 35.9248 25.7714C35.9738 26.1881 37.1627 31.7406 44.5906 35.332C45.0318 35.5403 45.7673 35.9938 44.468 36.717Z"
+                            fill="white" />
+                    </svg>
                 </a>
                 <a href="#">
                     <svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M47.5219 14.4001C47.5219 14.4001 47.0531 11.0907 45.6094 9.6376C43.7812 7.7251 41.7375 7.71572 40.8 7.60322C34.0875 7.11572 24.0094 7.11572 24.0094 7.11572H23.9906C23.9906 7.11572 13.9125 7.11572 7.2 7.60322C6.2625 7.71572 4.21875 7.7251 2.39062 9.6376C0.946875 11.0907 0.4875 14.4001 0.4875 14.4001C0.4875 14.4001 0 18.2907 0 22.172V25.8095C0 29.6907 0.478125 33.5813 0.478125 33.5813C0.478125 33.5813 0.946875 36.8907 2.38125 38.3438C4.20937 40.2563 6.60938 40.1907 7.67813 40.397C11.5219 40.7626 24 40.8751 24 40.8751C24 40.8751 34.0875 40.8563 40.8 40.3782C41.7375 40.2657 43.7812 40.2563 45.6094 38.3438C47.0531 36.8907 47.5219 33.5813 47.5219 33.5813C47.5219 33.5813 48 29.7001 48 25.8095V22.172C48 18.2907 47.5219 14.4001 47.5219 14.4001ZM19.0406 30.2251V16.7345L32.0062 23.5032L19.0406 30.2251Z" fill="white"/>
-                        </svg>
-                                        
-
+                        <path
+                            d="M47.5219 14.4001C47.5219 14.4001 47.0531 11.0907 45.6094 9.6376C43.7812 7.7251 41.7375 7.71572 40.8 7.60322C34.0875 7.11572 24.0094 7.11572 24.0094 7.11572H23.9906C23.9906 7.11572 13.9125 7.11572 7.2 7.60322C6.2625 7.71572 4.21875 7.7251 2.39062 9.6376C0.946875 11.0907 0.4875 14.4001 0.4875 14.4001C0.4875 14.4001 0 18.2907 0 22.172V25.8095C0 29.6907 0.478125 33.5813 0.478125 33.5813C0.478125 33.5813 0.946875 36.8907 2.38125 38.3438C4.20937 40.2563 6.60938 40.1907 7.67813 40.397C11.5219 40.7626 24 40.8751 24 40.8751C24 40.8751 34.0875 40.8563 40.8 40.3782C41.7375 40.2657 43.7812 40.2563 45.6094 38.3438C47.0531 36.8907 47.5219 33.5813 47.5219 33.5813C47.5219 33.5813 48 29.7001 48 25.8095V22.172C48 18.2907 47.5219 14.4001 47.5219 14.4001ZM19.0406 30.2251V16.7345L32.0062 23.5032L19.0406 30.2251Z"
+                            fill="white" />
+                    </svg>
                 </a>
                 <a href="#">
                     <svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M36.6526 3.80786H43.3995L28.6594 20.6548L46 43.5798H32.4225L21.7881 29.6759L9.61989 43.5798H2.86886L18.6349 25.5601L2 3.80786H15.9222L25.5348 16.5165L36.6526 3.80786ZM34.2846 39.5414H38.0232L13.8908 7.63413H9.87892L34.2846 39.5414Z" fill="white"/>
-                        </svg>
+                        <path
+                            d="M36.6526 3.80786H43.3995L28.6594 20.6548L46 43.5798H32.4225L21.7881 29.6759L9.61989 43.5798H2.86886L18.6349 25.5601L2 3.80786H15.9222L25.5348 16.5165L36.6526 3.80786ZM34.2846 39.5414H38.0232L13.8908 7.63413H9.87892L34.2846 39.5414Z"
+                            fill="white" />
+                    </svg>
                 </a>
                 <a href="#">
                     <svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_437_7342)">
-                        <path d="M48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 35.9789 8.77641 45.908 20.25 47.7084V30.9375H14.1562V24H20.25V18.7125C20.25 12.6975 23.8331 9.375 29.3152 9.375C31.9402 9.375 34.6875 9.84375 34.6875 9.84375V15.75H31.6613C28.68 15.75 27.75 17.6002 27.75 19.5V24H34.4062L33.3422 30.9375H27.75V47.7084C39.2236 45.908 48 35.9789 48 24Z" fill="white"/>
+                            <path
+                                d="M48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 35.9789 8.77641 45.908 20.25 47.7084V30.9375H14.1562V24H20.25V18.7125C20.25 12.6975 23.8331 9.375 29.3152 9.375C31.9402 9.375 34.6875 9.84375 34.6875 9.84375V15.75H31.6613C28.68 15.75 27.75 17.6002 27.75 19.5V24H34.4062L33.3422 30.9375H27.75V47.7084C39.2236 45.908 48 35.9789 48 24Z"
+                                fill="white" />
                         </g>
                         <defs>
-                        <clipPath id="clip0_437_7342">
-                        <rect width="48" height="48" fill="white"/>
-                        </clipPath>
+                            <clipPath id="clip0_437_7342">
+                                <rect width="48" height="48" fill="white" />
+                            </clipPath>
                         </defs>
-                        </svg>
-                        
-                        
+                    </svg>
                 </a>
                 <a href="#">
                     <svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_437_7336)">
-                        <path d="M24 4.32187C30.4125 4.32187 31.1719 4.35 33.6938 4.4625C36.0375 4.56562 37.3031 4.95938 38.1469 5.2875C39.2625 5.71875 40.0688 6.24375 40.9031 7.07812C41.7469 7.92188 42.2625 8.71875 42.6938 9.83438C43.0219 10.6781 43.4156 11.9531 43.5188 14.2875C43.6313 16.8187 43.6594 17.5781 43.6594 23.9813C43.6594 30.3938 43.6313 31.1531 43.5188 33.675C43.4156 36.0188 43.0219 37.2844 42.6938 38.1281C42.2625 39.2438 41.7375 40.05 40.9031 40.8844C40.0594 41.7281 39.2625 42.2438 38.1469 42.675C37.3031 43.0031 36.0281 43.3969 33.6938 43.5C31.1625 43.6125 30.4031 43.6406 24 43.6406C17.5875 43.6406 16.8281 43.6125 14.3063 43.5C11.9625 43.3969 10.6969 43.0031 9.85313 42.675C8.7375 42.2438 7.93125 41.7188 7.09688 40.8844C6.25313 40.0406 5.7375 39.2438 5.30625 38.1281C4.97813 37.2844 4.58438 36.0094 4.48125 33.675C4.36875 31.1438 4.34063 30.3844 4.34063 23.9813C4.34063 17.5688 4.36875 16.8094 4.48125 14.2875C4.58438 11.9437 4.97813 10.6781 5.30625 9.83438C5.7375 8.71875 6.2625 7.9125 7.09688 7.07812C7.94063 6.23438 8.7375 5.71875 9.85313 5.2875C10.6969 4.95938 11.9719 4.56562 14.3063 4.4625C16.8281 4.35 17.5875 4.32187 24 4.32187ZM24 0C17.4844 0 16.6688 0.028125 14.1094 0.140625C11.5594 0.253125 9.80625 0.665625 8.2875 1.25625C6.70312 1.875 5.3625 2.69062 4.03125 4.03125C2.69063 5.3625 1.875 6.70313 1.25625 8.27813C0.665625 9.80625 0.253125 11.55 0.140625 14.1C0.028125 16.6687 0 17.4844 0 24C0 30.5156 0.028125 31.3312 0.140625 33.8906C0.253125 36.4406 0.665625 38.1938 1.25625 39.7125C1.875 41.2969 2.69063 42.6375 4.03125 43.9688C5.3625 45.3 6.70313 46.125 8.27813 46.7344C9.80625 47.325 11.55 47.7375 14.1 47.85C16.6594 47.9625 17.475 47.9906 23.9906 47.9906C30.5063 47.9906 31.3219 47.9625 33.8813 47.85C36.4313 47.7375 38.1844 47.325 39.7031 46.7344C41.2781 46.125 42.6188 45.3 43.95 43.9688C45.2812 42.6375 46.1063 41.2969 46.7156 39.7219C47.3063 38.1938 47.7188 36.45 47.8313 33.9C47.9438 31.3406 47.9719 30.525 47.9719 24.0094C47.9719 17.4938 47.9438 16.6781 47.8313 14.1188C47.7188 11.5688 47.3063 9.81563 46.7156 8.29688C46.125 6.70312 45.3094 5.3625 43.9688 4.03125C42.6375 2.7 41.2969 1.875 39.7219 1.26562C38.1938 0.675 36.45 0.2625 33.9 0.15C31.3313 0.028125 30.5156 0 24 0Z" fill="white"/>
-                        <path d="M24 11.6719C17.1938 11.6719 11.6719 17.1938 11.6719 24C11.6719 30.8062 17.1938 36.3281 24 36.3281C30.8062 36.3281 36.3281 30.8062 36.3281 24C36.3281 17.1938 30.8062 11.6719 24 11.6719ZM24 31.9969C19.5844 31.9969 16.0031 28.4156 16.0031 24C16.0031 19.5844 19.5844 16.0031 24 16.0031C28.4156 16.0031 31.9969 19.5844 31.9969 24C31.9969 28.4156 28.4156 31.9969 24 31.9969Z" fill="white"/>
-                        <path d="M39.6937 11.1843C39.6937 12.778 38.4 14.0624 36.8156 14.0624C35.2219 14.0624 33.9375 12.7687 33.9375 11.1843C33.9375 9.59053 35.2313 8.30615 36.8156 8.30615C38.4 8.30615 39.6937 9.5999 39.6937 11.1843Z" fill="white"/>
+                            <path
+                                d="M24 4.32187C30.4125 4.32187 31.1719 4.35 33.6938 4.4625C36.0375 4.56562 37.3031 4.95938 38.1469 5.2875C39.2625 5.71875 40.0688 6.24375 40.9031 7.07812C41.7469 7.92188 42.2625 8.71875 42.6938 9.83438C43.0219 10.6781 43.4156 11.9531 43.5188 14.2875C43.6313 16.8187 43.6594 17.5781 43.6594 23.9813C43.6594 30.3938 43.6313 31.1531 43.5188 33.675C43.4156 36.0188 43.0219 37.2844 42.6938 38.1281C42.2625 39.2438 41.7375 40.05 40.9031 40.8844C40.0594 41.7281 39.2625 42.2438 38.1469 42.675C37.3031 43.0031 36.0281 43.3969 33.6938 43.5C31.1625 43.6125 30.4031 43.6406 24 43.6406C17.5875 43.6406 16.8281 43.6125 14.3063 43.5C11.9625 43.3969 10.6969 43.0031 9.85313 42.675C8.7375 42.2438 7.93125 41.7188 7.09688 40.8844C6.25313 40.0406 5.7375 39.2438 5.30625 38.1281C4.97813 37.2844 4.58438 36.0094 4.48125 33.675C4.36875 31.1438 4.34063 30.3844 4.34063 23.9813C4.34063 17.5688 4.36875 16.8094 4.48125 14.2875C4.58438 11.9437 4.97813 10.6781 5.30625 9.83438C5.7375 8.71875 6.2625 7.9125 7.09688 7.07812C7.94063 6.23438 8.7375 5.71875 9.85313 5.2875C10.6969 4.95938 11.9719 4.56562 14.3063 4.4625C16.8281 4.35 17.5875 4.32187 24 4.32187ZM24 0C17.4844 0 16.6688 0.028125 14.1094 0.140625C11.5594 0.253125 9.80625 0.665625 8.2875 1.25625C6.70312 1.875 5.3625 2.69062 4.03125 4.03125C2.69063 5.3625 1.875 6.70313 1.25625 8.27813C0.665625 9.80625 0.253125 11.55 0.140625 14.1C0.028125 16.6687 0 17.4844 0 24C0 30.5156 0.028125 31.3312 0.140625 33.8906C0.253125 36.4406 0.665625 38.1938 1.25625 39.7125C1.875 41.2969 2.69063 42.6375 4.03125 43.9688C5.3625 45.3 6.70313 46.125 8.27813 46.7344C9.80625 47.325 11.55 47.7375 14.1 47.85C16.6594 47.9625 17.475 47.9906 23.9906 47.9906C30.5063 47.9906 31.3219 47.9625 33.8813 47.85C36.4313 47.7375 38.1844 47.325 39.7031 46.7344C41.2781 46.125 42.6188 45.3 43.95 43.9688C45.2812 42.6375 46.1063 41.2969 46.7156 39.7219C47.3063 38.1938 47.7188 36.45 47.8313 33.9C47.9438 31.3406 47.9719 30.525 47.9719 24.0094C47.9719 17.4938 47.9438 16.6781 47.8313 14.1188C47.7188 11.5688 47.3063 9.81563 46.7156 8.29688C46.125 6.70312 45.3094 5.3625 43.9688 4.03125C42.6375 2.7 41.2969 1.875 39.7219 1.26562C38.1938 0.675 36.45 0.2625 33.9 0.15C31.3313 0.028125 30.5156 0 24 0Z"
+                                fill="white" />
+                            <path
+                                d="M24 11.6719C17.1938 11.6719 11.6719 17.1938 11.6719 24C11.6719 30.8062 17.1938 36.3281 24 36.3281C30.8062 36.3281 36.3281 30.8062 36.3281 24C36.3281 17.1938 30.8062 11.6719 24 11.6719ZM24 31.9969C19.5844 31.9969 16.0031 28.4156 16.0031 24C16.0031 19.5844 19.5844 16.0031 24 16.0031C28.4156 16.0031 31.9969 19.5844 31.9969 24C31.9969 28.4156 28.4156 31.9969 24 31.9969Z"
+                                fill="white" />
+                            <path
+                                d="M39.6937 11.1843C39.6937 12.778 38.4 14.0624 36.8156 14.0624C35.2219 14.0624 33.9375 12.7687 33.9375 11.1843C33.9375 9.59053 35.2313 8.30615 36.8156 8.30615C38.4 8.30615 39.6937 9.5999 39.6937 11.1843Z"
+                                fill="white" />
                         </g>
                         <defs>
-                        <clipPath id="clip0_437_7336">
-                        <rect width="48" height="48" fill="white"/>
-                        </clipPath>
+                            <clipPath id="clip0_437_7336">
+                                <rect width="48" height="48" fill="white" />
+                            </clipPath>
                         </defs>
-                        </svg>
-                        
-              
+                    </svg>
                 </a>
             </div>
         </div>
     </div>
-    <!--==============================
-			Footer Area
-	==============================-->
+    <!-- Footer -->
     <footer class="footer-wrapper footer-layout1">
         <div class="container">
             <div class="widget-area">
@@ -814,7 +1125,8 @@ Checkout Arae
                         <div class="logo">
                             <img src="assets/img/logo-footer.svg" alt="Logo">
                         </div>
-                        <p class="text-white mt-3">تعد كوخ المرح الرائدة في مجال الترفيه الممتع و الهادف , حيث انطلقت منذ عام 2012 لترسم لإسمها بصمة واضحة في مجال الترفيه لتنوع الاصناف وجودة المنتجات</p>
+                        <p class="text-white mt-3">تعد كوخ المرح الرائدة في مجال الترفيه الممتع و الهادف , حيث انطلقت
+                            منذ عام 2012 لترسم لإسمها بصمة واضحة في مجال الترفيه لتنوع الاصناف وجودة المنتجات</p>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3">
                         <h6>روابط مهمة</h6>
@@ -835,77 +1147,107 @@ Checkout Arae
                     </div>
                     <div class="col-12 col-md-6 col-lg-3">
                         <h6>خدمة العملاء</h6>
-                        <div class="footer-links d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+                        <div
+                            class="footer-links d-flex align-items-center justify-content-center justify-content-md-start gap-3">
                             <a href="#">
-                                <svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 48L3.374 35.674C1.292 32.066 0.198 27.976 0.2 23.782C0.206 10.67 10.876 0 23.986 0C30.348 0.002 36.32 2.48 40.812 6.976C45.302 11.472 47.774 17.448 47.772 23.804C47.766 36.918 37.096 47.588 23.986 47.588C20.006 47.586 16.084 46.588 12.61 44.692L0 48ZM13.194 40.386C16.546 42.376 19.746 43.568 23.978 43.57C34.874 43.57 43.75 34.702 43.756 23.8C43.76 12.876 34.926 4.02 23.994 4.016C13.09 4.016 4.22 12.884 4.216 23.784C4.214 28.234 5.518 31.566 7.708 35.052L5.71 42.348L13.194 40.386ZM35.968 29.458C35.82 29.21 35.424 29.062 34.828 28.764C34.234 28.466 31.312 27.028 30.766 26.83C30.222 26.632 29.826 26.532 29.428 27.128C29.032 27.722 27.892 29.062 27.546 29.458C27.2 29.854 26.852 29.904 26.258 29.606C25.664 29.308 23.748 28.682 21.478 26.656C19.712 25.08 18.518 23.134 18.172 22.538C17.826 21.944 18.136 21.622 18.432 21.326C18.7 21.06 19.026 20.632 19.324 20.284C19.626 19.94 19.724 19.692 19.924 19.294C20.122 18.898 20.024 18.55 19.874 18.252C19.724 17.956 18.536 15.03 18.042 13.84C17.558 12.682 17.068 12.838 16.704 12.82L15.564 12.8C15.168 12.8 14.524 12.948 13.98 13.544C13.436 14.14 11.9 15.576 11.9 18.502C11.9 21.428 14.03 24.254 14.326 24.65C14.624 25.046 18.516 31.05 24.478 33.624C25.896 34.236 27.004 34.602 27.866 34.876C29.29 35.328 30.586 35.264 31.61 35.112C32.752 34.942 35.126 33.674 35.622 32.286C36.118 30.896 36.118 29.706 35.968 29.458Z" fill="white"/>
-                                </svg>                        
+                                <svg width="18" height="18" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 48L3.374 35.674C1.292 32.066 0.198 27.976 0.2 23.782C0.206 10.67 10.876 0 23.986 0C30.348 0.002 36.32 2.48 40.812 6.976C45.302 11.472 47.774 17.448 47.772 23.804C47.766 36.918 37.096 47.588 23.986 47.588C20.006 47.586 16.084 46.588 12.61 44.692L0 48ZM13.194 40.386C16.546 42.376 19.746 43.568 23.978 43.57C34.874 43.57 43.75 34.702 43.756 23.8C43.76 12.876 34.926 4.02 23.994 4.016C13.09 4.016 4.22 12.884 4.216 23.784C4.214 28.234 5.518 31.566 7.708 35.052L5.71 42.348L13.194 40.386ZM35.968 29.458C35.82 29.21 35.424 29.062 34.828 28.764C34.234 28.466 31.312 27.028 30.766 26.83C30.222 26.632 29.826 26.532 29.428 27.128C29.032 27.722 27.892 29.062 27.546 29.458C27.2 29.854 26.852 29.904 26.258 29.606C25.664 29.308 23.748 28.682 21.478 26.656C19.712 25.08 18.518 23.134 18.172 22.538C17.826 21.944 18.136 21.622 18.432 21.326C18.7 21.06 19.026 20.632 19.324 20.284C19.626 19.94 19.724 19.692 19.924 19.294C20.122 18.898 20.024 18.55 19.874 18.252C19.724 17.956 18.536 15.03 18.042 13.84C17.558 12.682 17.068 12.838 16.704 12.82L15.564 12.8C15.168 12.8 14.524 12.948 13.98 13.544C13.436 14.14 11.9 15.576 11.9 18.502C11.9 21.428 14.03 24.254 14.326 24.65C14.624 25.046 18.516 31.05 24.478 33.624C25.896 34.236 27.004 34.602 27.866 34.876C29.29 35.328 30.586 35.264 31.61 35.112C32.752 34.942 35.126 33.674 35.622 32.286C36.118 30.896 36.118 29.706 35.968 29.458Z"
+                                        fill="white" />
+                                </svg>
                             </a>
                             <a href="#">
-                                <svg width="18" height="18" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M28.6189 21.6787C28.5864 21.4937 28.5493 21.3308 28.5079 21.1857C28.2873 20.3967 27.5975 19.7972 26.7522 19.6565L20.3391 18.5893C19.5338 18.4531 18.7166 18.7668 18.2192 19.4019C18.1437 19.4967 18.0727 19.5944 18.0046 19.6936C17.7648 20.0444 17.365 20.1761 17.0112 20.0222C13.6004 18.5389 10.9047 15.8432 9.4228 12.4325C9.26884 12.0787 9.39757 11.682 9.74546 11.4451C9.87722 11.3548 10.0045 11.2601 10.1304 11.1594C10.7492 10.6591 11.0556 9.85966 10.9313 9.07064L9.93946 2.7718C9.80918 1.94281 9.24071 1.26781 8.45907 1.00875C8.25922 0.943615 8.0268 0.881413 7.75737 0.832562C5.99275 0.517251 4.18668 1.01768 2.79955 2.20935C1.33989 3.46468 0.531588 5.28549 0.583401 7.20549C0.901684 19.0304 10.4161 28.5445 22.2415 28.8643C22.2992 28.8657 22.3554 28.8657 22.4131 28.8657C24.2547 28.8657 25.9957 28.0678 27.2126 26.66C28.4146 25.2715 28.9269 23.4551 28.6189 21.6787ZM26.0904 25.6963C25.1282 26.8095 23.747 27.4432 22.28 27.3869C11.2392 27.0894 2.35833 18.2073 2.06225 7.16845C2.02228 5.69551 2.64263 4.29957 3.76329 3.33587C4.60563 2.61199 5.64924 2.22562 6.71511 2.22562C6.97418 2.22562 7.23473 2.24782 7.4938 2.29519C7.68477 2.32924 7.84912 2.37218 7.98976 2.41807C8.24439 2.50245 8.42939 2.72742 8.4738 3.00572L9.46717 9.30456C9.50862 9.5725 9.40498 9.84191 9.19773 10.0107C9.10594 10.0862 9.00976 10.1573 8.91058 10.2239C7.97201 10.8619 7.62409 12.0136 8.06376 13.0246C9.69663 16.7817 12.6634 19.7483 16.4206 21.3826C17.4302 21.8193 18.5834 21.4729 19.2274 20.53C19.2762 20.4589 19.328 20.3878 19.3828 20.3183C19.5456 20.1066 19.8181 20.006 20.0949 20.0504L26.5079 21.1176C26.7892 21.165 27.0142 21.3486 27.0808 21.5855C27.1104 21.6876 27.1356 21.8016 27.1578 21.9319C27.3932 23.2701 27.0038 24.6408 26.0904 25.6963Z" fill="#F8F9FA"/>
-                                </svg>                                    
+                                <svg width="18" height="18" viewBox="0 0 29 29" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M28.6189 21.6787C28.5864 21.4937 28.5493 21.3308 28.5079 21.1857C28.2873 20.3967 27.5975 19.7972 26.7522 19.6565L20.3391 18.5893C19.5338 18.4531 18.7166 18.7668 18.2192 19.4019C18.1437 19.4967 18.0727 19.5944 18.0046 19.6936C17.7648 20.0444 17.365 20.1761 17.0112 20.0222C13.6004 18.5389 10.9047 15.8432 9.4228 12.4325C9.26884 12.0787 9.39757 11.682 9.74546 11.4451C9.87722 11.3548 10.0045 11.2601 10.1304 11.1594C10.7492 10.6591 11.0556 9.85966 10.9313 9.07064L9.93946 2.7718C9.80918 1.94281 9.24071 1.26781 8.45907 1.00875C8.25922 0.943615 8.0268 0.881413 7.75737 0.832562C5.99275 0.517251 4.18668 1.01768 2.79955 2.20935C1.33989 3.46468 0.531588 5.28549 0.583401 7.20549C0.901684 19.0304 10.4161 28.5445 22.2415 28.8643C22.2992 28.8657 22.3554 28.8657 22.4131 28.8657C24.2547 28.8657 25.9957 28.0678 27.2126 26.66C28.4146 25.2715 28.9269 23.4551 28.6189 21.6787ZM26.0904 25.6963C25.1282 26.8095 23.747 27.4432 22.28 27.3869C11.2392 27.0894 2.35833 18.2073 2.06225 7.16845C2.02228 5.69551 2.64263 4.29957 3.76329 3.33587C4.60563 2.61199 5.64924 2.22562 6.71511 2.22562C6.97418 2.22562 7.23473 2.24782 7.4938 2.29519C7.68477 2.32924 7.84912 2.37218 7.98976 2.41807C8.24439 2.50245 8.42939 2.72742 8.4738 3.00572L9.46717 9.30456C9.50862 9.5725 9.40498 9.84191 9.19773 10.0107C9.10594 10.0862 9.00976 10.1573 8.91058 10.2239C7.97201 10.8619 7.62409 12.0136 8.06376 13.0246C9.69663 16.7817 12.6634 19.7483 16.4206 21.3826C17.4302 21.8193 18.5834 21.4729 19.2274 20.53C19.2762 20.4589 19.328 20.3878 19.3828 20.3183C19.5456 20.1066 19.8181 20.006 20.0949 20.0504L26.5079 21.1176C26.7892 21.165 27.0142 21.3486 27.0808 21.5855C27.1104 21.6876 27.1356 21.8016 27.1578 21.9319C27.3932 23.2701 27.0038 24.6408 26.0904 25.6963Z"
+                                        fill="#F8F9FA" />
+                                </svg>
 
                             </a>
                         </div>
-                    </div>  
+                    </div>
                     <div class="col-12 col-md-6 col-lg-3 d-none d-md-block">
                         <h6>تابعنا على</h6>
-                        <div class="footer-links d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+                        <div
+                            class="footer-links d-flex align-items-center justify-content-center justify-content-md-start gap-3">
                             <a href="#">
-                                <svg width="18" height="18" viewBox="0 0 41 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M30.1451 0H22.0556V32.6956C22.0556 36.5913 18.9444 39.7913 15.0725 39.7913C11.2007 39.7913 8.08938 36.5913 8.08938 32.6956C8.08938 28.8696 11.1315 25.7391 14.8651 25.6V17.3913C6.63744 17.5304 0 24.2783 0 32.6956C0 41.1827 6.77571 48 15.1417 48C23.5075 48 30.2833 41.1131 30.2833 32.6956V15.9304C33.3255 18.1565 37.059 19.4783 41 19.5479V11.3391C34.9157 11.1304 30.1451 6.12173 30.1451 0Z" fill="white"/>
-                                    </svg>
-                                                           
-                            </a>
-                            <a href="#">
-                                <svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M47.8265 34.9152C47.4955 34.0082 46.8582 33.5179 46.135 33.1257C46.0001 33.0521 45.8776 32.9786 45.7673 32.9296C45.5466 32.8192 45.326 32.7089 45.1054 32.5986C42.8501 31.3974 41.085 29.902 39.8716 28.1125C39.5284 27.6099 39.2219 27.0706 38.9768 26.519C38.8665 26.2249 38.8787 26.0533 38.9523 25.8939C39.0258 25.7714 39.1239 25.6733 39.2464 25.5875C39.6387 25.3301 40.0309 25.0727 40.3006 24.9011C40.7786 24.5824 41.1708 24.3373 41.416 24.1657C42.3353 23.516 42.9849 22.8296 43.3894 22.0574C43.9655 20.9788 44.039 19.7163 43.5977 18.5764C42.9849 16.9585 41.465 15.9656 39.6142 15.9656C39.2219 15.9656 38.842 16.0024 38.4497 16.0882C38.3517 16.1127 38.2414 16.1372 38.1433 16.1617C38.1556 15.0586 38.131 13.8942 38.033 12.742C37.6898 8.70937 36.2679 6.60114 34.7971 4.9219C33.8533 3.86778 32.7501 2.97301 31.5122 2.27435C29.2814 0.999606 26.7441 0.349976 23.9863 0.349976C21.2284 0.349976 18.7034 0.999606 16.4726 2.27435C15.2346 2.97301 14.1315 3.86778 13.1877 4.9219C11.7168 6.60114 10.3073 8.72163 9.95179 12.742C9.85373 13.8942 9.82922 15.0586 9.84148 16.1617C9.74342 16.1372 9.64536 16.1127 9.53505 16.0882C9.15507 16.0024 8.76285 15.9656 8.38287 15.9656C6.53204 15.9656 5.01215 16.9707 4.39929 18.5764C3.95803 19.7163 4.03157 20.9788 4.60766 22.0574C5.01215 22.8296 5.66178 23.516 6.58107 24.1657C6.82621 24.3373 7.20618 24.5824 7.69647 24.9011C7.95387 25.0727 8.33384 25.3178 8.71382 25.563C8.84864 25.6488 8.95896 25.7591 9.04476 25.8939C9.1183 26.0533 9.13056 26.2249 9.00799 26.5436C8.76284 27.0829 8.46867 27.6099 8.12547 28.1002C6.93653 29.8407 5.22052 31.3239 3.03874 32.5128C1.88657 33.1257 0.685365 33.5302 0.170564 34.9152C-0.209408 35.9571 0.035735 37.1338 1.00405 38.1389C1.35951 38.5066 1.77625 38.8253 2.22977 39.0704C3.17357 39.5852 4.17866 39.9897 5.23278 40.2716C5.45341 40.3329 5.64952 40.4187 5.83338 40.5413C6.18884 40.8477 6.13981 41.3135 6.60558 41.9999C6.83847 42.3553 7.1449 42.6618 7.4881 42.9069C8.48093 43.5933 9.59633 43.6301 10.773 43.6791C11.8394 43.7159 13.0406 43.7649 14.4257 44.2184C15.0017 44.4023 15.5901 44.77 16.2765 45.199C17.9312 46.2163 20.1865 47.6014 23.974 47.6014C27.7615 47.6014 30.029 46.2041 31.696 45.1867C32.3824 44.77 32.9708 44.4023 33.5223 44.2184C34.8951 43.7649 36.1086 43.7159 37.175 43.6791C38.3517 43.6301 39.4671 43.5933 40.4599 42.9069C40.8767 42.6127 41.2198 42.245 41.465 41.8037C41.8082 41.2277 41.7959 40.8232 42.1146 40.5413C42.2862 40.4187 42.4823 40.3329 42.6785 40.2839C43.7326 40.0019 44.7622 39.5975 45.7182 39.0704C46.1963 38.813 46.6375 38.4698 47.0052 38.0653L47.0175 38.0531C47.9736 37.0725 48.2064 35.9203 47.8265 34.9152ZM44.468 36.717C42.4211 37.8447 41.0483 37.7221 39.9941 38.4085C39.0871 38.9846 39.6264 40.2348 38.9768 40.6883C38.1678 41.2399 35.7899 40.6516 32.7256 41.6689C30.1884 42.5024 28.5827 44.9171 24.023 44.9171C19.4634 44.9171 17.8944 42.5147 15.3204 41.6689C12.2561 40.6516 9.87825 41.2522 9.06927 40.6883C8.41964 40.2348 8.9467 38.9846 8.05193 38.4085C6.98556 37.7221 5.62501 37.8447 3.57806 36.717C2.26654 35.9938 3.01423 35.5526 3.44323 35.3442C10.8711 31.7529 12.06 26.2004 12.1091 25.7836C12.1703 25.2811 12.2439 24.8888 11.6923 24.3863C11.1653 23.896 8.81187 22.4374 8.14999 21.9839C7.07135 21.2239 6.59333 20.4763 6.94878 19.5447C7.19393 18.9073 7.79453 18.6622 8.41964 18.6622C8.61576 18.6622 8.81187 18.6867 9.00799 18.7235C10.1969 18.9809 11.3491 19.5692 12.011 19.7408C12.0968 19.7653 12.1703 19.7776 12.2561 19.7776C12.6116 19.7776 12.7342 19.5937 12.7097 19.1893C12.6361 17.89 12.4523 15.365 12.6606 12.9994C12.9425 9.75123 13.9844 8.13328 15.2346 6.71145C15.8352 6.02505 18.6421 3.05881 24.023 3.05881C29.4039 3.05881 32.2108 6.01279 32.8114 6.69919C34.0617 8.12103 35.1035 9.73897 35.3854 12.9871C35.5938 15.3528 35.4099 17.8777 35.3241 19.177C35.2996 19.606 35.4222 19.7653 35.7777 19.7653C35.8635 19.7653 35.937 19.7531 36.0228 19.7286C36.6847 19.5692 37.8369 18.9686 39.0258 18.7112C39.2219 18.6622 39.418 18.6499 39.6142 18.6499C40.2393 18.6499 40.8399 18.8951 41.085 19.5325C41.4405 20.464 40.9625 21.2117 39.8838 21.9716C39.2342 22.4251 36.8808 23.8838 36.3415 24.374C35.7899 24.8766 35.8635 25.2688 35.9248 25.7714C35.9738 26.1881 37.1627 31.7406 44.5906 35.332C45.0318 35.5403 45.7673 35.9938 44.468 36.717Z" fill="white"/>
-                                    </svg>
-                                                                    
+                                <svg width="18" height="18" viewBox="0 0 41 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M30.1451 0H22.0556V32.6956C22.0556 36.5913 18.9444 39.7913 15.0725 39.7913C11.2007 39.7913 8.08938 36.5913 8.08938 32.6956C8.08938 28.8696 11.1315 25.7391 14.8651 25.6V17.3913C6.63744 17.5304 0 24.2783 0 32.6956C0 41.1827 6.77571 48 15.1417 48C23.5075 48 30.2833 41.1131 30.2833 32.6956V15.9304C33.3255 18.1565 37.059 19.4783 41 19.5479V11.3391C34.9157 11.1304 30.1451 6.12173 30.1451 0Z"
+                                        fill="white" />
+                                </svg>
 
                             </a>
                             <a href="#">
-                                <svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M47.5219 14.4001C47.5219 14.4001 47.0531 11.0907 45.6094 9.6376C43.7812 7.7251 41.7375 7.71572 40.8 7.60322C34.0875 7.11572 24.0094 7.11572 24.0094 7.11572H23.9906C23.9906 7.11572 13.9125 7.11572 7.2 7.60322C6.2625 7.71572 4.21875 7.7251 2.39062 9.6376C0.946875 11.0907 0.4875 14.4001 0.4875 14.4001C0.4875 14.4001 0 18.2907 0 22.172V25.8095C0 29.6907 0.478125 33.5813 0.478125 33.5813C0.478125 33.5813 0.946875 36.8907 2.38125 38.3438C4.20937 40.2563 6.60938 40.1907 7.67813 40.397C11.5219 40.7626 24 40.8751 24 40.8751C24 40.8751 34.0875 40.8563 40.8 40.3782C41.7375 40.2657 43.7812 40.2563 45.6094 38.3438C47.0531 36.8907 47.5219 33.5813 47.5219 33.5813C47.5219 33.5813 48 29.7001 48 25.8095V22.172C48 18.2907 47.5219 14.4001 47.5219 14.4001ZM19.0406 30.2251V16.7345L32.0062 23.5032L19.0406 30.2251Z" fill="white"/>
-                                    </svg>
-                                                    
+                                <svg width="18" height="18" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M47.8265 34.9152C47.4955 34.0082 46.8582 33.5179 46.135 33.1257C46.0001 33.0521 45.8776 32.9786 45.7673 32.9296C45.5466 32.8192 45.326 32.7089 45.1054 32.5986C42.8501 31.3974 41.085 29.902 39.8716 28.1125C39.5284 27.6099 39.2219 27.0706 38.9768 26.519C38.8665 26.2249 38.8787 26.0533 38.9523 25.8939C39.0258 25.7714 39.1239 25.6733 39.2464 25.5875C39.6387 25.3301 40.0309 25.0727 40.3006 24.9011C40.7786 24.5824 41.1708 24.3373 41.416 24.1657C42.3353 23.516 42.9849 22.8296 43.3894 22.0574C43.9655 20.9788 44.039 19.7163 43.5977 18.5764C42.9849 16.9585 41.465 15.9656 39.6142 15.9656C39.2219 15.9656 38.842 16.0024 38.4497 16.0882C38.3517 16.1127 38.2414 16.1372 38.1433 16.1617C38.1556 15.0586 38.131 13.8942 38.033 12.742C37.6898 8.70937 36.2679 6.60114 34.7971 4.9219C33.8533 3.86778 32.7501 2.97301 31.5122 2.27435C29.2814 0.999606 26.7441 0.349976 23.9863 0.349976C21.2284 0.349976 18.7034 0.999606 16.4726 2.27435C15.2346 2.97301 14.1315 3.86778 13.1877 4.9219C11.7168 6.60114 10.3073 8.72163 9.95179 12.742C9.85373 13.8942 9.82922 15.0586 9.84148 16.1617C9.74342 16.1372 9.64536 16.1127 9.53505 16.0882C9.15507 16.0024 8.76285 15.9656 8.38287 15.9656C6.53204 15.9656 5.01215 16.9707 4.39929 18.5764C3.95803 19.7163 4.03157 20.9788 4.60766 22.0574C5.01215 22.8296 5.66178 23.516 6.58107 24.1657C6.82621 24.3373 7.20618 24.5824 7.69647 24.9011C7.95387 25.0727 8.33384 25.3178 8.71382 25.563C8.84864 25.6488 8.95896 25.7591 9.04476 25.8939C9.1183 26.0533 9.13056 26.2249 9.00799 26.5436C8.76284 27.0829 8.46867 27.6099 8.12547 28.1002C6.93653 29.8407 5.22052 31.3239 3.03874 32.5128C1.88657 33.1257 0.685365 33.5302 0.170564 34.9152C-0.209408 35.9571 0.035735 37.1338 1.00405 38.1389C1.35951 38.5066 1.77625 38.8253 2.22977 39.0704C3.17357 39.5852 4.17866 39.9897 5.23278 40.2716C5.45341 40.3329 5.64952 40.4187 5.83338 40.5413C6.18884 40.8477 6.13981 41.3135 6.60558 41.9999C6.83847 42.3553 7.1449 42.6618 7.4881 42.9069C8.48093 43.5933 9.59633 43.6301 10.773 43.6791C11.8394 43.7159 13.0406 43.7649 14.4257 44.2184C15.0017 44.4023 15.5901 44.77 16.2765 45.199C17.9312 46.2163 20.1865 47.6014 23.974 47.6014C27.7615 47.6014 30.029 46.2041 31.696 45.1867C32.3824 44.77 32.9708 44.4023 33.5223 44.2184C34.8951 43.7649 36.1086 43.7159 37.175 43.6791C38.3517 43.6301 39.4671 43.5933 40.4599 42.9069C40.8767 42.6127 41.2198 42.245 41.465 41.8037C41.8082 41.2277 41.7959 40.8232 42.1146 40.5413C42.2862 40.4187 42.4823 40.3329 42.6785 40.2839C43.7326 40.0019 44.7622 39.5975 45.7182 39.0704C46.1963 38.813 46.6375 38.4698 47.0052 38.0653L47.0175 38.0531C47.9736 37.0725 48.2064 35.9203 47.8265 34.9152ZM44.468 36.717C42.4211 37.8447 41.0483 37.7221 39.9941 38.4085C39.0871 38.9846 39.6264 40.2348 38.9768 40.6883C38.1678 41.2399 35.7899 40.6516 32.7256 41.6689C30.1884 42.5024 28.5827 44.9171 24.023 44.9171C19.4634 44.9171 17.8944 42.5147 15.3204 41.6689C12.2561 40.6516 9.87825 41.2522 9.06927 40.6883C8.41964 40.2348 8.9467 38.9846 8.05193 38.4085C6.98556 37.7221 5.62501 37.8447 3.57806 36.717C2.26654 35.9938 3.01423 35.5526 3.44323 35.3442C10.8711 31.7529 12.06 26.2004 12.1091 25.7836C12.1703 25.2811 12.2439 24.8888 11.6923 24.3863C11.1653 23.896 8.81187 22.4374 8.14999 21.9839C7.07135 21.2239 6.59333 20.4763 6.94878 19.5447C7.19393 18.9073 7.79453 18.6622 8.41964 18.6622C8.61576 18.6622 8.81187 18.6867 9.00799 18.7235C10.1969 18.9809 11.3491 19.5692 12.011 19.7408C12.0968 19.7653 12.1703 19.7776 12.2561 19.7776C12.6116 19.7776 12.7342 19.5937 12.7097 19.1893C12.6361 17.89 12.4523 15.365 12.6606 12.9994C12.9425 9.75123 13.9844 8.13328 15.2346 6.71145C15.8352 6.02505 18.6421 3.05881 24.023 3.05881C29.4039 3.05881 32.2108 6.01279 32.8114 6.69919C34.0617 8.12103 35.1035 9.73897 35.3854 12.9871C35.5938 15.3528 35.4099 17.8777 35.3241 19.177C35.2996 19.606 35.4222 19.7653 35.7777 19.7653C35.8635 19.7653 35.937 19.7531 36.0228 19.7286C36.6847 19.5692 37.8369 18.9686 39.0258 18.7112C39.2219 18.6622 39.418 18.6499 39.6142 18.6499C40.2393 18.6499 40.8399 18.8951 41.085 19.5325C41.4405 20.464 40.9625 21.2117 39.8838 21.9716C39.2342 22.4251 36.8808 23.8838 36.3415 24.374C35.7899 24.8766 35.8635 25.2688 35.9248 25.7714C35.9738 26.1881 37.1627 31.7406 44.5906 35.332C45.0318 35.5403 45.7673 35.9938 44.468 36.717Z"
+                                        fill="white" />
+                                </svg>
+
 
                             </a>
                             <a href="#">
-                                <svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M36.6526 3.80786H43.3995L28.6594 20.6548L46 43.5798H32.4225L21.7881 29.6759L9.61989 43.5798H2.86886L18.6349 25.5601L2 3.80786H15.9222L25.5348 16.5165L36.6526 3.80786ZM34.2846 39.5414H38.0232L13.8908 7.63413H9.87892L34.2846 39.5414Z" fill="white"/>
-                                    </svg>
+                                <svg width="18" height="18" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M47.5219 14.4001C47.5219 14.4001 47.0531 11.0907 45.6094 9.6376C43.7812 7.7251 41.7375 7.71572 40.8 7.60322C34.0875 7.11572 24.0094 7.11572 24.0094 7.11572H23.9906C23.9906 7.11572 13.9125 7.11572 7.2 7.60322C6.2625 7.71572 4.21875 7.7251 2.39062 9.6376C0.946875 11.0907 0.4875 14.4001 0.4875 14.4001C0.4875 14.4001 0 18.2907 0 22.172V25.8095C0 29.6907 0.478125 33.5813 0.478125 33.5813C0.478125 33.5813 0.946875 36.8907 2.38125 38.3438C4.20937 40.2563 6.60938 40.1907 7.67813 40.397C11.5219 40.7626 24 40.8751 24 40.8751C24 40.8751 34.0875 40.8563 40.8 40.3782C41.7375 40.2657 43.7812 40.2563 45.6094 38.3438C47.0531 36.8907 47.5219 33.5813 47.5219 33.5813C47.5219 33.5813 48 29.7001 48 25.8095V22.172C48 18.2907 47.5219 14.4001 47.5219 14.4001ZM19.0406 30.2251V16.7345L32.0062 23.5032L19.0406 30.2251Z"
+                                        fill="white" />
+                                </svg>
+
+
                             </a>
                             <a href="#">
-                                <svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="18" height="18" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M36.6526 3.80786H43.3995L28.6594 20.6548L46 43.5798H32.4225L21.7881 29.6759L9.61989 43.5798H2.86886L18.6349 25.5601L2 3.80786H15.9222L25.5348 16.5165L36.6526 3.80786ZM34.2846 39.5414H38.0232L13.8908 7.63413H9.87892L34.2846 39.5414Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="18" height="18" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_437_7342)">
-                                    <path d="M48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 35.9789 8.77641 45.908 20.25 47.7084V30.9375H14.1562V24H20.25V18.7125C20.25 12.6975 23.8331 9.375 29.3152 9.375C31.9402 9.375 34.6875 9.84375 34.6875 9.84375V15.75H31.6613C28.68 15.75 27.75 17.6002 27.75 19.5V24H34.4062L33.3422 30.9375H27.75V47.7084C39.2236 45.908 48 35.9789 48 24Z" fill="white"/>
+                                        <path
+                                            d="M48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 35.9789 8.77641 45.908 20.25 47.7084V30.9375H14.1562V24H20.25V18.7125C20.25 12.6975 23.8331 9.375 29.3152 9.375C31.9402 9.375 34.6875 9.84375 34.6875 9.84375V15.75H31.6613C28.68 15.75 27.75 17.6002 27.75 19.5V24H34.4062L33.3422 30.9375H27.75V47.7084C39.2236 45.908 48 35.9789 48 24Z"
+                                            fill="white" />
                                     </g>
                                     <defs>
-                                    <clipPath id="clip0_437_7342">
-                                    <rect width="48" height="48" fill="white"/>
-                                    </clipPath>
+                                        <clipPath id="clip0_437_7342">
+                                            <rect width="48" height="48" fill="white" />
+                                        </clipPath>
                                     </defs>
-                                    </svg>
-                                    
-                                    
+                                </svg>
+
+
                             </a>
                             <a href="#">
-                                <svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="18" height="18" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_437_7336)">
-                                    <path d="M24 4.32187C30.4125 4.32187 31.1719 4.35 33.6938 4.4625C36.0375 4.56562 37.3031 4.95938 38.1469 5.2875C39.2625 5.71875 40.0688 6.24375 40.9031 7.07812C41.7469 7.92188 42.2625 8.71875 42.6938 9.83438C43.0219 10.6781 43.4156 11.9531 43.5188 14.2875C43.6313 16.8187 43.6594 17.5781 43.6594 23.9813C43.6594 30.3938 43.6313 31.1531 43.5188 33.675C43.4156 36.0188 43.0219 37.2844 42.6938 38.1281C42.2625 39.2438 41.7375 40.05 40.9031 40.8844C40.0594 41.7281 39.2625 42.2438 38.1469 42.675C37.3031 43.0031 36.0281 43.3969 33.6938 43.5C31.1625 43.6125 30.4031 43.6406 24 43.6406C17.5875 43.6406 16.8281 43.6125 14.3063 43.5C11.9625 43.3969 10.6969 43.0031 9.85313 42.675C8.7375 42.2438 7.93125 41.7188 7.09688 40.8844C6.25313 40.0406 5.7375 39.2438 5.30625 38.1281C4.97813 37.2844 4.58438 36.0094 4.48125 33.675C4.36875 31.1438 4.34063 30.3844 4.34063 23.9813C4.34063 17.5688 4.36875 16.8094 4.48125 14.2875C4.58438 11.9437 4.97813 10.6781 5.30625 9.83438C5.7375 8.71875 6.2625 7.9125 7.09688 7.07812C7.94063 6.23438 8.7375 5.71875 9.85313 5.2875C10.6969 4.95938 11.9719 4.56562 14.3063 4.4625C16.8281 4.35 17.5875 4.32187 24 4.32187ZM24 0C17.4844 0 16.6688 0.028125 14.1094 0.140625C11.5594 0.253125 9.80625 0.665625 8.2875 1.25625C6.70312 1.875 5.3625 2.69062 4.03125 4.03125C2.69063 5.3625 1.875 6.70313 1.25625 8.27813C0.665625 9.80625 0.253125 11.55 0.140625 14.1C0.028125 16.6687 0 17.4844 0 24C0 30.5156 0.028125 31.3312 0.140625 33.8906C0.253125 36.4406 0.665625 38.1938 1.25625 39.7125C1.875 41.2969 2.69063 42.6375 4.03125 43.9688C5.3625 45.3 6.70313 46.125 8.27813 46.7344C9.80625 47.325 11.55 47.7375 14.1 47.85C16.6594 47.9625 17.475 47.9906 23.9906 47.9906C30.5063 47.9906 31.3219 47.9625 33.8813 47.85C36.4313 47.7375 38.1844 47.325 39.7031 46.7344C41.2781 46.125 42.6188 45.3 43.95 43.9688C45.2812 42.6375 46.1063 41.2969 46.7156 39.7219C47.3063 38.1938 47.7188 36.45 47.8313 33.9C47.9438 31.3406 47.9719 30.525 47.9719 24.0094C47.9719 17.4938 47.9438 16.6781 47.8313 14.1188C47.7188 11.5688 47.3063 9.81563 46.7156 8.29688C46.125 6.70312 45.3094 5.3625 43.9688 4.03125C42.6375 2.7 41.2969 1.875 39.7219 1.26562C38.1938 0.675 36.45 0.2625 33.9 0.15C31.3313 0.028125 30.5156 0 24 0Z" fill="white"/>
-                                    <path d="M24 11.6719C17.1938 11.6719 11.6719 17.1938 11.6719 24C11.6719 30.8062 17.1938 36.3281 24 36.3281C30.8062 36.3281 36.3281 30.8062 36.3281 24C36.3281 17.1938 30.8062 11.6719 24 11.6719ZM24 31.9969C19.5844 31.9969 16.0031 28.4156 16.0031 24C16.0031 19.5844 19.5844 16.0031 24 16.0031C28.4156 16.0031 31.9969 19.5844 31.9969 24C31.9969 28.4156 28.4156 31.9969 24 31.9969Z" fill="white"/>
-                                    <path d="M39.6937 11.1843C39.6937 12.778 38.4 14.0624 36.8156 14.0624C35.2219 14.0624 33.9375 12.7687 33.9375 11.1843C33.9375 9.59053 35.2313 8.30615 36.8156 8.30615C38.4 8.30615 39.6937 9.5999 39.6937 11.1843Z" fill="white"/>
+                                        <path
+                                            d="M24 4.32187C30.4125 4.32187 31.1719 4.35 33.6938 4.4625C36.0375 4.56562 37.3031 4.95938 38.1469 5.2875C39.2625 5.71875 40.0688 6.24375 40.9031 7.07812C41.7469 7.92188 42.2625 8.71875 42.6938 9.83438C43.0219 10.6781 43.4156 11.9531 43.5188 14.2875C43.6313 16.8187 43.6594 17.5781 43.6594 23.9813C43.6594 30.3938 43.6313 31.1531 43.5188 33.675C43.4156 36.0188 43.0219 37.2844 42.6938 38.1281C42.2625 39.2438 41.7375 40.05 40.9031 40.8844C40.0594 41.7281 39.2625 42.2438 38.1469 42.675C37.3031 43.0031 36.0281 43.3969 33.6938 43.5C31.1625 43.6125 30.4031 43.6406 24 43.6406C17.5875 43.6406 16.8281 43.6125 14.3063 43.5C11.9625 43.3969 10.6969 43.0031 9.85313 42.675C8.7375 42.2438 7.93125 41.7188 7.09688 40.8844C6.25313 40.0406 5.7375 39.2438 5.30625 38.1281C4.97813 37.2844 4.58438 36.0094 4.48125 33.675C4.36875 31.1438 4.34063 30.3844 4.34063 23.9813C4.34063 17.5688 4.36875 16.8094 4.48125 14.2875C4.58438 11.9437 4.97813 10.6781 5.30625 9.83438C5.7375 8.71875 6.2625 7.9125 7.09688 7.07812C7.94063 6.23438 8.7375 5.71875 9.85313 5.2875C10.6969 4.95938 11.9719 4.56562 14.3063 4.4625C16.8281 4.35 17.5875 4.32187 24 4.32187ZM24 0C17.4844 0 16.6688 0.028125 14.1094 0.140625C11.5594 0.253125 9.80625 0.665625 8.2875 1.25625C6.70312 1.875 5.3625 2.69062 4.03125 4.03125C2.69063 5.3625 1.875 6.70313 1.25625 8.27813C0.665625 9.80625 0.253125 11.55 0.140625 14.1C0.028125 16.6687 0 17.4844 0 24C0 30.5156 0.028125 31.3312 0.140625 33.8906C0.253125 36.4406 0.665625 38.1938 1.25625 39.7125C1.875 41.2969 2.69063 42.6375 4.03125 43.9688C5.3625 45.3 6.70313 46.125 8.27813 46.7344C9.80625 47.325 11.55 47.7375 14.1 47.85C16.6594 47.9625 17.475 47.9906 23.9906 47.9906C30.5063 47.9906 31.3219 47.9625 33.8813 47.85C36.4313 47.7375 38.1844 47.325 39.7031 46.7344C41.2781 46.125 42.6188 45.3 43.95 43.9688C45.2812 42.6375 46.1063 41.2969 46.7156 39.7219C47.3063 38.1938 47.7188 36.45 47.8313 33.9C47.9438 31.3406 47.9719 30.525 47.9719 24.0094C47.9719 17.4938 47.9438 16.6781 47.8313 14.1188C47.7188 11.5688 47.3063 9.81563 46.7156 8.29688C46.125 6.70312 45.3094 5.3625 43.9688 4.03125C42.6375 2.7 41.2969 1.875 39.7219 1.26562C38.1938 0.675 36.45 0.2625 33.9 0.15C31.3313 0.028125 30.5156 0 24 0Z"
+                                            fill="white" />
+                                        <path
+                                            d="M24 11.6719C17.1938 11.6719 11.6719 17.1938 11.6719 24C11.6719 30.8062 17.1938 36.3281 24 36.3281C30.8062 36.3281 36.3281 30.8062 36.3281 24C36.3281 17.1938 30.8062 11.6719 24 11.6719ZM24 31.9969C19.5844 31.9969 16.0031 28.4156 16.0031 24C16.0031 19.5844 19.5844 16.0031 24 16.0031C28.4156 16.0031 31.9969 19.5844 31.9969 24C31.9969 28.4156 28.4156 31.9969 24 31.9969Z"
+                                            fill="white" />
+                                        <path
+                                            d="M39.6937 11.1843C39.6937 12.778 38.4 14.0624 36.8156 14.0624C35.2219 14.0624 33.9375 12.7687 33.9375 11.1843C33.9375 9.59053 35.2313 8.30615 36.8156 8.30615C38.4 8.30615 39.6937 9.5999 39.6937 11.1843Z"
+                                            fill="white" />
                                     </g>
                                     <defs>
-                                    <clipPath id="clip0_437_7336">
-                                    <rect width="48" height="48" fill="white"/>
-                                    </clipPath>
+                                        <clipPath id="clip0_437_7336">
+                                            <rect width="48" height="48" fill="white" />
+                                        </clipPath>
                                     </defs>
-                                    </svg>
-                                    
-                                    
+                                </svg>
+
+
                             </a>
                         </div>
                     </div>
@@ -914,8 +1256,8 @@ Checkout Arae
             <p class="copyright-text text-center py-3">الحقوق محفوظة | 2023 كوخ المرح</p>
         </div>
 
- 
-        </footer>
+
+    </footer>
 
     <!-- Search Box Model -->
     <div class="modal fade" id="popupSearch" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -924,8 +1266,7 @@ Checkout Arae
             <div class="modal-content popup-content">
                 <form action="#">
                     <button class="searchClose" type="button" data-bs-dismiss="modal" aria-label="Close">
-                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M12.7302 1.58314L7.81394 6.50024L12.7284 11.4155C13.0905 11.7777 13.0905 12.3666 12.7284 12.7288C12.5464 12.9108 12.3086 13 12.0709 13C11.8332 13 11.5954 12.909 11.4134 12.7288L6.50091 7.81357L1.58658 12.7288C1.40457 12.9108 1.16683 13 0.929105 13C0.691375 13 0.453638 12.909 0.271626 12.7288C-0.0905418 12.3666 -0.0905418 11.7777 0.271626 11.4155L5.18595 6.50024L0.271626 1.58501C-0.0905418 1.22277 -0.0905418 0.63391 0.271626 0.271676C0.633793 -0.0905585 1.2226 -0.0905585 1.58477 0.271676L6.49909 5.1869L11.4134 0.271676C11.7756 -0.0905585 12.3643 -0.0905585 12.7264 0.271676C13.0886 0.63391 13.0924 1.2209 12.7302 1.58314Z"
                                 fill="#b3261e" />
@@ -936,8 +1277,7 @@ Checkout Arae
                     <input type="text" placeholder="البحث...">
                     <a href="#" class="show-all-result">عرض الكل</a>
                     <span class="search-icon">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M19.5302 18.469L14.8362 13.775C16.0302 12.344 16.7502 10.505 16.7502 8.5C16.7502 3.951 13.0492 0.25 8.50024 0.25C3.95124 0.25 0.250244 3.951 0.250244 8.5C0.250244 13.049 3.95124 16.75 8.50024 16.75C10.5052 16.75 12.3442 16.0301 13.7752 14.8361L18.4692 19.53C18.6152 19.676 18.8072 19.75 18.9992 19.75C19.1912 19.75 19.3832 19.677 19.5292 19.53C19.8232 19.237 19.8232 18.762 19.5302 18.469ZM1.75024 8.5C1.75024 4.778 4.77824 1.75 8.50024 1.75C12.2222 1.75 15.2502 4.778 15.2502 8.5C15.2502 12.222 12.2222 15.25 8.50024 15.25C4.77824 15.25 1.75024 12.222 1.75024 8.5Z"
                                 fill="#ADB5BD" />
@@ -1072,47 +1412,45 @@ Checkout Arae
     </div>
 
 
-   
-<!-- Location Model -->
 
-<div class="modal fade" id="location" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="locationLabel" aria-hidden="true">
-    <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="locationLabel">تعديل المدينة</h5>
-          <button type="button" class="bg-transparent border border-0" data-bs-dismiss="modal" aria-label="Close">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.53 9.53003L13.06 12L15.53 14.47C15.823 14.763 15.823 15.238 15.53 15.531C15.384 15.677 15.192 15.751 15 15.751C14.808 15.751 14.616 15.678 14.47 15.531L12 13.061L9.53003 15.531C9.38403 15.677 9.192 15.751 9 15.751C8.808 15.751 8.61597 15.678 8.46997 15.531C8.17697 15.238 8.17697 14.763 8.46997 14.47L10.94 12L8.46997 9.53003C8.17697 9.23703 8.17697 8.76199 8.46997 8.46899C8.76297 8.17599 9.23801 8.17599 9.53101 8.46899L12.001 10.939L14.471 8.46899C14.764 8.17599 15.239 8.17599 15.532 8.46899C15.825 8.76199 15.823 9.23703 15.53 9.53003ZM21.75 9V15C21.75 18.722 18.722 21.75 15 21.75H9C5.278 21.75 2.25 18.722 2.25 15V9C2.25 5.278 5.278 2.25 9 2.25H15C18.722 2.25 21.75 5.278 21.75 9ZM20.25 9C20.25 6.105 17.895 3.75 15 3.75H9C6.105 3.75 3.75 6.105 3.75 9V15C3.75 17.895 6.105 20.25 9 20.25H15C17.895 20.25 20.25 17.895 20.25 15V9Z" fill="#f00"></path>
-            </svg>
-          </button>
-        </div>
-        <form id="filterForm" action="#">
-            <div class="modal-body">
-                <div class="w-100">
-                    <h6 class="text-start w-100">المدينة</h6>
-                    <select class=" form-select w-100 model-loction-select" name="header-location">
-                       <option value="">المدينة</option>
-                       <option value="1">الرياض</option>
-                       <option value="2">جدة</option>
-                       <option value="3">المدينة المنورة</option>
-                       <option value="4">الشرقية</option>
-                       <option value="5">الخبر</option>
-                    </select>
+    <!-- Location Model -->
+
+    <div class="modal fade" id="location" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="locationLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="locationLabel">تعديل المدينة</h5>
+                    <button type="button" class="bg-transparent border border-0" data-bs-dismiss="modal"
+                        aria-label="Close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.53 9.53003L13.06 12L15.53 14.47C15.823 14.763 15.823 15.238 15.53 15.531C15.384 15.677 15.192 15.751 15 15.751C14.808 15.751 14.616 15.678 14.47 15.531L12 13.061L9.53003 15.531C9.38403 15.677 9.192 15.751 9 15.751C8.808 15.751 8.61597 15.678 8.46997 15.531C8.17697 15.238 8.17697 14.763 8.46997 14.47L10.94 12L8.46997 9.53003C8.17697 9.23703 8.17697 8.76199 8.46997 8.46899C8.76297 8.17599 9.23801 8.17599 9.53101 8.46899L12.001 10.939L14.471 8.46899C14.764 8.17599 15.239 8.17599 15.532 8.46899C15.825 8.76199 15.823 9.23703 15.53 9.53003ZM21.75 9V15C21.75 18.722 18.722 21.75 15 21.75H9C5.278 21.75 2.25 18.722 2.25 15V9C2.25 5.278 5.278 2.25 9 2.25H15C18.722 2.25 21.75 5.278 21.75 9ZM20.25 9C20.25 6.105 17.895 3.75 15 3.75H9C6.105 3.75 3.75 6.105 3.75 9V15C3.75 17.895 6.105 20.25 9 20.25H15C17.895 20.25 20.25 17.895 20.25 15V9Z"
+                                fill="#f00"></path>
+                        </svg>
+                    </button>
+                </div>
+                <form id="filterForm" action="#">
+                    <div class="modal-body">
+                        <div class="w-100">
+                            <h6 class="text-start w-100">المدينة</h6>
+                            <select class=" form-select w-100 model-loction-select" name="header-location">
+                                <option value="">المدينة</option>
+                                <option value="1">الرياض</option>
+                                <option value="2">جدة</option>
+                                <option value="3">المدينة المنورة</option>
+                                <option value="4">الشرقية</option>
+                                <option value="5">الخبر</option>
+                            </select>
+                        </div>
                     </div>
+                    <div class="modal-footer justify-content-center align-items-center">
+                        <button type="submit" class="th-btn">تغيير المدينة</button>
+                    </div>
+                </form>
             </div>
-            <div class="modal-footer justify-content-center align-items-center">
-            <button type="submit" class="th-btn">تغيير المدينة</button>
-            </div>
-        </form>
-      </div>
+        </div>
     </div>
-  </div>
-
-
-
-    <!--********************************
-			Code End  Here 
-	******************************** -->
 
 
     <!--==============================
@@ -1124,8 +1462,10 @@ Checkout Arae
     <script defer src="assets/js/bootstrap.min.js"></script>
     <!-- Jquery UI -->
     <script defer src="assets/js/jquery-ui.js"></script>
-     <!-- Select2 -->
-     <script defer src="assets/js/select2.min.js"></script>
+    <!-- Select2 -->
+    <script defer src="assets/js/select2.min.js"></script>
+    <!-- Flatpickr -->
+    <script defer src="assets/js/flatpickr.js"></script>
     <!-- Wow -->
     <script defer src="assets/js/wow.min.js"></script>
     <!-- Main Js File -->

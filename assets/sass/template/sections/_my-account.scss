@@ -1,0 +1,90 @@
+.my-account-page {
+  .account-card {
+    .account-image {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6); // Semi-transparent overlay
+        border-radius: 50%; // Circular overlay
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0; // Initially hidden
+        transition: opacity 0.3s ease;
+        pointer-events: none; // Allows clicks to pass through to the image
+
+        i {
+          color: white;
+          font-size: 24px; // Adjust icon size as needed
+        }
+      }
+
+      // Show the overlay on hover
+      &:hover .image-overlay {
+        opacity: 1;
+      }
+    }
+
+    #username {
+      //   font-size: 20px;
+      border-radius: 0 !important;
+    }
+  }
+  .row {
+    row-gap: 30px;
+  }
+  .phone-input-container {
+    .phone-label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .input-group {
+      display: flex;
+      overflow: hidden;
+    }
+
+    .country-code {
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid;
+      border-top-left-radius: 10px !important;
+      border-bottom-left-radius: 10px !important;
+
+      select {
+        padding-left: 10px;
+        padding-right: 10px;
+        border: none;
+        background: transparent;
+        border-right: 1px solid;
+        border-radius: 0;
+        // margin-left: -5px; // Adjust alignment with the input field
+      }
+    }
+    input {
+      margin-right: 0 !important;
+      margin-left: -1px;
+      padding-left: 10px;
+      border-width: 1px 1px 1px 0;
+      border-radius: 0 10px 10px 0 !important;
+    }
+  }
+  .th-btn.code {
+    background-color: $success-color;
+  }
+}

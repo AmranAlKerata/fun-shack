@@ -178,3 +178,21 @@
     }
   }
 }
+.price-filter {
+  display: flex;
+  column-gap: 10px;
+  .price-input {
+    span {
+      margin: 0 10px;
+    }
+  }
+  input {
+    border-radius: 0;
+    height: 40px;
+    + span {
+      position: absolute;
+      top: 4px;
+      left: 0;
+    }
+  }
+}

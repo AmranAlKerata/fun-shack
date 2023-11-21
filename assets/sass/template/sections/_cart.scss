@@ -13,11 +13,14 @@
     gap: 10px;
   }
   @include xs {
-    justify-content: start !important;
-    span {
-      font-size: 10px;
-      gap: 0;
+    > div > span:first-child {
+      display: none;
     }
+    // justify-content: start !important;
+    // span {
+    //   font-size: 10px;
+    //   gap: 0;
+    // }
   }
 }
 .cart_item {
