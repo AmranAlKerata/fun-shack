@@ -28,7 +28,15 @@
 .nav-tabs .nav-link {
   color: $body-color;
 }
+@include sm {
+  .nav-tabs .nav-link {
+    font-size: 12px;
+  }
+}
 .order-table {
+  p {
+    margin-bottom: 10px;
+  }
   @include sm {
     p,
     .th-btn {
@@ -37,6 +45,14 @@
     .th-btn {
       font-size: 10px;
       padding: 10px 0px;
+    }
+  }
+}
+.order-summery {
+  @include sm {
+    .label,
+    .value {
+      font-size: 12px;
     }
   }
 }

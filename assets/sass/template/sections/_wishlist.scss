@@ -1,7 +1,10 @@
 .wishlist-container {
-  row-gap: 50px;
+  row-gap: 20px;
   .wishlist-item {
+    padding: 20px;
     padding-left: 50px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
     h6 {
       font-size: 15px;
       margin-bottom: 5px;

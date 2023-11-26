@@ -462,7 +462,8 @@ table.woocommerce-product-attributes {
     }
   }
 }
-.edit-order-page {
+.edit-order-page,
+.woocommerce-cart-form {
   .quantity {
     input,
     i {
@@ -484,5 +485,15 @@ table.woocommerce-product-attributes {
   .remove-item {
     top: 0;
     left: 30px;
+  }
+}
+@include sm {
+  .product-about .wishlist-item {
+    padding: 40px 0;
+    .remove-item {
+      top: unset;
+      bottom: 58px;
+      left: 0;
+    }
   }
 }

@@ -1,7 +1,6 @@
 @use 'sass:color';
 .th-header {
   position: relative;
-  z-index: 41;
 
   .icon-btn {
     --btn-size: 40px;
@@ -1430,7 +1429,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 20px 10px;
-    z-index: 9999;
+    z-index: 9;
     box-shadow: 0px -2px 10px 0 rgba(0, 0, 0, 0.07);
   }
   .mobile-bottom-menu a {
@@ -1506,6 +1505,10 @@
     }
   }
 }
-#backArrow {
+#backArrow,
+#editDateCity {
   cursor: pointer;
+}
+.select2-dropdown {
+  z-index: 99999999999;
 }

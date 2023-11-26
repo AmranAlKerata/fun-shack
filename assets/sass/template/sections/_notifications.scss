@@ -41,6 +41,11 @@
       position: absolute;
       top: 10px;
       left: 0;
+      @include sm {
+        position: static;
+        display: block;
+        text-align: left;
+      }
     }
   }
 }

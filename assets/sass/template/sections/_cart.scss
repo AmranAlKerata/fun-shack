@@ -1,5 +1,24 @@
 .woocommerce-cart-form {
   text-align: center;
+  .remove-item {
+    top: 30px;
+  }
+  @include sm {
+    .remove-item {
+      top: unset;
+      bottom: 15px;
+    }
+  }
+  .cart-item {
+    background-color: $smoke-color;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    &.disabled {
+      background-color: rgba(179, 38, 30, 0.1019607843);
+      pointer-events: none;
+    }
+  }
 }
 .woocommerce-message {
   @include xs {

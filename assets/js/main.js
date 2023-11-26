@@ -1,39 +1,7 @@
 (function($) {
-  "use strict";
   /*=================================
       JS Index Here
   ==================================*/
-  /*
-    01. On Load Function
-    03. Mobile Menu Active
-    04. Sticky fix
-    05. Scroll To Top
-    06.Set Background & Mask Image
-    07. Global Slider
-    08. Custom Animaiton For Slider
-    09. Ajax Contact Form
-    10. Popup Sidemenu  
-    11. Search Box Popup
-    12. Magnific Popup
-    13. Filter
-    14. Date Time Picker
-    15. Counter Up
-    16. VS Tab
-    17. Progress Bar Animation
-    18. Section Position
-    19. Shape Mockup
-    20. Toggle Password
-    00. Inspect Element Disable
-  */
-  /*=================================
-      JS Index End
-  ==================================*/
-  /*
-
-  /*---------- 01. On Load Function ----------*/
-  $(window).on("load", function() {
-    $(".preloader").fadeOut();
-  });
 
   /*---------- 03. Mobile Menu Active ----------*/
 
@@ -205,32 +173,12 @@
     });
   }
 
-  /*---------- 06. Set Background Image ----------*/
-  if ($("[data-bg-src]").length > 0) {
-    $("[data-bg-src]").each(function() {
-      var src = $(this).attr("data-bg-src");
-      $(this).css("background-image", "url(" + src + ")");
-      $(this).removeAttr("data-bg-src").addClass("background-image");
-    });
-  }
-
   /*---------- 06.Set Background & Mask Image ----------*/
   if ($("[data-bg-src]").length > 0) {
     $("[data-bg-src]").each(function() {
       var src = $(this).attr("data-bg-src");
       $(this).css("background-image", "url(" + src + ")");
       $(this).removeAttr("data-bg-src").addClass("background-image");
-    });
-  }
-  // Mask Image
-  if ($("[data-mask-src]").length > 0) {
-    $("[data-mask-src]").each(function() {
-      var mask = $(this).attr("data-mask-src");
-      $(this).css({
-        "mask-image": "url(" + mask + ")",
-        "-webkit-mask-image": "url(" + mask + ")"
-      });
-      $(this).removeAttr("data-mask-src");
     });
   }
 
@@ -375,17 +323,6 @@
     });
   });
 
-  /*----------- 08. Custom Animaiton For Slider ----------*/
-  $("[data-ani-duration]").each(function() {
-    var durationTime = $(this).data("ani-duration");
-    $(this).css("animation-duration", durationTime);
-  });
-
-  $("[data-ani-delay]").each(function() {
-    var delayTime = $(this).data("ani-delay");
-    $(this).css("animation-delay", delayTime);
-  });
-
   $("[data-ani]").each(function() {
     var animaionName = $(this).data("ani");
     $(this).addClass(animaionName);
@@ -460,338 +397,6 @@
   }
   popupSideMenu(".shopping-cart", ".sideMenuToggler2", ".sideMenuCls", "show");
 
-  /*----------- 12. Magnific Popup ----------*/
-
-  // Check if Magnific Popup function exists
-  if ($.fn.magnificPopup) {
-    /* magnificPopup img view */
-    $(".popup-image").magnificPopup({
-      type: "image",
-      gallery: {
-        enabled: true
-      }
-    });
-
-    /* magnificPopup video view */
-    $(".popup-video").magnificPopup({
-      type: "iframe"
-    });
-
-    /* magnificPopup content view */
-    $(".popup-content").magnificPopup({
-      type: "inline",
-      midClick: true
-    });
-  } else {
-    console.log("Magnific Popup plugin is not loaded.");
-  }
-
-  /*----------- 13. Filter ----------*/
-  if ($.fn.imagesLoaded) {
-    $(".filter-active").imagesLoaded(function() {
-      var $filter = ".filter-active",
-        $filterItem = ".filter-item",
-        $filterMenu = ".filter-menu-active";
-
-      if ($($filter).length > 0) {
-        var $grid = $($filter).isotope({
-          itemSelector: $filterItem,
-          filter: "*"
-          // masonry: {
-          //   // use outer width of grid-sizer for columnWidth
-          //   columnWidth: 1
-          // }
-        });
-
-        // filter items on button click
-        $($filterMenu).on("click", "button", function() {
-          var filterValue = $(this).attr("data-filter");
-          $grid.isotope({
-            filter: filterValue
-          });
-        });
-
-        // Menu Active Class
-        $($filterMenu).on("click", "button", function(event) {
-          event.preventDefault();
-          $(this).addClass("active");
-          $(this).siblings(".active").removeClass("active");
-        });
-      }
-    });
-
-    // Active specifix
-    $(".filter-active-cat1").imagesLoaded(function() {
-      var $filter = ".filter-active-cat1",
-        $filterItem = ".filter-item",
-        $filterMenu = ".filter-menu-active";
-
-      if ($($filter).length > 0) {
-        var $grid = $($filter).isotope({
-          itemSelector: $filterItem,
-          filter: ".cat1",
-          masonry: {
-            // use outer width of grid-sizer for columnWidth
-            columnWidth: 1
-          }
-        });
-
-        // filter items on button click
-        $($filterMenu).on("click", "button", function() {
-          var filterValue = $(this).attr("data-filter");
-          $grid.isotope({
-            filter: filterValue
-          });
-        });
-
-        // Menu Active Class
-        $($filterMenu).on("click", "button", function(event) {
-          event.preventDefault();
-          $(this).addClass("active");
-          $(this).siblings(".active").removeClass("active");
-        });
-      }
-    });
-  }
-
-  //======wow js=======
-  if ($.fn.WOW) {
-    new WOW().init();
-  }
-
-  /*----------- 15. Counter Up ----------*/
-  if ($.fn.counterUp) {
-    $(".counter-number").counterUp({
-      delay: 10,
-      time: 1000
-    });
-  }
-
-  /*---------- 16. VS Tab ----------*/
-  $.fn.vsTab = function(options) {
-    var opt = $.extend(
-      {
-        sliderTab: false,
-        tabButton: "button"
-      },
-      options
-    );
-
-    $(this).each(function() {
-      var $menu = $(this);
-      var $button = $menu.find(opt.tabButton);
-
-      // Append indicator
-      $menu.append('<span class="indicator"></span>');
-      var $line = $menu.find(".indicator");
-
-      // On Click Button Class Remove and indecator postion set
-      $button.on("click", function(e) {
-        e.preventDefault();
-        var cBtn = $(this);
-        cBtn.addClass("active").siblings().removeClass("active");
-        if (opt.sliderTab) {
-          $(slider).slick("slickGoTo", cBtn.data("slide-go-to"));
-        } else {
-          linePos();
-        }
-      });
-
-      // Work With slider
-      if (opt.sliderTab) {
-        var slider = $menu.data("asnavfor"); // select slider
-
-        // Select All button and set attribute
-        var i = 0;
-        $button.each(function() {
-          var slideBtn = $(this);
-          slideBtn.attr("data-slide-go-to", i);
-          i++;
-
-          // Active Slide On load > Actived Button
-          if (slideBtn.hasClass("active")) {
-            $(slider).slick("slickGoTo", slideBtn.data("slide-go-to"));
-          }
-
-          // Change Indicator On slide Change
-          $(slider).on("beforeChange", function(
-            event,
-            slick,
-            currentSlide,
-            nextSlide
-          ) {
-            $menu
-              .find(opt.tabButton + '[data-slide-go-to="' + nextSlide + '"]')
-              .addClass("active")
-              .siblings()
-              .removeClass("active");
-            linePos();
-          });
-        });
-      }
-
-      // Indicator Position
-      function linePos() {
-        var $btnActive = $menu.find(opt.tabButton + ".active"),
-          $height = $btnActive.css("height"),
-          $width = $btnActive.css("width"),
-          $top = $btnActive.position().top + "px",
-          $left = $btnActive.position().left + "px";
-
-        $line.get(0).style.setProperty("--height-set", $height);
-        $line.get(0).style.setProperty("--width-set", $width);
-        $line.get(0).style.setProperty("--pos-y", $top);
-        $line.get(0).style.setProperty("--pos-x", $left);
-
-        if ($($button).first().position().left == $btnActive.position().left) {
-          $line.addClass("start").removeClass("center").removeClass("end");
-        } else if (
-          $($button).last().position().left == $btnActive.position().left
-        ) {
-          $line.addClass("end").removeClass("center").removeClass("start");
-        } else {
-          $line.addClass("center").removeClass("start").removeClass("end");
-        }
-      }
-      linePos();
-    });
-  };
-
-  // Call On Load
-  if ($(".taxi-tab").length) {
-    $(".taxi-tab").vsTab({
-      sliderTab: true,
-      tabButton: ".th-btn"
-    });
-  }
-
-  /*----------- 17. Progress Bar Animation ----------*/
-  if ($.fn.waypoint) {
-    $(".progress-bar").waypoint(
-      function() {
-        $(".progress-bar").css({
-          animation: "animate-positive 1.8s",
-          opacity: "1"
-        });
-      },
-      { offset: "75%" }
-    );
-  }
-
-  /*---------- 18. Section Position ----------*/
-  // Interger Converter
-  function convertInteger(str) {
-    return parseInt(str, 10);
-  }
-
-  $.fn.sectionPosition = function(mainAttr, posAttr) {
-    $(this).each(function() {
-      var section = $(this);
-
-      function setPosition() {
-        var sectionHeight = Math.floor(section.height() / 2), // Main Height of section
-          posData = section.attr(mainAttr), // where to position
-          posFor = section.attr(posAttr), // On Which section is for positioning
-          topMark = "top-half", // Pos top
-          bottomMark = "bottom-half", // Pos Bottom
-          parentPT = convertInteger($(posFor).css("padding-top")), // Default Padding of  parent
-          parentPB = convertInteger($(posFor).css("padding-bottom")); // Default Padding of  parent
-
-        if (posData === topMark) {
-          $(posFor).css("padding-bottom", parentPB + sectionHeight + "px");
-          section.css("margin-top", "-" + sectionHeight + "px");
-        } else if (posData === bottomMark) {
-          $(posFor).css("padding-top", parentPT + sectionHeight + "px");
-          section.css("margin-bottom", "-" + sectionHeight + "px");
-        }
-      }
-      setPosition(); // Set Padding On Load
-    });
-  };
-
-  var postionHandler = "[data-sec-pos]";
-  if ($(postionHandler).length) {
-    $(postionHandler).imagesLoaded(function() {
-      $(postionHandler).sectionPosition("data-sec-pos", "data-pos-for");
-    });
-  }
-
-  /*----------- 19. Shape Mockup ----------*/
-  $.fn.shapeMockup = function() {
-    var $shape = $(this);
-    $shape.each(function() {
-      var $currentShape = $(this),
-        shapeTop = $currentShape.data("top"),
-        shapeRight = $currentShape.data("right"),
-        shapeBottom = $currentShape.data("bottom"),
-        shapeLeft = $currentShape.data("left");
-      $currentShape
-        .css({
-          top: shapeTop,
-          right: shapeRight,
-          bottom: shapeBottom,
-          left: shapeLeft
-        })
-        .removeAttr("data-top")
-        .removeAttr("data-right")
-        .removeAttr("data-bottom")
-        .removeAttr("data-left")
-        .parent()
-        .addClass("shape-mockup-wrap");
-    });
-  };
-
-  if ($(".shape-mockup")) {
-    $(".shape-mockup").shapeMockup();
-  }
-
-  // Set position when click on bootstrap Tab
-
-  if ($.fn.slick) {
-    $('[data-bs-toggle="tab"]').on("shown.bs.tab", function(e) {
-      $(".th-carousel").slick("setPosition");
-    });
-  }
-
-  /*----------- 00. Woocommerce Toggle ----------*/
-  // Ship To Different Address
-  $("#ship-to-different-address-checkbox").on("change", function() {
-    if ($(this).is(":checked")) {
-      $("#ship-to-different-address").next(".shipping_address").slideDown();
-    } else {
-      $("#ship-to-different-address").next(".shipping_address").slideUp();
-    }
-  });
-
-  // Login Toggle
-  $(".woocommerce-form-login-toggle a").on("click", function(e) {
-    e.preventDefault();
-    $(".woocommerce-form-login").slideToggle();
-  });
-
-  // Coupon Toggle
-  $(".woocommerce-form-coupon-toggle a").on("click", function(e) {
-    e.preventDefault();
-    $(".woocommerce-form-coupon").slideToggle();
-  });
-
-  // Woocommerce Shipping Method
-  $(".shipping-calculator-button").on("click", function(e) {
-    e.preventDefault();
-    $(this).next(".shipping-calculator-form").slideToggle();
-  });
-
-  // Woocommerce Payment Toggle
-  $('.wc_payment_methods input[type="radio"]:checked')
-    .siblings(".payment_box")
-    .show();
-  $('.wc_payment_methods input[type="radio"]').each(function() {
-    $(this).on("change", function() {
-      $(".payment_box").slideUp();
-      $(this).siblings(".payment_box").slideDown();
-    });
-  });
-
   // Woocommerce Rating Toggle
   $(".rating-select .stars a").each(function() {
     $(this).on("click", function(e) {
@@ -853,7 +458,7 @@
     $("#date").flatpickr({
       dateFormat: "d/m/Y"
     });
-    $("#birth").flatpickr({});
+    $("#birth").flatpickr();
   }
   if ($.fn.slider) {
     $("#price-slider-range").slider({
@@ -1044,6 +649,44 @@
       // This is necessary to display the image in the <img> tag
       reader.readAsDataURL(this.files[0]);
     }
+  });
+
+  // Function to remove filters
+  $(".clearFilters").on("click", function() {
+    // Find the parent form of the clicked button
+    const form = $(this).closest("form");
+
+    // Check if the price filter exists
+    const priceFilter = form.find(".price-filter");
+    if (priceFilter.length) {
+      // Get the default min and max values
+      const defaultMin = 0;
+      const defaultMax = 10000;
+
+      // Reset min and max price inputs
+      form.find("input#min-price").val(defaultMin);
+      form.find("input#max-price").val(defaultMax);
+    }
+
+    // Reset all other input elements within the form
+    form.find("input:not(#min-price, #max-price), textarea").val("");
+
+    // Reset all Select2 elements to the first option
+    form.find("select").each(function() {
+      $(this).val($(this).find("option:first").val()).trigger("change");
+    });
+
+    // Select the first radio button in each group
+    form.find('input[type="radio"]').each(function() {
+      let name = $(this).attr("name");
+      form.find(`input[name="${name}"]:first`).prop("checked", true);
+    });
+
+    // Reset all checkboxes
+    form.find('input[type="checkbox"]').prop("checked", false);
+
+    // Prevent the default action of the button
+    return false;
   });
 })(jQuery);
 

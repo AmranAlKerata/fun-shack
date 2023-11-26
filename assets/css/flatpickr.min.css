@@ -32,7 +32,7 @@
 }
 .flatpickr-calendar.open {
   display: inline-block;
-  z-index: 9999999999;
+  z-index: 999;
 }
 .flatpickr-calendar.animate.open {
   -webkit-animation: fpFadeInDown 300ms cubic-bezier(.23, 1, .32, 1);

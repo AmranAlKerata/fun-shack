@@ -88,3 +88,22 @@
     background-color: $success-color;
   }
 }
+.accordion h6 i {
+  cursor: pointer;
+}
+.accordion h6[aria-expanded="false"] {
+  i.fa-minus {
+    display: none;
+  }
+  i.fa-plus {
+    display: inline-block;
+  }
+}
+.accordion h6[aria-expanded="true"] {
+  i.fa-minus {
+    display: inline-block;
+  }
+  i.fa-plus {
+    display: none;
+  }
+}

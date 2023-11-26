@@ -190,7 +190,7 @@ input[type="radio"] {
 
   ~ label {
     position: relative;
-    padding-right: 15px;
+    padding-right: 40px;
     cursor: pointer;
     line-height: 1;
     display: inline-block;
@@ -376,4 +376,8 @@ textarea.is-invalid {
       }
     }
   }
+}
+textarea:disabled,
+textarea[readonly] {
+  background-color: #e9ecef;
 }
