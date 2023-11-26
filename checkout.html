@@ -226,7 +226,7 @@ Header Area
 ==============================-->
 <header class="th-header header-layout5">
 
-    <div class="sticky-wrapper">
+    <div class="">
         <!-- Main Menu Area -->
         <div class="menu-area">
             <div class="container py-1 py-lg-0">
@@ -645,17 +645,44 @@ Checkout Arae
 ==============================-->
 
     <div class="th-checkout-wrapper space-top space-extra-bottom">
-        <div class="container">
-            <div class="alert alert-primary d-flex align-items-center position-sticky" role="alert">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 0C4.486 0 0 4.486 0 10C0 15.514 4.486 20 10 20C15.514 20 20 15.514 20 10C20 4.486 15.514 0 10 0ZM10 18C5.589 18 2 14.411 2 10C2 5.589 5.589 2 10 2C14.411 2 18 5.589 18 10C18 14.411 14.411 18 10 18ZM15 10C15 10.553 14.552 11 14 11H10C9.448 11 9 10.553 9 10V5C9 4.447 9.448 4 10 4C10.552 4 11 4.447 11 5V9H14C14.552 9 15 9.447 15 10Z" fill="#41416E"/>
-                    </svg>
-                    
-                <div>
-                    <span class="ms-3 cart-timer">20:00</span>
-                    <span>الوقت المتبقي لإتمام الطلب</span>
+        <div class="steps-wrapper mb-5  ">
+            <div class="steps-container container">
+                <div class="row justify-content-center align-items-center text-center">
+                    <div class="col first-step">
+                        <a href="cart.html" class="py-3 step d-flex align-items-center justify-content-center  gap-1 gap-sm-3">
+                            <h6 class="step-number mb-0">1</h6>
+                            <h6 class="step-title mb-0">التحقق</h6>
+                        </a>
+                    </div>
+                    <div class="col second-step">
+                        <a href="client-data.html" class="py-3 step d-flex align-items-center justify-content-center  gap-1 gap-sm-3">
+                            <h6 class="step-number mb-0">2</h6>
+                            <h6 class="step-title mb-0">بيانات العميل</h6>
+                        </a>
+                    </div>
+                    <div class="col last-step">
+                        <a href="checkout.html" class="py-3 step active d-flex align-items-center justify-content-center gap-1 gap-sm-3">
+                            <h6 class="step-number mb-0">3</h6>
+                            <h6 class="step-title mb-0">الملخص و الدفع</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="alert alert-primary" role="alert">
+                <div class="container d-flex align-items-center  justify-content-center">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0C4.486 0 0 4.486 0 10C0 15.514 4.486 20 10 20C15.514 20 20 15.514 20 10C20 4.486 15.514 0 10 0ZM10 18C5.589 18 2 14.411 2 10C2 5.589 5.589 2 10 2C14.411 2 18 5.589 18 10C18 14.411 14.411 18 10 18ZM15 10C15 10.553 14.552 11 14 11H10C9.448 11 9 10.553 9 10V5C9 4.447 9.448 4 10 4C10.552 4 11 4.447 11 5V9H14C14.552 9 15 9.447 15 10Z" fill="#41416E"/>
+                        </svg>
+                        
+                    <div>
+                        <span class="ms-3 cart-timer">20:00</span>
+                        <span>الوقت المتبقي لإتمام الطلب</span>
+                    </div>
                 </div>
               </div>
+        </div>
+        <div class="container">
+         
              
               <div class="row">
    
@@ -743,15 +770,15 @@ Checkout Arae
                         <div class="row mt-5">
                             <div class="col-12 ">
                                 <div class="row">
-                                    <div class="col-md-4 form-group">
+                                    <div class="col-md-6 form-group">
                                         <label for="card-number">رقم البطاقة</label>
                                         <input type="text" name="card-number" class="form-control" placeholder="*****">
                                     </div>
-                                    <div class="col-md-4 form-group">
+                                    <div class="col-md-3 form-group">
                                         <label for="m-y">الشهر / السنة</label>
                                         <input type="text" name="m-y" class="form-control" placeholder="الشهر / السنة">
                                     </div>
-                                    <div class="col-md-4 form-group">
+                                    <div class="col-md-3 form-group">
                                         <label for="code">رمز التحقق (خلف البطاقة)</label>
                                         <input type="text" name="code" class="form-control" placeholder="رمز التحقق (خلف البطاقة)" >
                                     </div>

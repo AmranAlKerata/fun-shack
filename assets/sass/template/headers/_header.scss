@@ -1512,3 +1512,9 @@
 .select2-dropdown {
   z-index: 99999999999;
 }
+@include sm {
+  .mobile-login-btn {
+    font-size: 12px;
+    padding: 10px;
+  }
+}

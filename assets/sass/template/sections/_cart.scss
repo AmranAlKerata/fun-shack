@@ -414,3 +414,57 @@
     }
   }
 }
+.steps-wrapper {
+  background-color: $smoke-color;
+  &.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Optional, to ensure it stays on top of other content */
+  }
+  .step {
+    * {
+      cursor: pointer;
+    }
+    &.active {
+      background-color: $theme-color;
+      .step-title {
+        color: $white-color;
+      }
+    }
+    .step-number {
+      background-color: $white-color;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 50%;
+      color: $theme-color;
+    }
+  }
+  @include sm {
+    .first-step {
+      padding-right: 0;
+    }
+    .second-step {
+      padding: 0;
+    }
+    .last-step {
+      padding-left: 0;
+    }
+    .step {
+      h6 {
+        font-size: 12px;
+      }
+      .step-number {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+      }
+      &:not(.active) {
+        .step-title {
+          display: none;
+        }
+      }
+    }
+  }
+}

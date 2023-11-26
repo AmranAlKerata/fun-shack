@@ -688,6 +688,21 @@
     // Prevent the default action of the button
     return false;
   });
+
+  // Get the offset position of the navbar
+  const stickyOffset = $(".steps-wrapper").offset().top;
+
+  // Function to add 'sticky' class
+  const stickyScroll = () => {
+    if (window.pageYOffset >= stickyOffset) {
+      $(".steps-wrapper").addClass("sticky");
+    } else {
+      $(".steps-wrapper").removeClass("sticky");
+    }
+  };
+
+  // When the user scrolls the page, execute stickyScroll
+  $(window).on("scroll", stickyScroll);
 })(jQuery);
 
 $.fn.modal.Constructor.prototype._enforceFocus = function() {
