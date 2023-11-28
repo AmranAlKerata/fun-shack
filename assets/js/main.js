@@ -689,6 +689,12 @@
     return false;
   });
 
+  if ($(".pyro").length > 0) {
+    setTimeout(() => {
+      $(".pyro").remove();
+    }, 4000);
+  }
+
   // Get the offset position of the navbar
   const stickyOffset = $(".steps-wrapper").offset().top;
 
@@ -702,7 +708,9 @@
   };
 
   // When the user scrolls the page, execute stickyScroll
-  $(window).on("scroll", stickyScroll);
+  if ($(".steps-wrapper").length > 0) {
+    $(window).on("scroll", stickyScroll);
+  }
 })(jQuery);
 
 $.fn.modal.Constructor.prototype._enforceFocus = function() {
