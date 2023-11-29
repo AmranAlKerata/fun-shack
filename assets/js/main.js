@@ -539,6 +539,12 @@
       $(".filters-select2").select2();
     });
   }
+  if ($(".add-to-cart-select2").length > 0) {
+    $("#addToCartModal").on("shown.bs.modal", function() {
+      // Make sure to add "select-2-select" class to any select box
+      $(".add-to-cart-select2").select2();
+    });
+  }
 
   // Function to start the countdown timer
   function startCountdown(duration) {
@@ -695,12 +701,9 @@
     }, 4000);
   }
 
-  // Get the offset position of the navbar
-  const stickyOffset = $(".steps-wrapper").offset().top;
-
   // Function to add 'sticky' class
   const stickyScroll = () => {
-    if (window.pageYOffset >= stickyOffset) {
+    if (window.pageYOffset >= $(".steps-wrapper").offset().top) {
       $(".steps-wrapper").addClass("sticky");
     } else {
       $(".steps-wrapper").removeClass("sticky");
