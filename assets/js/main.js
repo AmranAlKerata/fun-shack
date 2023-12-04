@@ -78,10 +78,18 @@
         });
       });
 
-      // Hide Menu On out side click
-      menu.on("click", function(e) {
-        e.stopPropagation();
-        menuToggle();
+      $(document).click(function(event) {
+        // Check if the click is not on .th-menu-toggle and not on a descendant of .th-menu-toggle
+        if (!$(event.target).closest(".th-menu-toggle").length) {
+          // Then, check if the .th-menu-wrapper is currently visible (has the 'th-body-visible' class)
+          if ($(".th-menu-wrapper").hasClass("th-body-visible")) {
+            // And if the clicked area is not the .th-menu-wrapper and not a descendant of it
+            if (!$(event.target).closest(".th-menu-wrapper").length) {
+              // Remove the class 'th-body-visible' from all elements with class '.th-menu-wrapper'
+              $(".th-menu-wrapper").removeClass("th-body-visible");
+            }
+          }
+        }
       });
 
       // Stop Hide full menu on menu click
